@@ -2,6 +2,8 @@
 
 henry once again attempts to try something weird
 
+(this is not related to REV and their motor controllers)
+
 (temp readme)
 
 basically
