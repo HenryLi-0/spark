@@ -19,7 +19,7 @@ Anyways, this project is meant to challenge me to do something a bit outside my 
 ![10122025 - 1.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTk0NiwicHVyIjoiYmxvYl9pZCJ9fQ==--766c916e5f20ff70c5067f251bf11021a90d1c2c/10122025%20-%201.png)
   
 
-## 10/20/2025 - Lots oResearch  
+## 10/20/2025 - Lots o' Research!  
 
 It's been a week! Let's cut to the chase!
 
