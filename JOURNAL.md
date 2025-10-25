@@ -19,3 +19,17 @@ Anyways, this project is meant to challenge me to do something a bit outside my 
 ![10122025 - 1.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTk0NiwicHVyIjoiYmxvYl9pZCJ9fQ==--766c916e5f20ff70c5067f251bf11021a90d1c2c/10122025%20-%201.png)
   
 
+## 10/20/2025 - Lots o' Research!  
+
+It's been a week! Let's cut to the chase!
+
+![10192025 - 1.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzY4MiwicHVyIjoiYmxvYl9pZCJ9fQ==--5297eb70bbb7e4459261376624675505fa9ef0c8/10192025%20-%201.png)
+
+Simply, for the past week, I've been watching a bunch of videos, such as [this one](https://www.youtube.com/watch?v=qub5chyIQ0s) and [this one](https://www.youtube.com/watch?v=mbo6soXn_kQ) from Dr. D-Flo on YouTube. These videos were pretty entertaining and informative! Basically, watching these (and a couple other videos) helped me get some terminology, understand what I need to do, and know what things to look into. 
+
+Moving on, also started working on deciding how to keep the budget low while also having a sturdy and decent machine. Oh yeah, also shrank the project scope a bit. The idea was, a CNC mill and 3D printer in one would be really cool, but the priority of this project is to make a printer now. I'll keep the CNC mill in the back of my mind to make it easy to implement, but for now, 3D printer first.
+
+After this, I wrote up some stuff about keeping power usage low, then started building an image of it in Minecraft, to realize I don't like how non-parametric it is. Anyways, after that, laid out a plan for the next couple weeks! This week's plan is, well, planning. Basically, state the specifics of things. Goal's to finish by mid-November! Anyways it's 1:36 AM, good night!
+
+Also, thought this was a lot? Go look at the [`updatelogs`](https://github.com/HenryLi-0/spark/blob/main/updatelogs/logs202510/10192025.md) for today!  
+
