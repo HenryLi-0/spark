@@ -6,10 +6,6 @@
   ==================================================================
 -->
 
-This is my journal of the design and building process of **Spark**.  
-You can view this journal in more detail on **Hack Club Blueprint** [here](https://blueprint.hackclub.com/projects/461).
-
-
 ## 10/13/2025 - Writing The Idea and Setting Project Scope!  
 
 Today was generally just a super long write up of my idea/concept for what I want to make! Simply, I want to create something that enables the ability to create more, similarly to a 3D printer. However, if you have one CNC machine, why not have it able to do many CNC things at once? As in, if it can do additive manufacturing, why not subtractive manufacturing? With the ability to move objects? Basically, a 3D frame with a coreXY motion system with toolheads that can be changed. And yeah, the write up just has way more detail and stuff, check it out at [on the repo!](https://github.com/HenryLi-0/spark/blob/main/updatelogs/logs202510/10122025.md). (if i ever change this, just check for an `updatelogs` folder and navigate to today, 10/12/2025 (yes i know it's 1:37 AM on 10/13/2025 for me))
@@ -32,4 +28,20 @@ Moving on, also started working on deciding how to keep the budget low while als
 After this, I wrote up some stuff about keeping power usage low, then started building an image of it in Minecraft, to realize I don't like how non-parametric it is. Anyways, after that, laid out a plan for the next couple weeks! This week's plan is, well, planning. Basically, state the specifics of things. Goal's to finish by mid-November! Anyways it's 1:36 AM, good night!
 
 Also, thought this was a lot? Go look at the [`updatelogs`](https://github.com/HenryLi-0/spark/blob/main/updatelogs/logs202510/10192025.md) for today!  
+
+## 11/2/2025 - The Last Two Weeks! (Scope and CAD)  
+
+Unfortunately, in this weekend, I had this thing called AP Language who has 50+ assignments (not exaggerating here), and I've finally completed all of them, along with the 60+ videos. More importantly though, what happened in the last two weeks?
+
+On 10/25/2025, I've fully defined the scope of the project and created a rough BOM, which, to generalize, is a ~20x20cm, coreXY, 3D motion system with multipurpose toolheads. Additionally, I started drafting plans on the limits of the software side, where I'm exploring whether or not to work on making my own firmware or parts of a central motherboard instead of buying a full one. The benefit of doing this is that I can learn how it all works, but with the downside that it's a TON of work. However, it would be worth it!
+
+Then, on 10/26/2025 and 10/27/2025, started working on the CAD!
+
+![10272025 - 2](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzk1NCwicHVyIjoiYmxvYl9pZCJ9fQ==--d6189bb9b07515a63176d3b13a3d5ac1f182d03b/10272025%20-%202.png)
+
+Of course, it's nothing too big right now, but hey, getting the mastersketch to base everything on top of is something quite significant! Oh yeah, we're doing the FRC top down, then bottom up assemble structure! Should keep things fairly parametric and all. Oh yeah, also the KrayonCAD (frc?).
+
+![10252025 - 1](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzk1NSwicHVyIjoiYmxvYl9pZCJ9fQ==--f21daa1d0947ce6270247269af1b80db9f0f266d/10252025%20-%201.png)
+
+That was a bit ago, but yeah!  
 
