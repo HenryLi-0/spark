@@ -1,6 +1,6 @@
 # spark
 
-![temp](</updatelogs/images/202511/11052025 - 1.png>)
+![temp](</updatelogs/images/202511/11152025 - 1.png>)
 
 henry once again attempts to try something weird (trying to make a 3d printer)
 
