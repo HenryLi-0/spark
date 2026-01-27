@@ -63,7 +63,7 @@ r_target = [
     [38, 2],
     [25.6, 2],
     [15.1, 2],
-    [18, 2]
+    [18.6, 2]
 ]
 
 results = calculate(r_length, r_count, r_target)
