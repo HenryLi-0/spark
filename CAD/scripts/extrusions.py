@@ -29,6 +29,9 @@ def calculate(length:int, count:int, target:list[int, int]):
         lengths[best][1].append(cut)
         lengths[best][0] -= cut
 
+    for group in lengths:
+        group[0] = round(group[0]*1000)/1000
+
     return [True, lengths]
 
 
@@ -62,8 +65,8 @@ r_Z_HEIGHT = 35
 r_target = [
     [38, 2],
     [25.6, 2],
-    [15.1, 2],
-    [18.6, 2]
+    [14.75, 2],
+    [19.3, 2]
 ]
 
 results = calculate(r_length, r_count, r_target)
