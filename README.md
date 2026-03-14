@@ -1,6 +1,14 @@
-# spark
+<div align="center">
+    <h2>Spark</h2>
+    <p>by <a href= "https://github.com/HenryLi-0/spark"> @HenryLi-0 </a></p>
+    <img src="spark_banner.png" alt="banner"/>
+</div>
 
-![temp](</updatelogs/images/202511/11152025 - 1.png>)
+<sub>It's all open source! Hardware licensed under CERN OHL S v2.<sub>
+
+---
+
+## Spark
 
 henry once again attempts to try something weird (trying to make a 3d printer)
 
