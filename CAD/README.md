@@ -1,5 +1,5 @@
 # CAD
 
-This folder contains all the general CAD files for printable parts! Of course, it would make much more sense to just view it on Onshape, but if you need quick files/can't get on Onshape, here you go! (The Onshape document will also be more updated, since it's pretty annoying to export everything every time a change is made!)
+Check out the CAD, made in Onshape, [here]! Or the huge `.STEP` file under the [`CAD`]() folder?
 
-todo: add onshape link!
+*Note: **The 16mm M3 screws in the CAD are supposed to be 14mm M3 screws.** Unfortunately, Onshape's standard content does not include 14mm for some reason. Do NOT buy 16mm screws, there WILL be interferences in some areas. (If you already purchased 16mm, spacers should fix your issue, but no guarantees.)*

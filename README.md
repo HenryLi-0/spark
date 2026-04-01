@@ -1,7 +1,7 @@
 <div align="center">
     <h2>Spark</h2>
     <p>by <a href= "https://github.com/HenryLi-0/spark"> @HenryLi-0 </a></p>
-    <img src="spark_banner.png" alt="banner"/>
+    <img src="frontimages/spark_banner.png" alt="banner"/>
 </div>
 
 <sub>It's all open source! Hardware licensed under CERN OHL S v2.<sub>
@@ -10,11 +10,98 @@
 
 ## Spark
 
-henry once again attempts to try something weird (trying to make a 3d printer)
+[Spark](https://github.com/HenryLi-0/spark) is an open source complex 3D printer, built for (and generously funded by) Hack Club's [Blueprint](https://blueprint.hackclub.com/)!
 
-(this is not related to REV and their motor controllers)
+---
 
-(although, would a NEO make for a good spindle motor thingy?)
+### What is this?
 
-- see [`updatelogs`](</updatelogs/>) for long writing about ideas and stuff!
-- see [`JOURNAL.md`](</JOURNAL.md>) for a condensed version for hack club (this is what i input into the site and they autogenerate that file)
+Following summer break, I realized I wasn't really doing much programming, CAD work, or pretty much anything significantly large. To simplify, I wanted to work on something to get out of creative limbo, something complex enough to grab my interest, and something that I would actually find myself using to create more.
+
+With that said, along with 6 months of on and off work, I present my newest, top 1 hardest mechanical endurance design project, **Spark**. Compared to the mechanical design of [`Raven`](https://github.com/HenryLi-0/raven), Spark is significantly more complex, involving coreXY, belts, and bringing in the idea of a passive tool changer. (Note: In my opinion, one can't compare Spark and Raven, since they're both very complex in their own ways, Raven is more of an all-skill complexity, while Spark is more endurance and CAD.)
+
+Spark uses [Klipper](https://www.klipper3d.org/), running on an SKR 1.4 Turbo Motherboard, to control its inputs. Powered through a Meanwell LRS-150-24, Spark features a coreXY motion system, which uses two NEMA17 42Ncm stepper motors. In this assembly, Spark is able to move the gantry, where a passive tool exchange system is utilized, using a latch, magnet, and guide system to align the tool head with the tool base. This allows Spark to use significantly less motors compared to a normal tool changer, using only one across all tools. With three motors down, Spark also has two more for Z control. In theory, this makes it capable of printing at a rotation, but that feature will probably be saved for a future date. 
+
+The name Spark, apart from being possible foreshadowing (please no), is also meant to be trying to spark motivation to bounce back. Spark holds it difficulty in the lack of a fast reward function, meaning hours of CAD and research doesn't really translate directly to a "percent" or "progress". This, along with the mental struggles of pushing for time between an intense school year, really contributed to my personal rating of this journey. However, I don't regret my choice, and I feel the scope was fairly optimistic but achievable. In the end, Spark sorta achieved my initial personal goal, the one of trying to prove to myself that I was, infact, not washed and still capable of producing advanced projects. If anything its got the ball rolling again, and I definitely learned a lot more about the deep design behind FDM 3D printing. Well, that's it for now! Enjoy the showcase!
+
+---
+
+### Pictures!
+
+![](</frontimages/assembly-2026-3-31.png>)
+
+![](</frontimages/tool-area-2026-3-31.png>)
+
+![](</frontimages/assembly-close-up-2026-3-31.png>)
+
+A wiring diagram, if you're doing any wiring that isn't on a PCB
+
+---
+
+### Directory
+
+- [CAD](</CAD/README.md>)
+    - Made in Onshape! Unlike last time, there's way too many print files to keep exporting them individually, so please check the CAD! 
+- [Firmware](</firmware/README.md>)
+    - We'll be using Klipper for this! Check out that folder for more info!
+- [Updatelogs](</updatelogs/>)
+    - Want to learn about the research and process behind stuff? Or want a REALLY long read? Check out the updatelogs! (It's WAY more extensive and detailed than on the Blueprint site!)
+- [BOM](</BOM.csv>)
+    - Want to build it yourself? Here's the BOM in CSV form! I suggest checking out the Google Sheets instead though, check down below for that!
+
+---
+
+### How to Use
+
+Now, I don't exactly recommend trying to build this yet (as of 3/31/2026), but here we go:
+
+1. Get to the BOM and get shopping. You might need to find alternatives depending on where you are, and the price may be higher, given current global situations.
+2. Firstly, pull up the CAD and get familiar with it. Don't use the `.STEP` file on this repository, the Onshape link is easier to use! Use logic to determine the order of steps, pay special attention to the extrusions and T nuts, along with where wires would go.
+3. There are no custom PCBs this time! Use the wiring diagram above to wire things up. PLEASE BE CAREFUL. USE COMMON SENSE WHEN DEALING WITH POWER HERE. (Triple check this, along with the wiring diagram itself, and research this.)
+4. Back to CAD, assemble the main structure first, the tool base and coreXY seperately, then carefully attach the two segments. The tool base has been designed to be highly replaceable, but it is very deep inside the stack, so a lot of disassembly is required to safely remove parts. (Use the CAD!!!)
+5. Ok, firmware time! Use Klipper docs and the wonderful resource of the internets to configure things! Safely test!
+
+---
+
+### BOM
+
+Note: This list was made in late March 2026. Depending on global situations, this price may change over time, so please be aware that prices in whatever future occurs may be different! Currently, shipping and tax estimates are included, but if you want to see the actual cost over time, check out `updatelogs` during construction time!
+
+*Try using AliExpress Deals (Welcome Deal, along with deals every other day) on the stepper motors, as it's the most expensive component (you might need to order it by itself for the deal to only apply there, do research). The BOM uses the current deal on the stepper motors.*
+
+Additionally, [here's](https://docs.google.com/spreadsheets/d/1Kiavj4VHOEFxnAxZlPTYNFeEL1XEMzFvvFbyFuPWtZs/) the original Google Sheets BOM, before it was compressed to this list. Reference that for a cleaner checklist!
+
+|   Part                                    |   Price   | Link |
+|-------------------------------------------|-----------|------|
+|   2020 Aluminum Extrusions		        |   $41.00 	| [Amazon](https://www.amazon.com/Aluminum-Extrusion-European-Standard-Anodized/dp/B0CLGX27MY/)
+|   M3 10mm (8x40pcs)					    |   $11.84 	| [AliExpress](https://www.aliexpress.us/item/3256804341271555.html)
+|   M3 14mm (2x40pcs)					    |   $3.14 	| [AliExpress](https://www.aliexpress.us/item/3256804341271555.html)
+|   M3 30mm (1x40pcs)					    |   $2.16 	| [AliExpress](https://www.aliexpress.us/item/3256804341271555.html)
+|   M3 2020 (3x100pcs)					    |   $19.77 	| [AliExpress](https://www.aliexpress.us/item/3256807638725964.html)
+|   Motion Rods					            |   $30.00 	| [Amazon](https://www.amazon.com/12mm-350mm-13-78-inches-Vigorous-Hardened/dp/B0D4VQJN4F/)
+|   NEMA 17 38mm Stepper Motor				|   $39.95 	| [AliExpress](https://www.aliexpress.us/item/3256808837281579.html)
+|   GT2 Timing Pulley (with Shaft Collar)   |   $4.62 	| [AliExpress](https://www.aliexpress.us/item/3256808347934917.html)
+|   T8 Lead Screw With Nut					|   $7.44 	| [AliExpress](https://www.aliexpress.us/item/3256807271104483.html)
+|   T8 Lead Screw Motor Coupler				|   $3.37 	| [AliExpress](https://www.aliexpress.us/item/2255799990666860.html)
+|   623 Bearings					        |   $9.90 	| [AliExpress](https://www.aliexpress.us/item/3256807482131308.html)
+|   GT2 Timing Belt					        |   $5.18 	| [AliExpress](https://www.aliexpress.us/item/3256803076577178.html)
+|   LM12UU Linear Bearings					|   $8.05 	| [AliExpress](https://www.aliexpress.us/item/3256807105962945.html)
+|   Magnets					                |   $5.85 	| [AliExpress](https://www.aliexpress.us/item/3256810045272763.html)
+|   TriangleLab V6 Volcano Hotend           |   $59.70 	| [AliExpress](https://www.aliexpress.us/item/2251832657765617.html)
+|   Build Plate                             |   $0.00   | Anywhere
+|   MeanWell USA LRS-150-24					|   $18.40 	| [DigiKey](https://www.digikey.com/en/products/detail/mean-well-usa-inc/LRS-150-24/7705015)
+|   IEC320 C14 Power Inlet					|   $6.54 	| [DigiKey](https://www.digikey.com/en/products/detail/adam-tech/IEC-GS-1-100/9831135)
+|   250V 2.5A Fuse					        |   $0.25 	| [DigiKey](https://www.digikey.com/en/products/detail/littelfuse-inc/061702-5MXP/5233765)
+|   C14 Power Wire						    |   $0.00   | Anywhere
+|   SKR 1.4 Turbo Motherboard				|   $29.95 	| [Zyltech](https://www.zyltech.com/genuine-skr-1-4-turbo-3d-printer-control-board-by-bigtree-tech/)
+|   A4988 Stepper Motor Controller          |   $5.21 	| [AliExpress](https://www.aliexpress.us/item/3256808903461933.html)
+|   Limit Switch					        |   $1.66 	| [AliExpress](https://www.aliexpress.us/item/3256805410237576.html)
+|   Build Plate Heat Bed					|   $27.74 	| [Keenovo](https://keenovo.store/products/keenovo-square-silicone-heater-3d-printer-build-plate-heatbed-heating-pad?variant=33194097803404)
+|   Wires						            |   $0.00   | Anywhere
+|   SHIPPING: Shipping Price to NYC		    |   $6.99 	| Amazon
+|   ESTIMATED TAX					        |   $11.86 	| Amazon
+|   SHIPPING: Shipping Price to NYC         |   $0.00 	| AliExpress
+|   SHIPPING: Shipping Price to NYC			|   $5.00 	| Zyltech
+|   SHIPPING: Shipping Price to NYC			|   $18.86 	| DigiKey
+|   TOTAL					                |   $384.43 | 
+                        
