@@ -34,7 +34,9 @@ The name Spark, apart from being possible foreshadowing (please no), is also mea
 
 ![](</frontimages/assembly-close-up-2026-3-31.png>)
 
-A wiring diagram, if you're doing any wiring that isn't on a PCB
+![](</updatelogs/images/202604/04012026 - 1.png>)
+
+*Note: The electronics diagram is currently being updated, here's the most recent version! (4/1/2026)*
 
 ---
 
