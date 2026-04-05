@@ -34,9 +34,7 @@ The name Spark, apart from being possible foreshadowing (please no), is also mea
 
 ![](</frontimages/assembly-close-up-2026-3-31.png>)
 
-![](</updatelogs/images/202604/04012026 - 1.png>)
-
-*Note: The electronics diagram is currently being updated, here's the most recent version! (4/1/2026)*
+![](</frontimages/wiring.png>)
 
 ---
 
