@@ -4,7 +4,7 @@
     <img src="frontimages/spark_banner.png" alt="banner"/>
 </div>
 
-<sub>It's all open source! Hardware licensed under CERN OHL S v2.<sub>
+<sub>All designs are open source! Hardware licensed under CERN OHL S v2.<sub>
 
 ---
 
@@ -14,7 +14,7 @@
 
 ---
 
-### What is this?
+## What is this?
 
 Following summer break, I realized I wasn't really doing much programming, CAD work, or pretty much anything significantly large. To simplify, I wanted to work on something to get out of creative limbo, something complex enough to grab my interest, and something that I would actually find myself using to create more.
 
@@ -26,7 +26,7 @@ The name Spark, apart from being possible foreshadowing (please no), is also mea
 
 ---
 
-### Pictures!
+## Pictures!
 
 ![](</frontimages/assembly-2026-3-31.png>)
 
@@ -38,7 +38,7 @@ The name Spark, apart from being possible foreshadowing (please no), is also mea
 
 ---
 
-### Directory
+## Directory
 
 - [CAD](</CAD/README.md>)
     - Made in Onshape! Unlike last time, there's way too many print files to keep exporting them individually, so please check the CAD! 
@@ -51,19 +51,29 @@ The name Spark, apart from being possible foreshadowing (please no), is also mea
 
 ---
 
-### How to Use
+## How to Use
 
 Now, I don't exactly recommend trying to build this yet (as of 3/31/2026), but here we go:
 
+**Assembly**
+
 1. Get to the BOM and get shopping. You might need to find alternatives depending on where you are, and the price may be higher, given current global situations.
-2. Firstly, pull up the CAD and get familiar with it. Don't use the `.STEP` file on this repository, the Onshape link is easier to use! Use logic to determine the order of steps, pay special attention to the extrusions and T nuts, along with where wires would go.
-3. There are no custom PCBs this time! Use the wiring diagram above to wire things up. PLEASE BE CAREFUL. USE COMMON SENSE WHEN DEALING WITH POWER HERE. (Triple check this, along with the wiring diagram itself, and research this.)
+2. Firstly, pull up the CAD and get familiar with it. Don't use the `.STEP` file on this repository, the Onshape link is easier to use (and more updated)! Use logic to determine the order of steps, pay special attention to the extrusions and sliding in the T nuts, along with where wires would go.
+3. There are no custom PCBs this time! Use the wiring diagram above to wire things up. PLEASE BE CAREFUL. Use common sense when dealing with power here. (Triple check this, along with the wiring diagram itself, and research this. Check with your local rules/regulations for more wiring size requirements!)
 4. Back to CAD, assemble the main structure first, the tool base and coreXY seperately, then carefully attach the two segments. The tool base has been designed to be highly replaceable, but it is very deep inside the stack, so a lot of disassembly is required to safely remove parts. (Use the CAD!!!)
-5. Ok, firmware time! Use Klipper docs and the wonderful resource of the internets to configure things! Safely test!
+5. Ok, firmware time! Use Klipper docs and the wonderful resource of the internets to configure things! Some basic things to do are flashing a card for the main board, flashing a card for the pi, and changing the config file (research this!).
+
+**Testing**
+
+1. Great! Looks good? CHECK YOUR WIRING AGAIN!!! (Triple check it again, frying components is not fun!)
+2. Nice, have a fire extinguisher on hand (or do this far from anything flammable), secure all components (including wires), and 
+3. Safely test! Wear appropriate safety equipment and plug it in! Ideally, nothing explodes. If so, great! Make sure all components are properly powered, then feel free to work on adjusting the config file! Remember there is a switch to power off, along with pulling the plug, if safety ever requires it.
+4. Once configs looks good, it's time for the first print! Check that coreXY actually moves (a straight line and a circle test are good first runs), along with the Z axis (check it reaches the top!). Also, ensure heated elements actually reach their goals (check thermistors but an external measurement would also be nice)! Once that's done, run a single color print!
+5. Once that's all tuned, record some macros and work on getting tool changing to work! It might also be a good idea to test each tool beforehand!
 
 ---
 
-### BOM
+## BOM
 
 Note: This list was made in late March 2026. Depending on global situations, this price may change over time, so please be aware that prices in whatever future occurs may be different! Currently, shipping and tax estimates are included, but if you want to see the actual cost over time, check out `updatelogs` during construction time!
 
