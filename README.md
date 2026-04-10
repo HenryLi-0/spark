@@ -81,37 +81,38 @@ Note: This list was made in late March 2026. Depending on global situations, thi
 
 Additionally, [here's](https://docs.google.com/spreadsheets/d/1Kiavj4VHOEFxnAxZlPTYNFeEL1XEMzFvvFbyFuPWtZs/) the original Google Sheets BOM, before it was compressed to this list. Reference that for a cleaner checklist!
 
-|   Part                                    |   Price   | Link |
-|-------------------------------------------|-----------|------|
-|   2020 Aluminum Extrusions		        |   $41.00 	| [Amazon](https://www.amazon.com/Aluminum-Extrusion-European-Standard-Anodized/dp/B0CLGX27MY/)
-|   M3 10mm (8x40pcs)					    |   $11.84 	| [AliExpress](https://www.aliexpress.us/item/3256804341271555.html)
-|   M3 14mm (2x40pcs)					    |   $3.14 	| [AliExpress](https://www.aliexpress.us/item/3256804341271555.html)
-|   M3 30mm (1x40pcs)					    |   $2.16 	| [AliExpress](https://www.aliexpress.us/item/3256804341271555.html)
-|   M3 2020 (3x100pcs)					    |   $19.77 	| [AliExpress](https://www.aliexpress.us/item/3256807638725964.html)
-|   Motion Rods					            |   $30.00 	| [Amazon](https://www.amazon.com/12mm-350mm-13-78-inches-Vigorous-Hardened/dp/B0D4VQJN4F/)
-|   NEMA 17 38mm Stepper Motor				|   $39.95 	| [AliExpress](https://www.aliexpress.us/item/3256808837281579.html)
-|   GT2 Timing Pulley (with Shaft Collar)   |   $4.62 	| [AliExpress](https://www.aliexpress.us/item/3256808347934917.html)
-|   T8 Lead Screw With Nut					|   $7.44 	| [AliExpress](https://www.aliexpress.us/item/3256807271104483.html)
-|   T8 Lead Screw Motor Coupler				|   $3.37 	| [AliExpress](https://www.aliexpress.us/item/2255799990666860.html)
-|   623 Bearings					        |   $9.90 	| [AliExpress](https://www.aliexpress.us/item/3256807482131308.html)
-|   GT2 Timing Belt					        |   $5.18 	| [AliExpress](https://www.aliexpress.us/item/3256803076577178.html)
-|   LM12UU Linear Bearings					|   $8.05 	| [AliExpress](https://www.aliexpress.us/item/3256807105962945.html)
-|   Magnets					                |   $5.85 	| [AliExpress](https://www.aliexpress.us/item/3256810045272763.html)
-|   TriangleLab V6 Volcano Hotend           |   $59.70 	| [AliExpress](https://www.aliexpress.us/item/2251832657765617.html)
-|   Build Plate                             |   $0.00   | Anywhere
-|   MeanWell USA LRS-150-24					|   $18.40 	| [DigiKey](https://www.digikey.com/en/products/detail/mean-well-usa-inc/LRS-150-24/7705015)
-|   IEC320 C14 Power Inlet					|   $6.54 	| [DigiKey](https://www.digikey.com/en/products/detail/adam-tech/IEC-GS-1-100/9831135)
-|   250V 2.5A Fuse					        |   $0.25 	| [DigiKey](https://www.digikey.com/en/products/detail/littelfuse-inc/061702-5MXP/5233765)
-|   C14 Power Wire						    |   $0.00   | Anywhere
-|   SKR 1.4 Turbo Motherboard				|   $29.95 	| [Zyltech](https://www.zyltech.com/genuine-skr-1-4-turbo-3d-printer-control-board-by-bigtree-tech/)
-|   A4988 Stepper Motor Controller          |   $5.21 	| [AliExpress](https://www.aliexpress.us/item/3256808903461933.html)
-|   Limit Switch					        |   $1.66 	| [AliExpress](https://www.aliexpress.us/item/3256805410237576.html)
-|   Build Plate Heat Bed					|   $27.74 	| [Keenovo](https://keenovo.store/products/keenovo-square-silicone-heater-3d-printer-build-plate-heatbed-heating-pad?variant=33194097803404)
-|   Wires						            |   $0.00   | Anywhere
-|   SHIPPING: Shipping Price to NYC		    |   $6.99 	| Amazon
-|   ESTIMATED TAX					        |   $11.86 	| Amazon
-|   SHIPPING: Shipping Price to NYC         |   $0.00 	| AliExpress
-|   SHIPPING: Shipping Price to NYC			|   $5.00 	| Zyltech
-|   SHIPPING: Shipping Price to NYC			|   $18.86 	| DigiKey
-|   TOTAL					                |   $384.43 | 
-                        
+|   Part                                            |   Price   | Link  |
+|---------------------------------------------------|-----------|-------|
+|   2020 Aluminum Extrusions (4pcs, 1220mm, Silver) |   $41.00 	| [Amazon](https://www.amazon.com/Aluminum-Extrusion-European-Standard-Anodized/dp/B0CLGX27MY/)
+|   M3 10mm (8x40pcs)                               |   $12.16 	| [AliExpress](https://www.aliexpress.us/item/3256804341271555.html)
+|   M3 14mm (2x40pcs)                               |   $3.22	| [AliExpress](https://www.aliexpress.us/item/3256804341271555.html)
+|   M3 30mm (1x40pcs)                               |   $2.21	| [AliExpress](https://www.aliexpress.us/item/3256804341271555.html)
+|   M3 2020 (3x100pcs)                              |   $20.31 	| [AliExpress](https://www.aliexpress.us/item/3256807638725964.html)
+|   Motion Rods (2pc, 1000mm, 12mm)                 |   $30.00 	| [Amazon](https://www.amazon.com/12mm-350mm-13-78-inches-Vigorous-Hardened/dp/B0D4VQJN4F/)
+|   NEMA 17 38mm Stepper Motor (5pcs)               |   $39.95 	| [AliExpress](https://www.aliexpress.us/item/3256808837281579.html)
+|   GT2 Timing Pulley (with Shaft Collar)           |   $2.72 	| [AliExpress](https://www.aliexpress.us/item/3256808347934917.html)
+|   T8 Lead Screw With Nut (200mm)                  |   $7.76 	| [AliExpress](https://www.aliexpress.us/item/3256807271104483.html)
+|   T8 Lead Screw Motor Coupler (2pcs, D20L25)      |   $3.55 	| [AliExpress](https://www.aliexpress.us/item/2255799990666860.html)
+|   623 Bearings (3x10pcs, 3x10x4mm)                |   $10.35 	| [AliExpress](https://www.aliexpress.us/item/3256807482131308.html)
+|   GT2 Timing Belt (5m, W 6mm)                     |   $5.45 	| [AliExpress](https://www.aliexpress.us/item/3256803076577178.html)
+|   LM12UU Linear Bearings (8pcs, LM12UU)           |   $8.65 	| [AliExpress](https://www.aliexpress.us/item/3256807105962945.html)
+|   Magnets (50pcs, 4x2)                            |   $5.84 	| [AliExpress](https://www.aliexpress.us/item/3256810045272763.html)
+|   TriangleLab V6 Volcano Hotend (3x1pcs, 24V)     |   $59.70 	| [AliExpress](https://www.aliexpress.us/item/2251832657765617.html)
+|   Build Plate (MIC6/Aluminum)                     |   $0.00   | Anywhere
+|   MeanWell USA LRS-150-24                         |   $18.40 	| [DigiKey](https://www.digikey.com/en/products/detail/mean-well-usa-inc/LRS-150-24/7705015)
+|   IEC320 C14 Power Inlet                          |   $5.95	| [DigiKey](https://www.digikey.com/en/products/detail/adam-tech/IEC-GS-1-100/9831135)
+|   250V 2.5A Fuse                                  |   $0.25	| [DigiKey](https://www.digikey.com/en/products/detail/littelfuse-inc/061702-5MXP/5233765)
+|   C14 Power Wire						            |   $0.00   | Anywhere
+|   LM2596 Buck Converter                           |   $3.22   | [AliExpress](https://www.aliexpress.us/item/3256807802058189.html)
+|   Micro USB Cable to Power                        |   $0.00   | Anywhere
+|   SKR 1.4 Turbo Motherboard                       |   $29.95 	| [Zyltech](https://www.zyltech.com/genuine-skr-1-4-turbo-3d-printer-control-board-by-bigtree-tech/)
+|   A4988 Stepper Motor Controller (5pc, Red)       |   $5.41	| [AliExpress](https://www.aliexpress.us/item/3256808903461933.html)
+|   Limit Switch (10pc, Pulley)                     |   $1.71 	| [AliExpress](https://www.aliexpress.us/item/3256805410237576.html)
+|   Build Plate Heat Bed (100x100mm, 60W, 24V)      |   $27.74 	| [Keenovo](https://keenovo.store/products/keenovo-square-silicone-heater-3d-printer-build-plate-heatbed-heating-pad?variant=33194097803404)
+|   Wires (16 AWG, 4m, 1 roll, Orange)              |   $4.53   | [AliExpress](https://www.aliexpress.us/item/3256807263561521.html)
+|   SHIPPING: Shipping Price to NYC                 |   $6.99	| Amazon
+|   ESTIMATED TAX                                   |   $6.92 	| Amazon
+|   SHIPPING: Shipping Price to NYC                 |   $0.00	| AliExpress
+|   SHIPPING: Shipping Price to NYC                 |   $5.00	| Zyltech
+|   SHIPPING: Shipping Price to NYC                 |   $10.96 	| DigiKey
+|   TOTAL                                           |   $379.90 | 
