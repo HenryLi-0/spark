@@ -35,6 +35,7 @@ def calculate(length:int, count:int, target:list[int, int]):
     return [True, lengths]
 
 
+# '''ALUMINUM EXTRUSION'''
 
 # e_count = 4 # number of extrusions
 # e_length = 122 # keep units consistent, cm for now
@@ -44,11 +45,10 @@ def calculate(length:int, count:int, target:list[int, int]):
 #     [26, 3],
 #     [26, 2],
 #     [6, 2],
-#     [Z_HEIGHT, 4],
+#     [Z_HEIGHT, 6],
 #     [26, 2],
 #     [26, 2],
 #     [6, 2],
-#     [26, 1],
 #     [26, 2],
 #     [34, 2]
 # ]
@@ -58,6 +58,8 @@ def calculate(length:int, count:int, target:list[int, int]):
 #     for i, length in enumerate(results[1], 1):
 #         print("extrusion {} (leftover {}): {}".format(i, length[0], length[1]))
 
+'''LINEAR RODS'''
+
 r_count = 2
 r_length = 100
 
@@ -65,8 +67,8 @@ r_Z_HEIGHT = 35
 r_target = [
     [38, 2],
     [25.6, 2],
-    [14.75, 2],
-    [19.3, 2]
+    [14.25, 2],
+    [18, 2]
 ]
 
 results = calculate(r_length, r_count, r_target)
