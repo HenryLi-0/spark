@@ -79,6 +79,8 @@ Note: This list was made in late March 2026. Depending on global situations, thi
 
 *Try using AliExpress Deals (Welcome Deal, along with deals every other day) on the stepper motors, as it's the most expensive component (you might need to order it by itself for the deal to only apply there, do research). The BOM uses the current deal on the stepper motors.*
 
+*Additional tip! Search for Promo Codes/Coupons and see what turns up! AliExpress usually has a ton!*
+
 Additionally, [here's](https://docs.google.com/spreadsheets/d/1Kiavj4VHOEFxnAxZlPTYNFeEL1XEMzFvvFbyFuPWtZs/) the original Google Sheets BOM, before it was compressed to this list. Reference that for a cleaner checklist (it also may be more updated at times!)!
 
 |   Part                                            |   Price   | Link  |
