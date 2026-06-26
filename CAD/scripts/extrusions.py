@@ -40,12 +40,11 @@ def calculate(lengthCounts:list[list[int, int]], target:list[list[int, int]]):
 # e_count = 4 # number of extrusions
 # e_length = 122 # keep units consistent, cm for now
 
-# Z_HEIGHT = 18
 # e_target = [ # required lengths, order by LENGTH, COUNT
 #     [26, 3],
 #     [26, 2],
 #     [6, 2],
-#     [Z_HEIGHT, 6],
+#     [18, 6],
 #     [26, 2],
 #     [26, 2],
 #     [6, 2],
@@ -53,10 +52,12 @@ def calculate(lengthCounts:list[list[int, int]], target:list[list[int, int]]):
 #     [34, 2]
 # ]
 
-# results = calculate(e_length, e_count, e_target)
+# results = calculate([[e_length, e_count]], e_target)
 # if results[0]:
 #     for i, length in enumerate(results[1], 1):
 #         print("extrusion {} (leftover {}): {}".format(i, length[0], length[1]))
+
+
 
 '''LINEAR RODS'''
 
