@@ -1,0 +1,6793 @@
+; HEADER_BLOCK_START
+; BambuStudio 01.09.05.51
+; estimated printing time (normal mode) = 7m 10s
+; total layer number: 35
+; filament_density: 1.24
+; filament_diameter: 1.75
+; max_z_height: 24.00
+; HEADER_BLOCK_END
+
+; CONFIG_BLOCK_START
+; accel_to_decel_enable = 1
+; accel_to_decel_factor = 50%
+; activate_air_filtration = 0
+; additional_cooling_fan_speed = 70
+; auxiliary_fan = 0
+; bed_custom_model = 
+; bed_custom_texture = 
+; bed_exclude_area = 0x0
+; before_layer_change_gcode = ;BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\n
+; best_object_pos = 0.5,0.5
+; bottom_shell_layers = 3
+; bottom_shell_thickness = 0
+; bottom_surface_pattern = monotonic
+; bridge_angle = 0
+; bridge_flow = 0.95
+; bridge_no_support = 0
+; bridge_speed = 25
+; brim_object_gap = 0.1
+; brim_type = auto_brim
+; brim_width = 5
+; chamber_temperatures = 0
+; change_filament_gcode = 
+; close_fan_the_first_x_layers = 1
+; complete_print_exhaust_fan_speed = 80
+; cool_plate_temp = 60
+; cool_plate_temp_initial_layer = 60
+; curr_bed_type = High Temp Plate
+; default_acceleration = 3000
+; default_filament_colour = ""
+; default_filament_profile = "Voron Generic ABS"
+; default_jerk = 9
+; default_print_profile = 0.20mm Standard @Voron
+; deretraction_speed = 6.5
+; detect_narrow_internal_solid_infill = 1
+; detect_overhang_wall = 1
+; detect_thin_wall = 0
+; different_settings_to_system = skirt_loops;;
+; draft_shield = disabled
+; during_print_exhaust_fan_speed = 60
+; elefant_foot_compensation = 0
+; enable_arc_fitting = 0
+; enable_long_retraction_when_cut = 0
+; enable_overhang_bridge_fan = 1
+; enable_overhang_speed = 1
+; enable_pressure_advance = 0
+; enable_prime_tower = 0
+; enable_support = 0
+; enforce_support_layers = 0
+; eng_plate_temp = 60
+; eng_plate_temp_initial_layer = 60
+; ensure_vertical_shell_thickness = 1
+; exclude_object = 1
+; extruder_clearance_height_to_lid = 140
+; extruder_clearance_height_to_rod = 36
+; extruder_clearance_max_radius = 68
+; extruder_clearance_radius = 65
+; extruder_colour = #FCE94F
+; extruder_offset = 0x0
+; extruder_type = DirectDrive
+; fan_cooling_layer_time = 100
+; fan_max_speed = 100
+; fan_min_speed = 100
+; filament_colour = #FFFFFF
+; filament_cost = 20
+; filament_density = 1.24
+; filament_diameter = 1.75
+; filament_end_gcode = "; filament end gcode \n"
+; filament_flow_ratio = 1.22
+; filament_ids = GFL99
+; filament_is_support = 0
+; filament_max_volumetric_speed = 3
+; filament_minimal_purge_on_wipe_tower = 15
+; filament_notes = 
+; filament_settings_id = "Generic PLA @HenryLi-0 spark 0.4 nozzle"
+; filament_soluble = 0
+; filament_start_gcode = "; filament start gcode\n"
+; filament_type = PLA
+; filament_vendor = Generic
+; filename_format = {input_filename_base}_{filament_type[0]}_{print_time}.gcode
+; filter_out_gap_fill = 0
+; first_layer_print_sequence = 0
+; flush_into_infill = 0
+; flush_into_objects = 0
+; flush_into_support = 1
+; flush_multiplier = 1
+; flush_volumes_matrix = 0
+; flush_volumes_vector = 140,140
+; full_fan_speed_layer = 0
+; fuzzy_skin = none
+; fuzzy_skin_point_distance = 0.8
+; fuzzy_skin_thickness = 0.3
+; gap_infill_speed = 60
+; gcode_add_line_number = 0
+; gcode_flavor = klipper
+; has_scarf_joint_seam = 0
+; head_wrap_detect_zone = 
+; host_type = octoprint
+; hot_plate_temp = 60
+; hot_plate_temp_initial_layer = 60
+; independent_support_layer_height = 1
+; infill_combination = 0
+; infill_direction = 45
+; infill_jerk = 12
+; infill_wall_overlap = 25%
+; initial_layer_acceleration = 350
+; initial_layer_flow_ratio = 1
+; initial_layer_infill_speed = 80
+; initial_layer_jerk = 9
+; initial_layer_line_width = 0.6
+; initial_layer_print_height = 0.2
+; initial_layer_speed = 80
+; inner_wall_acceleration = 3000
+; inner_wall_jerk = 7
+; inner_wall_line_width = 0.6
+; inner_wall_speed = 80
+; interface_shells = 0
+; internal_bridge_support_thickness = 0
+; internal_solid_infill_line_width = 0.6
+; internal_solid_infill_pattern = zig-zag
+; internal_solid_infill_speed = 80
+; ironing_direction = 45
+; ironing_flow = 10%
+; ironing_pattern = zig-zag
+; ironing_spacing = 0.15
+; ironing_speed = 30
+; ironing_type = top
+; is_infill_first = 0
+; layer_change_gcode = ;AFTER_LAYER_CHANGE\n;[layer_z]
+; layer_height = 0.2
+; line_width = 0.6
+; long_retractions_when_cut = 0
+; machine_end_gcode = G0 Z75\nG0 X-45 Y-70\nTURN_OFF_HEATERS\nPRINT_END
+; machine_load_filament_time = 0
+; machine_max_acceleration_e = 100,5000
+; machine_max_acceleration_extruding = 100,20000
+; machine_max_acceleration_retracting = 100,5000
+; machine_max_acceleration_travel = 9000,9000
+; machine_max_acceleration_x = 100,20000
+; machine_max_acceleration_y = 100,20000
+; machine_max_acceleration_z = 100,200
+; machine_max_jerk_e = 0.25,2.5
+; machine_max_jerk_x = 4.5,12
+; machine_max_jerk_y = 4.5,12
+; machine_max_jerk_z = 0.175,0.4
+; machine_max_speed_e = 15,25
+; machine_max_speed_x = 100,200
+; machine_max_speed_y = 100,200
+; machine_max_speed_z = 5,12
+; machine_min_extruding_rate = 0,0
+; machine_min_travel_rate = 0,0
+; machine_pause_gcode = PAUSE
+; machine_start_gcode = M190 S[bed_temperature_initial_layer_single]\nM109 S[nozzle_temperature_initial_layer]
+; machine_unload_filament_time = 0
+; max_bridge_length = 10
+; max_layer_height = 0.32
+; max_travel_detour_distance = 0
+; min_bead_width = 85%
+; min_feature_size = 25%
+; min_layer_height = 0.08
+; minimum_sparse_infill_area = 15
+; mmu_segmented_region_interlocking_depth = 0
+; mmu_segmented_region_max_width = 0
+; nozzle_diameter = 0.4
+; nozzle_height = 4
+; nozzle_temperature = 230
+; nozzle_temperature_initial_layer = 230
+; nozzle_temperature_range_high = 240
+; nozzle_temperature_range_low = 200
+; nozzle_type = brass
+; nozzle_volume = 0
+; only_one_wall_first_layer = 0
+; ooze_prevention = 0
+; other_layers_print_sequence = 0
+; other_layers_print_sequence_nums = 0
+; outer_wall_acceleration = 1500
+; outer_wall_jerk = 7
+; outer_wall_line_width = 0.6
+; outer_wall_speed = 80
+; overhang_1_4_speed = 80
+; overhang_2_4_speed = 50
+; overhang_3_4_speed = 30
+; overhang_4_4_speed = 10
+; overhang_fan_speed = 100
+; overhang_fan_threshold = 50%
+; overhang_totally_speed = 24
+; post_process = 
+; precise_z_height = 0
+; pressure_advance = 0.02
+; prime_tower_brim_width = 3
+; prime_tower_width = 35
+; prime_volume = 45
+; print_compatible_printers = "HenryLi-0 spark 0.4 nozzle"
+; print_flow_ratio = 1
+; print_sequence = by layer
+; print_settings_id = 0.20mm Standard @HenryLi-0 spark 0.4 nozzle
+; printable_area = -75x-75,75x-75,75x75,-75x75
+; printable_height = 120
+; printer_model = HenryLi-0 spark
+; printer_notes = 
+; printer_settings_id = HenryLi-0 spark 0.4 nozzle
+; printer_structure = corexy
+; printer_technology = FFF
+; printer_variant = 0.4
+; printhost_authorization_type = key
+; printhost_ssl_ignore_revoke = 0
+; printing_by_object_gcode = 
+; process_notes = 
+; raft_contact_distance = 0.1
+; raft_expansion = 1.5
+; raft_first_layer_density = 90%
+; raft_first_layer_expansion = 2
+; raft_layers = 0
+; reduce_crossing_wall = 0
+; reduce_fan_stop_start_freq = 1
+; reduce_infill_retraction = 1
+; required_nozzle_HRC = 3
+; resolution = 0.012
+; retract_before_wipe = 0%
+; retract_length_toolchange = 2
+; retract_lift_above = 0
+; retract_lift_below = 274
+; retract_restart_extra = 0
+; retract_restart_extra_toolchange = 0
+; retract_when_changing_layer = 1
+; retraction_distances_when_cut = 18
+; retraction_length = 0.8
+; retraction_minimum_travel = 1
+; retraction_speed = 2
+; scan_first_layer = 0
+; scarf_angle_threshold = 155
+; seam_gap = 15%
+; seam_position = aligned
+; seam_slope_conditional = 1
+; seam_slope_entire_loop = 0
+; seam_slope_inner_walls = 1
+; seam_slope_min_length = 10
+; seam_slope_start_height = 50%
+; seam_slope_steps = 10
+; seam_slope_type = none
+; silent_mode = 0
+; single_extruder_multi_material = 1
+; skirt_distance = 5
+; skirt_height = 1
+; skirt_loops = 0
+; slice_closing_radius = 0.049
+; slicing_mode = regular
+; slow_down_for_layer_cooling = 1
+; slow_down_layer_time = 8
+; slow_down_min_speed = 10
+; small_perimeter_speed = 50%
+; small_perimeter_threshold = 0
+; smooth_coefficient = 80
+; smooth_speed_discontinuity_area = 1
+; solid_infill_filament = 1
+; sparse_infill_acceleration = 100%
+; sparse_infill_anchor = 400%
+; sparse_infill_anchor_max = 20
+; sparse_infill_density = 15%
+; sparse_infill_filament = 1
+; sparse_infill_line_width = 0.6
+; sparse_infill_pattern = grid
+; sparse_infill_speed = 80
+; spiral_mode = 0
+; spiral_mode_max_xy_smoothing = 200%
+; spiral_mode_smooth = 0
+; standby_temperature_delta = -5
+; start_end_points = 30x-3,54x245
+; support_air_filtration = 0
+; support_angle = 0
+; support_base_pattern = default
+; support_base_pattern_spacing = 2.5
+; support_bottom_interface_spacing = 0.5
+; support_bottom_z_distance = 0.2
+; support_chamber_temp_control = 0
+; support_critical_regions_only = 0
+; support_expansion = 0
+; support_filament = 0
+; support_interface_bottom_layers = 0
+; support_interface_filament = 0
+; support_interface_loop_pattern = 0
+; support_interface_not_for_body = 1
+; support_interface_pattern = auto
+; support_interface_spacing = 0.5
+; support_interface_speed = 80
+; support_interface_top_layers = 3
+; support_line_width = 0.6
+; support_object_first_layer_gap = 0.2
+; support_object_xy_distance = 0.35
+; support_on_build_plate_only = 0
+; support_remove_small_overhang = 1
+; support_speed = 150
+; support_style = default
+; support_threshold_angle = 30
+; support_top_z_distance = 0.2
+; support_type = normal(auto)
+; temperature_vitrification = 60
+; template_custom_gcode = 
+; textured_plate_temp = 60
+; textured_plate_temp_initial_layer = 60
+; thick_bridges = 0
+; thumbnail_size = 50x50
+; time_lapse_gcode = 
+; timelapse_type = 0
+; top_area_threshold = 100%
+; top_one_wall_type = all top
+; top_shell_layers = 4
+; top_shell_thickness = 0.8
+; top_solid_infill_flow_ratio = 1
+; top_surface_acceleration = 1500
+; top_surface_jerk = 9
+; top_surface_line_width = 0.6
+; top_surface_pattern = monotonic
+; top_surface_speed = 80
+; travel_jerk = 12
+; travel_speed = 350
+; travel_speed_z = 0
+; tree_support_branch_angle = 40
+; tree_support_branch_diameter = 5
+; tree_support_branch_distance = 5
+; tree_support_wall_count = 0
+; upward_compatible_machine = 
+; use_firmware_retraction = 0
+; use_relative_e_distances = 1
+; wall_distribution_count = 1
+; wall_filament = 1
+; wall_generator = arachne
+; wall_loops = 3
+; wall_sequence = inner wall/outer wall
+; wall_transition_angle = 10
+; wall_transition_filter_deviation = 25%
+; wall_transition_length = 100%
+; wipe = 1
+; wipe_distance = 2
+; wipe_speed = 80%
+; wipe_tower_no_sparse_layers = 0
+; wipe_tower_rotation_angle = 0
+; wipe_tower_x = 56
+; wipe_tower_y = 60
+; xy_contour_compensation = 0
+; xy_hole_compensation = 0
+; z_hop = 0.4
+; z_hop_types = Normal Lift
+; CONFIG_BLOCK_END
+
+; THUMBNAIL_BLOCK_START
+; thumbnail begin 50x50 1388
+; iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAD1klEQVR4Ae2X2St1URjG19/gzpST3L
+; hTLojUKbduSClSGyWEkKkMbUOReR7jmDNmjAzZZiEyk7CRC8Mf8X77WbVOH/q+7+o7Q62n3taxz0rv
+; 77zrfda7GZOSkpKSkpKSkpKyl9zd3U3M2RUQEGDWdZ2ur69pdHRUY86qtLQ09fz8nA4PD+nh4YE8PT
+; 1NzBkVEhKiDA0N0ezsLPX29tL7+zsNDw9rTgWEZOPj49W2tjaqqqqivr4+DiIiOztbZY4uQBjHSUd/
+; tLa2UmVl5Q8QBL53SCAA5Obmqt+T3d3d/QHxexwdHekpKSkqs7cAkJOToz4/P9Pq6irt7e39NfHv8f
+; b2RisrK8TsqbCwMEXTNH1zc5MWFhbo6emJxsbGaHx8nG5ubv4JATebnJykqKgoC7OXUIXt7W2ampqi
+; tbU1ntjn5yevisVi4X3xp+qgCjhyHR0dNDg4SKGhoSqztUQvAAJJwGLRC4DAOj09zUHwHOvMzAy9vr
+; 5+qcLi4iJVV1fzPbW1teTt7W1mthQgdnZ2dEDgXCOp09NTenl5IeFS7e3tHKC+vp6DTkxM0MjICJqa
+; zs7OCJYM2P7+fh4ACQ4OViIjIxVmKyUkJPCmPj4+5hUQgWNye3vL4VpaWjgI7g8ELkMEnjU2NnJAAK
+; AaAqSgoEBbX1/H/9Hd3NxMzBYqKyvTkPzHx4cVBM3e2dlJqBSgfgdpamri/QIYJI3vcLSw9+rqiioq
+; Kmhubo5XDiONscd2jV9YWKihAgIICeFIAaa7u/sLSE1NDX8mQJqbm+nx8ZGWl5c5RF1dHQnXg9uh4h
+; 4eHiZmK+Xl5XEYgCBgvbBSAQIAgBjzlRUEz7BHQCB6enp48rBr9M7l5SVFREQozJYKDw+37O/vW60X
+; QEhSgKBnkKQAgVMJAASOHcZ87EEcHBzw4xUTE6MyW8vPz09ZWlriMABBlQQInAx/i4bH3CUAcJQEgI
+; j7+3tekejoaJXZQ7gH0NCwYwAhqfn5eV4lJIcjAwsWEHhH+Q5xd3fHIYxJgXx8fMzMnsrPz9cuLi74
+; BYiewY2PgEPBshEnJyfWdWtriweqgx8C1m0Yie7i4mJi9lZcXJyGi3BgYIDfGQ0NDXzFRYiRBAF3Q9
+; JdXV18pMEew9apuLiYFEVxnNfiwMBA1ZjFqKioiEpKSqyBZMvLy/nn0tJSUlWVNjY2+LxmuCAZFSUv
+; Ly8zcyS5urqak5KSKDU1lYz3d0pPT6eMjAzKzMzkIT5jzcrK4hEUFKQyR5W/v7+amJhI3wOQycnJFB
+; sbqxvTr8XX11dhUlJSUlJSUlJSUv9bvwDwEIQkc/QHhgAAAABJRU5ErkJggg==
+; thumbnail end
+; THUMBNAIL_BLOCK_END
+
+; EXECUTABLE_BLOCK_START
+EXCLUDE_OBJECT_DEFINE NAME=3DBenchy.stl_id_0_copy_0 CENTER=-0.000500679,0.00920868 POLYGON=[[-7.75292,-2.66018],[-7.68759,-4.11912],[-7.62276,-4.84483],[-7.30529,-6.03529],[-6.80779,-7.39045],[-6.21291,-8.68704],[-5.52384,-9.83801],[-5.00021,-10.618],[-4.20572,-11.6525],[-3.08295,-12.8419],[-1.682,-14.0659],[-0.475635,-14.9007],[-0.017216,-14.986],[0.307163,-14.9521],[0.579139,-14.842],[1.65464,-14.0708],[2.68308,-13.2196],[3.63389,-12.2695],[4.51798,-11.2725],[5.43528,-9.98547],[5.93329,-9.19361],[6.64197,-7.77635],[7.26077,-6.18695],[7.61372,-4.86493],[7.71501,-3.89509],[7.74729,-3.23839],[7.75192,-2.54652],[7.73807,-2.02692],[7.61968,-0.280993],[5.57024,14.2969],[5.42051,14.5876],[5.28949,14.712],[5.00189,14.9195],[4.85648,14.9863],[4.7028,14.9903],[-4.75823,15.0045],[-5.19147,14.8253],[-5.51217,14.4369],[-5.5885,14.1699],[-7.56612,0.069633],[-7.65889,-0.955583],[-7.73295,-1.85456],[-7.74682,-2.16409],[-7.75292,-2.66018]]
+M73 P0 R7
+M106 S0
+M106 P2 S0
+; FEATURE: Custom
+M190 S60
+M109 S230
+G90
+G21
+M83 ; use relative distances for extrusion
+; filament start gcode
+; CHANGE_LAYER
+; Z_HEIGHT: 17.2
+; LAYER_HEIGHT: 17.2
+;BEFORE_LAYER_CHANGE
+;17.2
+G92 E0
+
+G1 E-.8 F120
+;AFTER_LAYER_CHANGE
+;17.2
+M106 S0
+M106 P2 S0
+SET_VELOCITY_LIMIT ACCEL_TO_DECEL=50
+M204 S100
+SET_VELOCITY_LIMIT SQUARE_CORNER_VELOCITY=4
+M140 S60 ; set bed temperature
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z17.2 F21000
+G1 X-3.538 Y3.96
+M73 P1 R7
+G1 Z17.2
+G1 E.8 F420
+; FEATURE: Outer wall
+; LINE_WIDTH: 0.594562
+; LAYER_HEIGHT: 0.2
+G1 F600
+G1 X-3.574 Y3.644 E.01779
+; LINE_WIDTH: 0.558026
+G1 X-3.61 Y3.328 E.01661
+; LINE_WIDTH: 0.522839
+G1 X-4.078 Y-5.059 E.40895
+; LINE_WIDTH: 0.566254
+G1 X-4.076 Y-5.411 E.01869
+; LINE_WIDTH: 0.609669
+G1 X-4.074 Y-5.763 E.02024
+G1 X-3.779 Y-5.768 E.01693
+G1 X-3.108 Y-5.857 E.03894
+; LINE_WIDTH: 0.598315
+G1 X-3.077 Y-5.932 E.00457
+G1 X3.079 Y-5.932 E.34685
+G1 X3.114 Y-5.857 E.00465
+G1 X3.241 Y-5.838 E.00727
+; LINE_WIDTH: 0.560552
+G1 X3.369 Y-5.818 E.00678
+; LINE_WIDTH: 0.56526
+G1 X3.717 Y-5.792 E.01851
+; LINE_WIDTH: 0.60773
+G1 X4.066 Y-5.765 E.02002
+G1 X4.068 Y-5.412 E.02021
+; LINE_WIDTH: 0.563523
+G1 X4.071 Y-5.059 E.01863
+; LINE_WIDTH: 0.519426
+G1 X3.605 Y3.328 E.40604
+; LINE_WIDTH: 0.523037
+G1 X3.599 Y3.411 E.00404
+; LINE_WIDTH: 0.559045
+G1 X3.565 Y3.688 E.01464
+; LINE_WIDTH: 0.595052
+G1 X3.532 Y3.966 E.01566
+G1 X3.212 Y3.985 E.01797
+; LINE_WIDTH: 0.557263
+G1 X2.891 Y4.003 E.01674
+; LINE_WIDTH: 0.519473
+G1 X-2.894 Y3.999 E.27966
+; LINE_WIDTH: 0.516929
+G1 X-2.894 Y3.999 E.00002
+; LINE_WIDTH: 0.555746
+G1 X-3.216 Y3.98 E.01679
+; LINE_WIDTH: 0.594562
+G1 X-3.478 Y3.964 E.0147
+; WIPE_START
+G1 F16800
+G1 X-3.574 Y3.644 E-.12677
+G1 X-3.61 Y3.328 E-.12081
+G1 X-3.685 Y1.982 E-.51242
+; WIPE_END
+M73 P2 R7
+G1 E-.04 F120
+G1 Z17.6 F21000
+G1 X3.562 Y-5.293 Z17.6
+G1 Z17.2
+G1 E.8 F420
+; LINE_WIDTH: 0.60773
+G1 F600
+G1 X3.579 Y-5.189 E.00601
+; LINE_WIDTH: 0.563523
+G1 X3.595 Y-5.086 E.00554
+; LINE_WIDTH: 0.519426
+G1 X3.129 Y3.302 E.40604
+; LINE_WIDTH: 0.557239
+M73 P2 R6
+G1 X3.105 Y3.395 E.00505
+; LINE_WIDTH: 0.595052
+G1 X3.081 Y3.489 E.00542
+G1 X2.986 Y3.508 E.00541
+; LINE_WIDTH: 0.557263
+G1 X2.891 Y3.527 E.00504
+; LINE_WIDTH: 0.519473
+G1 X-2.893 Y3.525 E.27966
+; LINE_WIDTH: 0.555746
+G1 X-2.989 Y3.506 E.0051
+; LINE_WIDTH: 0.594562
+G1 X-3.085 Y3.486 E.00548
+G1 X-3.109 Y3.394 E.00533
+; LINE_WIDTH: 0.558026
+G1 X-3.132 Y3.302 E.00498
+; LINE_WIDTH: 0.522839
+G1 X-3.599 Y-5.085 E.40895
+; LINE_WIDTH: 0.566254
+G1 X-3.583 Y-5.189 E.00554
+; LINE_WIDTH: 0.609669
+G1 X-3.567 Y-5.292 E.006
+G1 X-2.918 Y-5.376 E.03762
+; LINE_WIDTH: 0.59832
+G1 X2.924 Y-5.376 E.32915
+; LINE_WIDTH: 0.60773
+M73 P3 R6
+G1 X3.503 Y-5.301 E.03346
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 17.4
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;17.4
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X3.579 Y-5.189 E-.05124
+G1 X3.595 Y-5.086 E-.03989
+G1 X3.497 Y-3.328 E-.66887
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;17.4
+M106 S255
+M106 P2 S178
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z17.6 F21000
+G1 X-3.544 Y3.966 Z17.6
+G1 Z17.4
+G1 E.8 F420
+; LINE_WIDTH: 0.595072
+G1 F600
+G1 X-3.58 Y3.65 E.01782
+; LINE_WIDTH: 0.558463
+G1 X-3.616 Y3.334 E.01664
+; LINE_WIDTH: 0.52356
+G1 X-4.085 Y-5.074 E.4106
+; LINE_WIDTH: 0.566859
+G1 X-4.083 Y-5.427 E.01871
+; LINE_WIDTH: 0.610158
+G1 X-4.081 Y-5.779 E.02026
+G1 X-3.786 Y-5.783 E.01697
+G1 X-3.389 Y-5.836 E.02305
+G1 X-3.108 Y-5.873 E.01634
+; LINE_WIDTH: 0.59832
+G1 X-3.076 Y-5.948 E.00459
+G1 X3.079 Y-5.948 E.34679
+G1 X3.091 Y-5.921 E.00162
+G1 X3.113 Y-5.873 E.00303
+G1 X3.244 Y-5.853 E.00743
+; LINE_WIDTH: 0.560538
+G1 X3.375 Y-5.834 E.00693
+; LINE_WIDTH: 0.565266
+G1 X3.723 Y-5.808 E.01852
+; LINE_WIDTH: 0.607773
+G1 X4.072 Y-5.781 E.02003
+G1 X4.074 Y-5.428 E.02022
+; LINE_WIDTH: 0.563538
+G1 X4.077 Y-5.075 E.01864
+; LINE_WIDTH: 0.519671
+G1 X3.611 Y3.333 E.40727
+; LINE_WIDTH: 0.523283
+M73 P4 R6
+G1 X3.604 Y3.416 E.00404
+; LINE_WIDTH: 0.56038
+G1 X3.57 Y3.697 E.01486
+; LINE_WIDTH: 0.597476
+G1 X3.536 Y3.978 E.01593
+G1 X3.216 Y3.996 E.01802
+; LINE_WIDTH: 0.560332
+G1 X2.896 Y4.014 E.01682
+; LINE_WIDTH: 0.523187
+G1 X-2.899 Y4.006 E.28233
+; LINE_WIDTH: 0.517658
+G1 X-2.9 Y4.006 E.00004
+; LINE_WIDTH: 0.556365
+G1 X-3.222 Y3.986 E.0168
+; LINE_WIDTH: 0.595072
+G1 X-3.484 Y3.97 E.01471
+; WIPE_START
+G1 F16800
+G1 X-3.58 Y3.65 E-.12688
+G1 X-3.616 Y3.334 E-.12091
+G1 X-3.691 Y1.988 E-.51221
+; WIPE_END
+G1 E-.04 F120
+G1 Z17.8 F21000
+G1 X3.568 Y-5.309 Z17.8
+G1 Z17.4
+G1 E.8 F420
+; LINE_WIDTH: 0.607773
+G1 F600
+G1 X3.585 Y-5.205 E.00602
+; LINE_WIDTH: 0.563538
+G1 X3.601 Y-5.101 E.00555
+; LINE_WIDTH: 0.519671
+G1 X3.135 Y3.307 E.40727
+; LINE_WIDTH: 0.558574
+G1 X3.11 Y3.402 E.00514
+; LINE_WIDTH: 0.597476
+G1 X3.085 Y3.497 E.00553
+G1 X2.991 Y3.515 E.0054
+; LINE_WIDTH: 0.560332
+G1 X2.897 Y3.534 E.00504
+; LINE_WIDTH: 0.523187
+G1 X-2.898 Y3.531 E.28233
+; LINE_WIDTH: 0.556365
+G1 X-2.994 Y3.512 E.0051
+; LINE_WIDTH: 0.595072
+G1 X-3.091 Y3.492 E.00549
+G1 X-3.114 Y3.399 E.00535
+; LINE_WIDTH: 0.558463
+G1 X-3.138 Y3.307 E.00499
+; LINE_WIDTH: 0.52356
+G1 X-3.605 Y-5.101 E.4106
+; LINE_WIDTH: 0.566859
+M73 P5 R6
+G1 X-3.589 Y-5.204 E.00554
+; LINE_WIDTH: 0.610158
+G1 X-3.573 Y-5.307 E.006
+G1 X-2.918 Y-5.392 E.03804
+; LINE_WIDTH: 0.59832
+G1 X2.924 Y-5.392 E.32912
+G1 X3.11 Y-5.373 E.01054
+; LINE_WIDTH: 0.560814
+G1 X3.296 Y-5.355 E.00983
+; LINE_WIDTH: 0.565542
+G1 X3.432 Y-5.332 E.00733
+; LINE_WIDTH: 0.607773
+G1 X3.509 Y-5.319 E.00448
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 17.6
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;17.6
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X3.585 Y-5.205 E-.05188
+G1 X3.601 Y-5.101 E-.03991
+G1 X3.504 Y-3.346 E-.66822
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;17.6
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z17.8 F21000
+G1 X-3.599 Y4.051 Z17.8
+G1 Z17.6
+G1 E.8 F420
+; LINE_WIDTH: 0.64967
+G1 F600
+G1 X-3.616 Y3.809 E.01491
+; LINE_WIDTH: 0.613705
+G1 X-3.634 Y3.568 E.01403
+; LINE_WIDTH: 0.57774
+G1 X-3.651 Y3.326 E.01315
+; LINE_WIDTH: 0.541775
+G1 X-3.659 Y2.669 E.03324
+; LINE_WIDTH: 0.524308
+G1 X-4.092 Y-5.09 E.37949
+; LINE_WIDTH: 0.567482
+G1 X-4.091 Y-5.442 E.01874
+; LINE_WIDTH: 0.610655
+G1 X-4.089 Y-5.794 E.02028
+G1 X-3.793 Y-5.799 E.01701
+G1 X-3.394 Y-5.851 E.02321
+G1 X-3.107 Y-5.888 E.01662
+; LINE_WIDTH: 0.59832
+G1 X-3.075 Y-5.963 E.00459
+G1 X3.079 Y-5.963 E.34675
+M73 P6 R6
+G1 X3.091 Y-5.937 E.00163
+G1 X3.113 Y-5.888 E.00302
+G1 X3.247 Y-5.869 E.0076
+; LINE_WIDTH: 0.560523
+G1 X3.38 Y-5.85 E.00708
+; LINE_WIDTH: 0.565272
+G1 X3.729 Y-5.823 E.01853
+; LINE_WIDTH: 0.607813
+G1 X4.078 Y-5.797 E.02004
+G1 X4.08 Y-5.444 E.02024
+; LINE_WIDTH: 0.563543
+G1 X4.083 Y-5.091 E.01865
+; LINE_WIDTH: 0.519789
+G1 X3.633 Y3.03 E.39346
+; LINE_WIDTH: 0.536183
+G1 X3.637 Y3.354 E.01618
+; LINE_WIDTH: 0.578217
+G1 X3.625 Y3.583 E.01245
+; LINE_WIDTH: 0.62025
+G1 X3.614 Y3.812 E.01343
+; LINE_WIDTH: 0.662283
+G1 X3.602 Y4.041 E.01441
+G1 X3.487 Y4.1 E.00814
+G1 X3.193 Y4.113 E.01851
+; LINE_WIDTH: 0.628588
+G1 X2.898 Y4.127 E.0175
+; LINE_WIDTH: 0.594893
+G1 X-.268 Y4.1 E.17729
+; LINE_WIDTH: 0.577072
+G1 X-.271 Y4.1 E.00017
+; LINE_WIDTH: 0.577967
+G1 X-2.903 Y4.101 E.14288
+; LINE_WIDTH: 0.613819
+G1 X-3.251 Y4.076 E.0202
+; LINE_WIDTH: 0.64967
+G1 X-3.539 Y4.055 E.01778
+; WIPE_START
+G1 F16800
+G1 X-3.616 Y3.809 E-.09798
+G1 X-3.634 Y3.568 E-.09208
+G1 X-3.651 Y3.326 E-.09208
+G1 X-3.659 Y2.669 E-.24963
+G1 X-3.693 Y2.069 E-.22823
+; WIPE_END
+G1 E-.04 F120
+G1 Z18 F21000
+G1 X3.574 Y-5.325 Z18
+G1 Z17.6
+G1 E.8 F420
+; LINE_WIDTH: 0.607813
+G1 F600
+G1 X3.591 Y-5.221 E.00602
+; LINE_WIDTH: 0.563543
+G1 X3.607 Y-5.117 E.00555
+; LINE_WIDTH: 0.519789
+G1 X3.157 Y3.004 E.39346
+; LINE_WIDTH: 0.536183
+M73 P7 R6
+G1 X3.146 Y3.331 E.01639
+; LINE_WIDTH: 0.578217
+G1 X3.128 Y3.402 E.00396
+; LINE_WIDTH: 0.62025
+G1 X3.11 Y3.473 E.00427
+; LINE_WIDTH: 0.662283
+G1 X3.092 Y3.543 E.00458
+G1 X2.997 Y3.559 E.00606
+; LINE_WIDTH: 0.628588
+G1 X2.902 Y3.575 E.00573
+; LINE_WIDTH: 0.594893
+G1 X-.265 Y3.566 E.17729
+; LINE_WIDTH: 0.577072
+G1 X-.271 Y3.566 E.00035
+; LINE_WIDTH: 0.577967
+G1 X-2.903 Y3.566 E.14288
+; LINE_WIDTH: 0.613819
+G1 X-3.001 Y3.549 E.00576
+; LINE_WIDTH: 0.64967
+G1 X-3.099 Y3.531 E.00612
+G1 X-3.117 Y3.458 E.0046
+; LINE_WIDTH: 0.613705
+G1 X-3.135 Y3.385 E.00433
+; LINE_WIDTH: 0.57774
+G1 X-3.152 Y3.313 E.00406
+; LINE_WIDTH: 0.541775
+G1 X-3.179 Y2.67 E.03253
+; LINE_WIDTH: 0.523043
+G1 X-3.18 Y2.642 E.00137
+; LINE_WIDTH: 0.524308
+G1 X-3.612 Y-5.117 E.37949
+; LINE_WIDTH: 0.567482
+G1 X-3.596 Y-5.22 E.00554
+; LINE_WIDTH: 0.610655
+G1 X-3.58 Y-5.323 E.006
+G1 X-2.918 Y-5.408 E.03847
+; LINE_WIDTH: 0.59832
+G1 X2.923 Y-5.408 E.32909
+; LINE_WIDTH: 0.607813
+G1 X3.515 Y-5.332 E.03417
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 17.8
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;17.8
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X3.591 Y-5.221 E-.05123
+G1 X3.607 Y-5.117 E-.03992
+G1 X3.51 Y-3.36 E-.66885
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;17.8
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z18 F21000
+G1 X4.08 Y-5.814 Z18
+G1 Z17.8
+G1 E.8 F420
+; LINE_WIDTH: 0.606733
+G1 F600
+G1 X4.083 Y-5.46 E.02022
+; LINE_WIDTH: 0.562087
+G1 X4.086 Y-5.107 E.01862
+; LINE_WIDTH: 0.519617
+G1 X3.758 Y.87 E.28945
+; LINE_WIDTH: 0.532524
+M73 P8 R6
+G1 X3.749 Y1.359 E.0243
+; LINE_WIDTH: 0.57957
+G1 X3.75 Y1.424 E.00355
+G1 X3.77 Y2.236 E.0442
+; LINE_WIDTH: 0.626616
+G1 X3.783 Y2.749 E.03041
+G1 X3.792 Y3.113 E.02152
+; LINE_WIDTH: 0.672953
+G1 X3.821 Y3.288 E.01138
+; LINE_WIDTH: 0.719289
+G1 X3.849 Y3.464 E.01221
+; LINE_WIDTH: 0.766052
+G1 X3.842 Y3.609 E.01065
+; LINE_WIDTH: 0.812815
+G1 X3.835 Y3.754 E.01134
+; LINE_WIDTH: 0.859577
+G1 X3.828 Y3.899 E.01203
+G1 X3.857 Y4.201 E.02511
+G1 X3.752 Y4.325 E.01346
+G1 X3.164 Y4.369 E.04882
+; LINE_WIDTH: 0.813806
+G1 X2.906 Y4.392 E.02023
+; LINE_WIDTH: 0.768273
+G1 X.023 Y4.392 E.21216
+G1 X-2.908 Y4.392 E.21571
+; LINE_WIDTH: 0.813119
+G1 F1168.53
+G1 X-2.936 Y4.39 E.00218
+G1 X-3.288 Y4.37 E.02756
+; LINE_WIDTH: 0.857964
+G1 F600
+G1 X-3.668 Y4.347 E.03147
+G1 X-3.84 Y4.213 E.01805
+G1 X-3.826 Y3.74 E.03909
+; LINE_WIDTH: 0.809841
+G1 X-3.83 Y3.589 E.01171
+; LINE_WIDTH: 0.761717
+G1 X-3.834 Y3.439 E.01098
+; LINE_WIDTH: 0.713594
+G1 X-3.837 Y3.288 E.01024
+; LINE_WIDTH: 0.66547
+G1 X-3.796 Y2.762 E.03334
+; LINE_WIDTH: 0.61627
+G1 X-3.755 Y2.236 E.0307
+; LINE_WIDTH: 0.567069
+G1 X-3.764 Y1.411 E.04387
+G1 X-3.772 Y.766 E.03429
+; LINE_WIDTH: 0.52423
+G1 X-3.773 Y.752 E.00069
+; LINE_WIDTH: 0.525065
+G1 X-4.1 Y-5.106 E.28694
+; LINE_WIDTH: 0.568112
+G1 X-4.098 Y-5.458 E.01877
+; LINE_WIDTH: 0.611158
+G1 X-4.096 Y-5.81 E.0203
+G1 X-3.8 Y-5.815 E.01705
+G1 X-3.4 Y-5.866 E.02325
+G1 X-3.107 Y-5.904 E.01703
+; LINE_WIDTH: 0.59832
+G1 X-3.075 Y-5.979 E.0046
+G1 X3.079 Y-5.979 E.3467
+G1 X3.091 Y-5.953 E.00163
+G1 X3.113 Y-5.904 E.00302
+G1 X3.249 Y-5.885 E.00776
+; LINE_WIDTH: 0.560511
+G1 X3.386 Y-5.866 E.00723
+; LINE_WIDTH: 0.56472
+G1 X3.733 Y-5.84 E.01843
+; LINE_WIDTH: 0.606733
+G1 X4.02 Y-5.818 E.01648
+; WIPE_START
+G1 F16800
+G1 X4.083 Y-5.46 E-.1381
+G1 X4.086 Y-5.107 E-.13433
+G1 X4.016 Y-3.826 E-.48757
+; WIPE_END
+G1 E-.04 F120
+G1 Z18.2 F21000
+G1 X-3.177 Y3.547 Z18.2
+M73 P9 R6
+G1 Z17.8
+G1 E.8 F420
+; LINE_WIDTH: 0.809841
+G1 F600
+G1 X-3.191 Y3.472 E.00595
+; LINE_WIDTH: 0.761717
+G1 X-3.205 Y3.396 E.00557
+; LINE_WIDTH: 0.713594
+G1 X-3.219 Y3.321 E.0052
+; LINE_WIDTH: 0.66547
+G1 X-3.219 Y2.976 E.02183
+; LINE_WIDTH: 0.627722
+G1 X-3.22 Y2.63 E.02051
+; LINE_WIDTH: 0.589973
+G1 X-3.231 Y2.222 E.02265
+; LINE_WIDTH: 0.567069
+G1 X-3.291 Y.753 E.07816
+; LINE_WIDTH: 0.52423
+G1 X-3.292 Y.725 E.00138
+; LINE_WIDTH: 0.525065
+G1 X-3.618 Y-5.133 E.28694
+; LINE_WIDTH: 0.568112
+G1 X-3.602 Y-5.235 E.00554
+; LINE_WIDTH: 0.611158
+G1 X-3.587 Y-5.338 E.006
+G1 X-3.482 Y-5.362 E.00618
+; LINE_WIDTH: 0.566898
+G1 X-3.378 Y-5.386 E.0057
+; LINE_WIDTH: 0.560479
+G1 X-3.147 Y-5.405 E.01213
+; LINE_WIDTH: 0.59832
+G1 X-2.917 Y-5.424 E.01301
+G1 X2.923 Y-5.424 E.32906
+; LINE_WIDTH: 0.606733
+G1 X3.579 Y-5.341 E.03782
+G1 X3.596 Y-5.237 E.00603
+; LINE_WIDTH: 0.562087
+G1 X3.612 Y-5.133 E.00555
+; LINE_WIDTH: 0.519617
+G1 X3.282 Y.844 E.28945
+; LINE_WIDTH: 0.532524
+G1 X3.26 Y1.358 E.02558
+; LINE_WIDTH: 0.57957
+G1 X3.235 Y2.235 E.04774
+; LINE_WIDTH: 0.626616
+G1 X3.209 Y3.111 E.05193
+; LINE_WIDTH: 0.672953
+G1 X3.213 Y3.274 E.01041
+; LINE_WIDTH: 0.719289
+G1 X3.217 Y3.437 E.01118
+; LINE_WIDTH: 0.766052
+G1 X3.2 Y3.498 E.00467
+; LINE_WIDTH: 0.812815
+G1 X3.182 Y3.56 E.00497
+; LINE_WIDTH: 0.859577
+G1 X3.164 Y3.621 E.00528
+G1 X3.035 Y3.644 E.01084
+; LINE_WIDTH: 0.813806
+G1 X2.906 Y3.667 E.01023
+; LINE_WIDTH: 0.768273
+G1 X-2.908 Y3.667 E.42786
+; LINE_WIDTH: 0.813119
+G1 X-3.036 Y3.644 E.01012
+; LINE_WIDTH: 0.857964
+G1 X-3.163 Y3.622 E.01071
+G1 X-3.166 Y3.606 E.00136
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 18
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;18
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-3.191 Y3.472 E-.05184
+G1 X-3.205 Y3.396 E-.02904
+G1 X-3.219 Y3.321 E-.02904
+G1 X-3.219 Y2.976 E-.13136
+G1 X-3.22 Y2.63 E-.13136
+M73 P10 R6
+G1 X-3.231 Y2.222 E-.15509
+G1 X-3.256 Y1.611 E-.23226
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;18
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z18.2 F21000
+G1 X4.091 Y-5.828 Z18.2
+G1 Z18
+G1 E.8 F420
+; LINE_WIDTH: 0.60596
+G1 F600
+G1 X4.093 Y-5.475 E.02015
+; LINE_WIDTH: 0.56257
+G1 X4.095 Y-5.122 E.0186
+; LINE_WIDTH: 0.519464
+G1 X3.883 Y-1.29 E.18552
+; LINE_WIDTH: 0.519758
+G1 X3.882 Y-1.279 E.00057
+; LINE_WIDTH: 0.568962
+G1 X3.885 Y-.846 E.02307
+G1 X3.891 Y-.123 E.03862
+; LINE_WIDTH: 0.598381
+G1 X3.902 Y.465 E.0331
+; LINE_WIDTH: 0.6278
+G1 X3.906 Y.63 E.00978
+G1 X3.914 Y1.052 E.02507
+; LINE_WIDTH: 0.662512
+G1 X3.954 Y1.255 E.01301
+; LINE_WIDTH: 0.697224
+G1 X3.993 Y1.458 E.01374
+; LINE_WIDTH: 0.728476
+G1 X4.017 Y1.902 E.03093
+; LINE_WIDTH: 0.759728
+G1 X4.042 Y2.347 E.03234
+G1 X3.991 Y3.232 E.0645
+G1 X3.983 Y3.369 E.00999
+; LINE_WIDTH: 0.764028
+G1 X3.985 Y3.651 E.0206
+; LINE_WIDTH: 0.723021
+G1 X3.996 Y3.807 E.01078
+; LINE_WIDTH: 0.682014
+G1 X4.008 Y3.963 E.01013
+; LINE_WIDTH: 0.641007
+G1 X4.019 Y4.118 E.00948
+; LINE_WIDTH: 0.599999
+G1 X3.975 Y4.279 E.00943
+G1 X3.827 Y4.456 E.01303
+G1 X3.47 Y4.492 E.02027
+; LINE_WIDTH: 0.643424
+G1 X3.331 Y4.47 E.00861
+; LINE_WIDTH: 0.686849
+G1 X3.191 Y4.448 E.00924
+; LINE_WIDTH: 0.730274
+G1 X3.051 Y4.427 E.00986
+; LINE_WIDTH: 0.773699
+G1 X2.911 Y4.405 E.01048
+; LINE_WIDTH: 0.774674
+G1 X-2.913 Y4.407 E.43236
+G1 X-3.053 Y4.429 E.01052
+; LINE_WIDTH: 0.731006
+G1 X-3.193 Y4.451 E.00989
+; LINE_WIDTH: 0.687337
+G1 X-3.333 Y4.473 E.00926
+; LINE_WIDTH: 0.643668
+G1 X-3.473 Y4.494 E.00864
+; LINE_WIDTH: 0.599999
+G1 X-3.722 Y4.495 E.01409
+G1 X-3.928 Y4.38 E.0133
+G1 X-3.982 Y4.259 E.0075
+G1 X-4.027 Y4.001 E.0148
+G1 X-4.033 Y3.966 E.00198
+; LINE_WIDTH: 0.640021
+G1 X-4.021 Y3.817 E.00906
+; LINE_WIDTH: 0.680042
+G1 X-4.01 Y3.668 E.00967
+; LINE_WIDTH: 0.720063
+G1 X-3.999 Y3.519 E.01028
+; LINE_WIDTH: 0.760084
+G1 X-3.987 Y3.37 E.01088
+; LINE_WIDTH: 0.761331
+G1 X-3.998 Y3.18 E.01386
+G1 X-4.045 Y2.368 E.05929
+G1 X-4.038 Y2.227 E.0103
+G1 X-4.014 Y1.864 E.02646
+; LINE_WIDTH: 0.726472
+G1 X-3.984 Y1.423 E.03068
+; LINE_WIDTH: 0.691613
+G1 X-3.936 Y1.022 E.02659
+; LINE_WIDTH: 0.64291
+G1 X-3.906 Y.76 E.01605
+G1 X-3.889 Y.62 E.00854
+; LINE_WIDTH: 0.594207
+G1 X-3.873 Y-.097 E.04015
+; LINE_WIDTH: 0.556121
+G1 X-3.876 Y-.383 E.01489
+G1 X-3.885 Y-1.151 E.03998
+; LINE_WIDTH: 0.525404
+G1 X-3.886 Y-1.166 E.0007
+; LINE_WIDTH: 0.526203
+G1 X-4.108 Y-5.121 E.19424
+; LINE_WIDTH: 0.568013
+G1 X-4.106 Y-5.473 E.01872
+; LINE_WIDTH: 0.609823
+G1 X-4.105 Y-5.824 E.02021
+G1 X-3.744 Y-5.848 E.02079
+; LINE_WIDTH: 0.562873
+G1 X-3.384 Y-5.871 E.01906
+; LINE_WIDTH: 0.516615
+M73 P11 R6
+G1 X3.382 Y-5.872 E.3251
+; LINE_WIDTH: 0.561288
+G1 X3.736 Y-5.85 E.01868
+; LINE_WIDTH: 0.60596
+G1 X4.031 Y-5.831 E.01686
+; WIPE_START
+G1 F16800
+G1 X4.093 Y-5.475 E-.13753
+G1 X4.095 Y-5.122 E-.13407
+G1 X4.024 Y-3.839 E-.48841
+; WIPE_END
+G1 E-.04 F120
+G1 Z18.4 F21000
+G1 X-3.247 Y3.406 Z18.4
+G1 Z18
+G1 E.8 F420
+; LINE_WIDTH: 0.774674
+G1 F600
+G1 X-3.265 Y3.392 E.00169
+; LINE_WIDTH: 0.765517
+G1 X-3.271 Y3.329 E.00465
+; LINE_WIDTH: 0.761331
+G1 X-3.328 Y2.324 E.07337
+G1 X-3.334 Y1.894 E.03138
+; LINE_WIDTH: 0.726472
+G1 X-3.341 Y1.463 E.02985
+; LINE_WIDTH: 0.691613
+G1 X-3.339 Y1.077 E.0254
+; LINE_WIDTH: 0.646002
+G1 X-3.338 Y.691 E.02362
+; LINE_WIDTH: 0.60039
+G1 X-3.359 Y-.087 E.04402
+; LINE_WIDTH: 0.557103
+G1 X-3.36 Y-.111 E.00125
+; LINE_WIDTH: 0.556121
+G1 X-3.403 Y-1.164 E.05487
+; LINE_WIDTH: 0.525404
+G1 X-3.405 Y-1.192 E.00139
+; LINE_WIDTH: 0.526203
+G1 X-3.625 Y-5.148 E.19424
+; LINE_WIDTH: 0.568013
+G1 X-3.61 Y-5.25 E.00546
+; LINE_WIDTH: 0.609823
+G1 X-3.595 Y-5.351 E.0059
+G1 X-3.489 Y-5.375 E.00621
+; LINE_WIDTH: 0.562873
+G1 X-3.384 Y-5.398 E.0057
+; LINE_WIDTH: 0.516615
+G1 X3.382 Y-5.399 E.3251
+; LINE_WIDTH: 0.561288
+G1 X3.485 Y-5.376 E.00553
+; LINE_WIDTH: 0.60596
+G1 X3.587 Y-5.354 E.00601
+G1 X3.603 Y-5.251 E.00594
+; LINE_WIDTH: 0.56257
+G1 X3.619 Y-5.149 E.00548
+; LINE_WIDTH: 0.519464
+G1 X3.407 Y-1.317 E.18552
+; LINE_WIDTH: 0.538822
+M73 P12 R6
+G1 X3.373 Y-.526 E.03981
+; LINE_WIDTH: 0.568962
+G1 X3.365 Y-.125 E.02139
+; LINE_WIDTH: 0.598381
+G1 X3.348 Y.462 E.0331
+; LINE_WIDTH: 0.6278
+G1 X3.33 Y1.049 E.03486
+; LINE_WIDTH: 0.671776
+G1 X3.328 Y1.468 E.02673
+; LINE_WIDTH: 0.715752
+G1 X3.327 Y1.887 E.0286
+; LINE_WIDTH: 0.759728
+G1 X3.326 Y2.306 E.03047
+G1 X3.269 Y3.33 E.07454
+; LINE_WIDTH: 0.764028
+G1 X3.262 Y3.392 E.00456
+G1 X3.221 Y3.423 E.00378
+; LINE_WIDTH: 0.723021
+G1 X3.18 Y3.454 E.00357
+; LINE_WIDTH: 0.682014
+G1 X3.138 Y3.485 E.00335
+; LINE_WIDTH: 0.641007
+G1 X3.097 Y3.516 E.00314
+; LINE_WIDTH: 0.644809
+G1 X3.067 Y3.555 E.00301
+; LINE_WIDTH: 0.689618
+G1 X3.036 Y3.594 E.00324
+; LINE_WIDTH: 0.734427
+G1 X3.006 Y3.633 E.00346
+; LINE_WIDTH: 0.779236
+G1 X2.975 Y3.671 E.00369
+G1 X2.911 Y3.674 E.00476
+; LINE_WIDTH: 0.774674
+G1 X-2.913 Y3.675 E.43236
+G1 X-3.2 Y3.444 E.02736
+G1 X-3.405 Y3.935 F21000
+; FEATURE: Inner wall
+; LINE_WIDTH: 0.578076
+G1 F600
+G1 X-3.438 Y3.993 E.00363
+G1 X-3.505 Y3.993 E.00363
+G1 X-3.539 Y3.935 E.00363
+G1 X-3.505 Y3.877 E.00363
+G1 X-3.438 Y3.877 E.00363
+; WIPE_START
+G1 F16800
+G1 X-3.505 Y3.877 E-.152
+G1 X-3.539 Y3.935 E-.152
+G1 X-3.505 Y3.993 E-.152
+G1 X-3.438 Y3.993 E-.152
+G1 X-3.405 Y3.935 E-.152
+; WIPE_END
+G1 E-.04 F120
+G1 Z18.4 F21000
+G1 X3.532 Y3.923 Z18.4
+G1 Z18
+G1 E.8 F420
+; LINE_WIDTH: 0.5756
+G1 F600
+G1 X3.499 Y3.98 E.0036
+G1 X3.432 Y3.98 E.0036
+G1 X3.399 Y3.923 E.0036
+G1 X3.432 Y3.865 E.0036
+G1 X3.499 Y3.865 E.0036
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 18.2
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;18.2
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X3.432 Y3.865 E-.152
+G1 X3.399 Y3.923 E-.152
+G1 X3.432 Y3.98 E-.152
+G1 X3.499 Y3.98 E-.152
+G1 X3.532 Y3.923 E-.152
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;18.2
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z18.4 F21000
+G1 X4.097 Y-5.844 Z18.4
+G1 Z18.2
+G1 E.8 F420
+; FEATURE: Outer wall
+; LINE_WIDTH: 0.606088
+G1 F600
+G1 X4.099 Y-5.491 E.02017
+; LINE_WIDTH: 0.56261
+G1 X4.101 Y-5.138 E.01861
+; LINE_WIDTH: 0.519272
+G1 X4.008 Y-3.451 E.08167
+; LINE_WIDTH: 0.519567
+G1 X4.007 Y-3.439 E.00057
+; LINE_WIDTH: 0.546181
+G1 X3.989 Y-2.472 E.04939
+G1 X3.987 Y-2.368 E.00531
+; LINE_WIDTH: 0.548999
+G1 X3.987 Y-2.34 E.0014
+; LINE_WIDTH: 0.587625
+G1 X4.019 Y-1.836 E.02794
+; LINE_WIDTH: 0.629179
+M73 P13 R6
+G1 X4.026 Y-1.465 E.02206
+G1 X4.035 Y-1.006 E.02728
+; LINE_WIDTH: 0.662534
+G1 X4.074 Y-.812 E.01242
+; LINE_WIDTH: 0.695889
+G1 X4.112 Y-.619 E.01309
+; LINE_WIDTH: 0.727713
+G1 X4.136 Y-.167 E.03143
+; LINE_WIDTH: 0.759536
+G1 X4.161 Y.285 E.03289
+G1 X4.111 Y1.158 E.06355
+G1 X4.073 Y1.825 E.04857
+G1 X3.984 Y3.374 E.11282
+; LINE_WIDTH: 0.756178
+G1 X3.995 Y3.526 E.01106
+; LINE_WIDTH: 0.717133
+G1 X4.006 Y3.677 E.01035
+; LINE_WIDTH: 0.678088
+G1 X4.017 Y3.828 E.00975
+; LINE_WIDTH: 0.639044
+G1 X4.028 Y3.979 E.00915
+; LINE_WIDTH: 0.599999
+G1 X4.013 Y4.229 E.01412
+G1 X3.839 Y4.471 E.01688
+G1 X3.468 Y4.508 E.02105
+; LINE_WIDTH: 0.64484
+G1 X3.33 Y4.485 E.00853
+; LINE_WIDTH: 0.689681
+G1 X3.192 Y4.463 E.00916
+; LINE_WIDTH: 0.734522
+G1 X3.054 Y4.441 E.0098
+; LINE_WIDTH: 0.779363
+G1 X2.916 Y4.418 E.01043
+; LINE_WIDTH: 0.781077
+G1 X-2.918 Y4.422 E.43687
+G1 X-3.056 Y4.444 E.01048
+; LINE_WIDTH: 0.735808
+G1 X-3.194 Y4.467 E.00983
+; LINE_WIDTH: 0.690538
+G1 X-3.332 Y4.49 E.00919
+; LINE_WIDTH: 0.645269
+G1 X-3.47 Y4.513 E.00855
+; LINE_WIDTH: 0.599999
+G1 X-3.729 Y4.513 E.01465
+G1 X-3.929 Y4.397 E.01303
+G1 X-3.98 Y4.282 E.00713
+G1 X-4.033 Y3.982 E.0172
+; LINE_WIDTH: 0.639445
+G1 X-4.022 Y3.83 E.00921
+; LINE_WIDTH: 0.678891
+G1 X-4.011 Y3.678 E.00982
+; LINE_WIDTH: 0.718337
+G1 X-4 Y3.527 E.01043
+; LINE_WIDTH: 0.757783
+G1 X-3.989 Y3.375 E.01104
+; LINE_WIDTH: 0.76153
+G1 X-4.077 Y1.84 E.11209
+G1 X-4.117 Y1.145 E.0507
+G1 X-4.163 Y.344 E.0585
+G1 X-4.134 Y-.185 E.03863
+; LINE_WIDTH: 0.727737
+G1 X-4.106 Y-.66 E.03308
+; LINE_WIDTH: 0.693944
+G1 X-4.061 Y-.995 E.02229
+; LINE_WIDTH: 0.648673
+G1 X-4.025 Y-1.268 E.01693
+G1 X-4.017 Y-1.329 E.00381
+; LINE_WIDTH: 0.603401
+G1 X-4.004 Y-1.874 E.03098
+; LINE_WIDTH: 0.574759
+G1 X-3.991 Y-2.419 E.0294
+; LINE_WIDTH: 0.546116
+G1 X-3.991 Y-2.431 E.0006
+; LINE_WIDTH: 0.545155
+G1 X-3.999 Y-3.083 E.03323
+; LINE_WIDTH: 0.527274
+G1 X-4.115 Y-5.137 E.10109
+; LINE_WIDTH: 0.568974
+G1 X-4.114 Y-5.488 E.01876
+; LINE_WIDTH: 0.610673
+G1 X-4.113 Y-5.84 E.02025
+G1 X-3.752 Y-5.864 E.02088
+; LINE_WIDTH: 0.56342
+G1 X-3.39 Y-5.887 E.01914
+; LINE_WIDTH: 0.516879
+G1 X3.388 Y-5.888 E.32587
+; LINE_WIDTH: 0.561484
+G1 X3.742 Y-5.866 E.01868
+; LINE_WIDTH: 0.606088
+G1 X4.037 Y-5.848 E.01686
+; WIPE_START
+G1 F16800
+G1 X4.099 Y-5.491 E-.1376
+G1 X4.101 Y-5.138 E-.13414
+G1 X4.03 Y-3.855 E-.48826
+; WIPE_END
+G1 E-.04 F120
+G1 Z18.6 F21000
+G1 X-3.258 Y3.406 Z18.6
+M73 P14 R6
+G1 Z18.2
+G1 E.8 F420
+; LINE_WIDTH: 0.781077
+G1 F600
+G1 X-3.269 Y3.397 E.00103
+; LINE_WIDTH: 0.763199
+G1 X-3.275 Y3.334 E.00462
+; LINE_WIDTH: 0.76153
+G1 X-3.445 Y.303 E.2213
+G1 X-3.454 Y-.154 E.03338
+; LINE_WIDTH: 0.727737
+G1 X-3.462 Y-.612 E.03181
+; LINE_WIDTH: 0.693944
+G1 X-3.459 Y-.928 E.02084
+; LINE_WIDTH: 0.652695
+G1 X-3.456 Y-1.243 E.01952
+; LINE_WIDTH: 0.611446
+G1 X-3.457 Y-1.331 E.00506
+; LINE_WIDTH: 0.603401
+G1 X-3.473 Y-1.876 E.03098
+; LINE_WIDTH: 0.574759
+G1 X-3.489 Y-2.42 E.0294
+; LINE_WIDTH: 0.546116
+G1 X-3.516 Y-3.081 E.03376
+; LINE_WIDTH: 0.526565
+G1 X-3.517 Y-3.11 E.00141
+; LINE_WIDTH: 0.527274
+G1 X-3.632 Y-5.164 E.10109
+; LINE_WIDTH: 0.568974
+G1 X-3.617 Y-5.265 E.00547
+; LINE_WIDTH: 0.610673
+G1 X-3.601 Y-5.367 E.0059
+G1 X-3.496 Y-5.39 E.00624
+; LINE_WIDTH: 0.56342
+G1 X-3.39 Y-5.414 E.00572
+; LINE_WIDTH: 0.516879
+G1 X3.388 Y-5.414 E.32587
+; LINE_WIDTH: 0.561484
+G1 X3.491 Y-5.392 E.00553
+; LINE_WIDTH: 0.606088
+G1 X3.593 Y-5.37 E.00601
+G1 X3.609 Y-5.267 E.00595
+; LINE_WIDTH: 0.562611
+G1 X3.626 Y-5.164 E.00549
+; LINE_WIDTH: 0.519272
+G1 X3.532 Y-3.477 E.08166
+; LINE_WIDTH: 0.519567
+G1 X3.531 Y-3.453 E.00114
+; LINE_WIDTH: 0.546181
+G1 X3.485 Y-2.383 E.05469
+; LINE_WIDTH: 0.587625
+G1 X3.475 Y-1.839 E.03009
+; LINE_WIDTH: 0.629179
+G1 X3.45 Y-1.009 E.04934
+; LINE_WIDTH: 0.672632
+G1 X3.448 Y-.592 E.0267
+; LINE_WIDTH: 0.716084
+G1 X3.447 Y-.174 E.02854
+; LINE_WIDTH: 0.759536
+G1 X3.445 Y.244 E.03038
+G1 X3.272 Y3.334 E.22493
+; LINE_WIDTH: 0.761581
+G1 X3.266 Y3.396 E.00459
+G1 X3.224 Y3.428 E.00383
+; LINE_WIDTH: 0.721186
+G1 X3.182 Y3.46 E.00361
+; LINE_WIDTH: 0.68079
+G1 X3.141 Y3.492 E.0034
+; LINE_WIDTH: 0.640395
+G1 X3.099 Y3.524 E.00318
+; LINE_WIDTH: 0.646236
+G1 X3.069 Y3.563 E.00299
+; LINE_WIDTH: 0.692472
+G1 X3.04 Y3.602 E.00322
+; LINE_WIDTH: 0.738708
+G1 X3.01 Y3.64 E.00345
+; LINE_WIDTH: 0.784944
+G1 X2.98 Y3.679 E.00368
+G1 X2.916 Y3.682 E.00485
+; LINE_WIDTH: 0.781077
+G1 X-2.918 Y3.684 E.43687
+G1 X-3.212 Y3.444 E.02838
+G1 X-3.403 Y3.95 F21000
+; FEATURE: Inner wall
+; LINE_WIDTH: 0.582458
+G1 F600
+G1 X-3.436 Y4.008 E.00369
+G1 X-3.504 Y4.008 E.00369
+G1 X-3.537 Y3.95 E.00369
+G1 X-3.504 Y3.892 E.00369
+G1 X-3.436 Y3.892 E.00369
+; WIPE_START
+G1 F16800
+G1 X-3.504 Y3.892 E-.152
+G1 X-3.537 Y3.95 E-.152
+G1 X-3.504 Y4.008 E-.152
+G1 X-3.436 Y4.008 E-.152
+G1 X-3.403 Y3.95 E-.152
+; WIPE_END
+G1 E-.04 F120
+G1 Z18.6 F21000
+M73 P15 R6
+G1 X3.531 Y3.936 Z18.6
+G1 Z18.2
+G1 E.8 F420
+; LINE_WIDTH: 0.577996
+G1 F600
+G1 X3.498 Y3.994 E.00363
+G1 X3.431 Y3.994 E.00363
+G1 X3.398 Y3.936 E.00363
+G1 X3.431 Y3.878 E.00363
+G1 X3.498 Y3.878 E.00363
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 18.4
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;18.4
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X3.431 Y3.878 E-.152
+G1 X3.398 Y3.936 E-.152
+G1 X3.431 Y3.994 E-.152
+G1 X3.498 Y3.994 E-.152
+G1 X3.531 Y3.936 E-.152
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;18.4
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z18.6 F21000
+G1 X-3.269 Y3.405 Z18.6
+G1 Z18.4
+G1 E.8 F420
+; FEATURE: Outer wall
+; LINE_WIDTH: 0.787433
+G1 F608
+G1 X-3.272 Y3.402 E.00032
+; LINE_WIDTH: 0.760882
+G1 X-3.279 Y3.34 E.00459
+; LINE_WIDTH: 0.761721
+G1 X-3.563 Y-1.722 E.36969
+G1 X-3.581 Y-2.413 E.05039
+; LINE_WIDTH: 0.721219
+G1 X-3.578 Y-2.792 E.02605
+; LINE_WIDTH: 0.672476
+G1 X-3.574 Y-3.17 E.02418
+; LINE_WIDTH: 0.623732
+G1 X-3.575 Y-3.281 E.0065
+; LINE_WIDTH: 0.612584
+G1 X-3.597 Y-4.018 E.0426
+; LINE_WIDTH: 0.573836
+G1 X-3.618 Y-4.754 E.0397
+; LINE_WIDTH: 0.535088
+G1 X-3.64 Y-5.182 E.02138
+; LINE_WIDTH: 0.572017
+G1 X-3.625 Y-5.282 E.00543
+; LINE_WIDTH: 0.612219
+G1 X-3.609 Y-5.382 E.00584
+G1 X-3.502 Y-5.406 E.00631
+; LINE_WIDTH: 0.564314
+G1 X-3.396 Y-5.43 E.00577
+; LINE_WIDTH: 0.517142
+G1 X3.394 Y-5.43 E.32664
+; LINE_WIDTH: 0.561951
+G1 X3.497 Y-5.408 E.00555
+; LINE_WIDTH: 0.606759
+G1 X3.6 Y-5.386 E.00603
+G1 X3.619 Y-5.283 E.00598
+; LINE_WIDTH: 0.568445
+G1 X3.637 Y-5.18 E.00558
+; LINE_WIDTH: 0.553507
+G1 X3.597 Y-4.24 E.04872
+; LINE_WIDTH: 0.579881
+G1 X3.591 Y-3.896 E.01874
+; LINE_WIDTH: 0.606255
+G1 X3.585 Y-3.552 E.01966
+; LINE_WIDTH: 0.633491
+G1 X3.569 Y-3.024 E.03162
+; LINE_WIDTH: 0.675431
+G1 X3.568 Y-2.622 E.02582
+; LINE_WIDTH: 0.71737
+G1 X3.566 Y-2.22 E.02753
+; LINE_WIDTH: 0.759309
+G1 X3.565 Y-1.817 E.02924
+G1 X3.276 Y3.339 E.37531
+; LINE_WIDTH: 0.759134
+M73 P16 R6
+G1 X3.269 Y3.401 E.00456
+G1 X3.227 Y3.434 E.00387
+; LINE_WIDTH: 0.719351
+G1 X3.185 Y3.466 E.00365
+; LINE_WIDTH: 0.679567
+G1 X3.143 Y3.499 E.00344
+; LINE_WIDTH: 0.639783
+G1 X3.101 Y3.532 E.00322
+; LINE_WIDTH: 0.647606
+G1 X3.072 Y3.571 E.00297
+; LINE_WIDTH: 0.695212
+G1 X3.043 Y3.609 E.0032
+; LINE_WIDTH: 0.742818
+G1 X3.015 Y3.648 E.00344
+; LINE_WIDTH: 0.790424
+G1 X2.986 Y3.687 E.00367
+G1 X2.921 Y3.69 E.00493
+; LINE_WIDTH: 0.787433
+G1 X-2.923 Y3.692 E.44137
+G1 X-3.223 Y3.443 E.02944
+; WIPE_START
+G1 F16800
+G1 X-3.272 Y3.402 E-.02441
+G1 X-3.279 Y3.34 E-.02392
+G1 X-3.384 Y1.47 E-.71167
+; WIPE_END
+G1 E-.04 F120
+G1 Z18.8 F21000
+G1 X4.102 Y-5.86 Z18.8
+M73 P16 R5
+G1 Z18.4
+G1 E.8 F420
+; LINE_WIDTH: 0.606759
+G1 F608
+G1 X4.113 Y-5.512 E.01989
+; LINE_WIDTH: 0.568445
+G1 X4.124 Y-5.165 E.01854
+; LINE_WIDTH: 0.556366
+G1 X4.117 Y-4.749 E.02165
+G1 X4.107 Y-4.197 E.02878
+; LINE_WIDTH: 0.606255
+G1 X4.146 Y-3.565 E.03617
+; LINE_WIDTH: 0.630521
+G1 X4.147 Y-3.548 E.00102
+G1 X4.157 Y-3.065 E.02881
+; LINE_WIDTH: 0.662535
+G1 X4.194 Y-2.88 E.01184
+; LINE_WIDTH: 0.694548
+G1 X4.23 Y-2.695 E.01245
+; LINE_WIDTH: 0.726929
+G1 X4.255 Y-2.236 E.03191
+; LINE_WIDTH: 0.759309
+G1 X4.28 Y-1.777 E.03342
+G1 X4.231 Y-.908 E.06323
+G1 X4.192 Y-.237 E.04885
+G1 X3.985 Y3.379 E.26322
+; LINE_WIDTH: 0.75375
+G1 X3.996 Y3.534 E.01118
+; LINE_WIDTH: 0.715312
+G1 X4.006 Y3.687 E.01047
+; LINE_WIDTH: 0.676874
+G1 X4.017 Y3.84 E.00987
+; LINE_WIDTH: 0.638437
+G1 X4.027 Y3.993 E.00928
+; LINE_WIDTH: 0.599999
+G1 X4.012 Y4.254 E.01477
+G1 X3.85 Y4.485 E.01594
+G1 X3.466 Y4.524 E.02182
+; LINE_WIDTH: 0.6462
+G1 X3.33 Y4.501 E.00844
+; LINE_WIDTH: 0.692401
+G1 X3.193 Y4.478 E.00909
+; LINE_WIDTH: 0.738602
+G1 X3.057 Y4.455 E.00974
+; LINE_WIDTH: 0.784803
+G1 X2.921 Y4.432 E.01039
+; LINE_WIDTH: 0.787433
+G1 X-2.923 Y4.437 E.44137
+G1 X-3.059 Y4.46 E.01043
+; LINE_WIDTH: 0.740575
+G1 X-3.195 Y4.484 E.00977
+; LINE_WIDTH: 0.693716
+G1 X-3.331 Y4.507 E.00912
+; LINE_WIDTH: 0.646858
+G1 X-3.467 Y4.531 E.00846
+; LINE_WIDTH: 0.599999
+G1 X-3.736 Y4.531 E.01521
+G1 X-3.929 Y4.414 E.01277
+G1 X-3.978 Y4.305 E.00676
+G1 X-4.032 Y3.998 E.01763
+; LINE_WIDTH: 0.63887
+G1 X-4.022 Y3.843 E.00936
+; LINE_WIDTH: 0.677741
+G1 X-4.011 Y3.689 E.00997
+; LINE_WIDTH: 0.716612
+G1 X-4.001 Y3.534 E.01058
+; LINE_WIDTH: 0.755483
+G1 X-3.99 Y3.38 E.01119
+; LINE_WIDTH: 0.761721
+G1 X-4.199 Y-.262 E.26597
+M73 P17 R5
+G1 X-4.235 Y-.889 E.04585
+G1 X-4.281 Y-1.682 E.05787
+G1 X-4.255 Y-2.227 E.03982
+; LINE_WIDTH: 0.730115
+G1 X-4.23 Y-2.73 E.03507
+; LINE_WIDTH: 0.698509
+G1 X-4.187 Y-3.004 E.01849
+; LINE_WIDTH: 0.655547
+G1 X-4.144 Y-3.279 E.01728
+; LINE_WIDTH: 0.612584
+G1 X-4.127 Y-4.016 E.0426
+; LINE_WIDTH: 0.573836
+G1 X-4.115 Y-4.526 E.02749
+G1 X-4.11 Y-4.753 E.01221
+; LINE_WIDTH: 0.535088
+G1 X-4.129 Y-5.16 E.02034
+; LINE_WIDTH: 0.572017
+G1 X-4.124 Y-5.508 E.01866
+; LINE_WIDTH: 0.612219
+G1 X-4.12 Y-5.855 E.02008
+G1 X-3.758 Y-5.879 E.02095
+; LINE_WIDTH: 0.564314
+G1 X-3.396 Y-5.903 E.01919
+; LINE_WIDTH: 0.517142
+G1 X3.394 Y-5.905 E.32664
+; LINE_WIDTH: 0.561951
+G1 X3.748 Y-5.882 E.01868
+; LINE_WIDTH: 0.606759
+G1 X4.042 Y-5.864 E.01686
+; WIPE_START
+G1 F16800
+G1 X4.113 Y-5.512 E-.13619
+G1 X4.124 Y-5.165 E-.13214
+G1 X4.117 Y-4.749 E-.15793
+G1 X4.107 Y-4.197 E-.21
+G1 X4.127 Y-3.872 E-.12373
+; WIPE_END
+G1 E-.04 F120
+G1 Z18.8 F21000
+G1 X3.497 Y3.891 Z18.8
+G1 Z18.4
+G1 E.8 F420
+; FEATURE: Inner wall
+; LINE_WIDTH: 0.580074
+G1 F608
+G1 X3.43 Y3.891 E.00366
+G1 X3.396 Y3.949 E.00366
+G1 X3.43 Y4.007 E.00366
+G1 X3.497 Y4.007 E.00366
+G1 X3.531 Y3.949 E.00366
+; WIPE_START
+G1 F16800
+G1 X3.497 Y4.007 E-.152
+G1 X3.43 Y4.007 E-.152
+G1 X3.396 Y3.949 E-.152
+G1 X3.43 Y3.891 E-.152
+G1 X3.497 Y3.891 E-.152
+; WIPE_END
+G1 E-.04 F120
+G1 Z18.8 F21000
+G1 X-3.4 Y3.965 Z18.8
+G1 Z18.4
+G1 E.8 F420
+; LINE_WIDTH: 0.58663
+M73 P18 R5
+G1 F608
+G1 X-3.434 Y4.024 E.00375
+G1 X-3.502 Y4.024 E.00375
+G1 X-3.536 Y3.965 E.00375
+G1 X-3.502 Y3.906 E.00375
+G1 X-3.434 Y3.906 E.00375
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 18.6
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;18.6
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-3.502 Y3.906 E-.152
+G1 X-3.536 Y3.965 E-.152
+G1 X-3.502 Y4.024 E-.152
+G1 X-3.434 Y4.024 E-.152
+G1 X-3.4 Y3.965 E-.152
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;18.6
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z18.8 F21000
+G1 X-2.949 Y3.434 Z18.8
+G1 Z18.6
+G1 E.8 F420
+; LINE_WIDTH: 0.599999
+G1 F1500
+G1 X-2.95 Y3.418 E.00089
+G1 X-3.364 Y-3.712 E.4036
+G1 X-3.324 Y-4.292 E.03289
+G1 X-3.305 Y-4.582 E.01641
+G1 X-3.234 Y-4.826 E.01438
+G1 X-3.154 Y-4.826 E.00453
+; FEATURE: Overhang wall
+
+G1 X3.152 Y-4.838 E.35638
+; FEATURE: Inner wall
+G1 X3.218 Y-4.838 E.00369
+G1 X3.23 Y-4.786 E.00304
+G1 X3.308 Y-4.442 E.01993
+G1 X3.322 Y-4.289 E.00869
+G1 X3.364 Y-3.847 E.02509
+G1 X2.944 Y3.418 E.41122
+G1 X-2.889 Y3.434 E.32969
+G1 X-3.476 Y3.976 F21000
+G1 F1500
+G1 X-3.922 Y-3.714 E.43532
+G1 X-3.86 Y-4.62 E.05128
+G1 X-3.735 Y-5.143 E.0304
+G1 X-3.717 Y-5.382 E.01358
+G1 X-3.625 Y-5.383 E.00516
+G1 X3.624 Y-5.396 E.40968
+G1 X3.71 Y-5.396 E.00483
+G1 X3.747 Y-5.02 E.0214
+G1 X3.862 Y-4.494 E.03039
+G1 X3.922 Y-3.857 E.03617
+G1 X3.47 Y3.983 E.44378
+M73 P19 R5
+G1 X-3.431 Y3.992 E.39
+G1 X-4.032 Y4.008 F21000
+; FEATURE: Outer wall
+G1 F1500
+G1 X-4.392 Y-2.201 E.35144
+G1 X-4.429 Y-2.836 E.036
+G1 X-4.454 Y-3.267 E.02434
+G1 X-4.48 Y-3.717 E.02552
+G1 X-4.418 Y-4.635 E.05198
+G1 X-4.377 Y-4.815 E.01043
+G1 X-4.282 Y-5.23 E.02403
+G1 X-4.276 Y-5.347 E.00665
+G1 X-4.25 Y-5.876 E.02993
+G1 X-4.211 Y-5.939 E.00416
+G1 X4.153 Y-5.954 E.47268
+G1 X4.227 Y-5.846 E.00744
+G1 X4.271 Y-5.471 E.02129
+G1 X4.325 Y-5.001 E.02674
+G1 X4.387 Y-4.732 E.0156
+G1 X4.409 Y-4.635 E.00563
+G1 X4.481 Y-3.867 E.0436
+G1 X4.456 Y-3.434 E.02453
+G1 X4.423 Y-2.868 E.03201
+G1 X4.385 Y-2.2 E.03781
+G1 X4.011 Y4.281 E.36689
+G1 X3.86 Y4.498 E.01492
+G1 X3.721 Y4.54 E.00819
+G1 X-3.743 Y4.549 E.42181
+G1 X-3.93 Y4.431 E.01252
+G1 X-4.019 Y4.233 E.0123
+G1 X-4.029 Y4.068 E.00933
+; WIPE_START
+G1 F16800
+G1 X-4.145 Y2.071 E-.76
+; WIPE_END
+G1 E-.04 F120
+G1 Z19 F21000
+G1 X2.546 Y3.261 Z19
+G1 Z18.6
+G1 E.8 F420
+; FEATURE: Bridge
+; LINE_WIDTH: 0.578781
+M73 P20 R5
+G1 F1500
+G1 X2.957 Y-3.861 E.38781
+G1 X2.901 Y-4.434 E.03128
+G1 X2.453 Y-4.433 E.02437
+G1 X2.023 Y3.024 E.40602
+G1 X1.486 Y3.024 E.02918
+G1 X1.916 Y-4.432 E.40601
+G1 X1.379 Y-4.431 E.02918
+G1 X.949 Y3.025 E.40599
+G1 X.412 Y3.026 E.02918
+G1 X.843 Y-4.43 E.40597
+G1 X.306 Y-4.429 E.02918
+G1 X-.125 Y3.027 E.40596
+G1 X-.661 Y3.027 E.02918
+G1 X-.231 Y-4.428 E.40594
+G1 X-.768 Y-4.427 E.02918
+G1 X-1.198 Y3.028 E.40592
+M73 P21 R5
+G1 X-1.735 Y3.029 E.02918
+G1 X-1.305 Y-4.426 E.4059
+G1 X-1.841 Y-4.425 E.02918
+G1 X-2.272 Y3.029 E.40589
+G1 X-2.568 Y3.03 E.01612
+G1 X-2.689 Y.954 E.11301
+G1 X-2.378 Y-4.424 E.29284
+G1 X-2.911 Y-4.423 E.02894
+G1 X-3.077 Y-1.622 E.15254
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 18.8
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;18.8
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-2.958 Y-3.618 E-.76
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;18.8
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z19 F21000
+G1 X-2.864 Y3.362 Z19
+G1 Z18.8
+G1 E.8 F420
+; FEATURE: Inner wall
+; LINE_WIDTH: 0.779184
+G1 F1222.388
+G1 X-2.923 Y2.681 E.05105
+; LINE_WIDTH: 0.762541
+G1 F1250.658
+G1 X-2.947 Y2.071 E.04459
+G1 X-2.978 Y1.958 E.00854
+; LINE_WIDTH: 0.715382
+G1 F1338.366
+G1 X-3.008 Y1.845 E.00798
+; LINE_WIDTH: 0.668223
+G1 F1439.302
+G1 X-3.038 Y1.732 E.00742
+; LINE_WIDTH: 0.621064
+G1 F1490
+G1 X-3.073 Y1.301 E.02534
+; LINE_WIDTH: 0.599999
+G1 X-3.446 Y-5.15 E.36519
+G1 X3.439 Y-5.155 E.3891
+M73 P22 R5
+G1 X3.042 Y1.729 E.3897
+; LINE_WIDTH: 0.643613
+G1 X3.007 Y1.963 E.01442
+; LINE_WIDTH: 0.687227
+G1 F1396.85
+G1 X2.971 Y2.197 E.01547
+; LINE_WIDTH: 0.730841
+G1 F1308.29
+G1 X2.936 Y2.431 E.01652
+; LINE_WIDTH: 0.740282
+G1 F1290.578
+G1 X2.908 Y2.839 E.02895
+; LINE_WIDTH: 0.762978
+G1 F1249.899
+G1 X2.866 Y3.361 E.03824
+G1 X2.007 Y3.363 E.06274
+G1 X2.189 Y2.876 E.03795
+G1 X2.249 Y2.392 E.03565
+; LINE_WIDTH: 0.730841
+G1 F1308.29
+G1 X2.166 Y2.162 E.01707
+; LINE_WIDTH: 0.687227
+G1 F1396.85
+G1 X2.082 Y1.932 E.01599
+; LINE_WIDTH: 0.643613
+G1 F1490
+G1 X1.999 Y1.702 E.01491
+; LINE_WIDTH: 0.599999
+G1 X1.593 Y1.006 E.04551
+G1 X1.441 Y.817 E.01371
+G1 X1.003 Y.458 E.03201
+G1 X.806 Y.391 E.01172
+G1 X.318 Y.318 E.0279
+G1 X-.491 Y.36 E.04577
+G1 X-1.018 Y.508 E.03097
+G1 X-1.348 Y.722 E.02221
+G1 X-1.592 Y1 E.02087
+G1 X-1.97 Y1.59 E.03963
+; LINE_WIDTH: 0.640635
+G1 X-2.037 Y1.728 E.00931
+; LINE_WIDTH: 0.68127
+G1 F1409.885
+G1 X-2.105 Y1.866 E.00994
+; LINE_WIDTH: 0.721906
+G1 F1325.507
+G1 X-2.172 Y2.004 E.01057
+; LINE_WIDTH: 0.762541
+G1 F1250.658
+G1 X-2.24 Y2.141 E.01121
+G1 X-2.224 Y2.636 E.03611
+; LINE_WIDTH: 0.779184
+G1 F1222.388
+G1 X-2.022 Y3.361 E.05624
+G1 X-2.804 Y3.362 E.05845
+G1 X-3.475 Y3.996 F21000
+; LINE_WIDTH: 0.599999
+G1 F1490
+G1 X-4.037 Y-5.707 E.54925
+G1 X4.029 Y-5.713 E.4558
+G1 X3.469 Y3.999 E.54975
+G1 X1.197 Y4.003 E.12841
+G1 X.632 Y3.936 E.03215
+M73 P23 R5
+G1 X1.037 Y3.641 E.02833
+G1 X1.368 Y3.249 E.02899
+G1 X1.591 Y2.653 E.03599
+G1 X1.628 Y2.356 E.0169
+G1 X1.518 Y1.983 E.02198
+G1 X1.112 Y1.287 E.04551
+G1 X.759 Y.959 E.02722
+G1 X.347 Y.874 E.02377
+G1 X-.539 Y.931 E.05018
+G1 X-.944 Y1.105 E.02492
+G1 X-1.122 Y1.3 E.0149
+G1 X-1.501 Y1.89 E.03963
+G1 X-1.631 Y2.389 E.02915
+G1 X-1.545 Y2.701 E.01826
+G1 X-1.337 Y3.304 E.03604
+G1 X-.96 Y3.7 E.03095
+G1 X-.437 Y3.987 E.03368
+G1 X-1.031 Y4.006 E.03359
+G1 X-3.428 Y4.01 E.13548
+G1 X-4.032 Y4.029 F21000
+; FEATURE: Outer wall
+G1 F1490
+G1 X-4.51 Y-4.215 E.46667
+G1 X-4.551 Y-4.925 E.04018
+G1 X-4.576 Y-5.356 E.0244
+G1 X-4.596 Y-5.702 E.01955
+G1 X-4.587 Y-5.904 E.01145
+G1 X-4.546 Y-6.082 E.01034
+G1 X-4.332 Y-6.263 E.01586
+G1 X4.274 Y-6.27 E.48633
+G1 X4.534 Y-6.124 E.01683
+G1 X4.596 Y-5.97 E.00939
+G1 X4.572 Y-5.44 E.02998
+G1 X4.543 Y-4.932 E.02876
+G1 X4.504 Y-4.262 E.03793
+G1 X4.01 Y4.305 E.48492
+G1 X3.843 Y4.523 E.0155
+G1 X3.729 Y4.556 E.00674
+G1 X1.024 Y4.56 E.15281
+; LINE_WIDTH: 0.634856
+G1 X.81 Y4.543 E.01293
+; LINE_WIDTH: 0.669712
+G1 F1435.884
+G1 X.595 Y4.526 E.01369
+; LINE_WIDTH: 0.704568
+G1 F1360.24
+G1 X.381 Y4.509 E.01445
+; LINE_WIDTH: 0.753399
+G1 F1266.751
+G1 X.304 Y4.484 E.00581
+; LINE_WIDTH: 0.80223
+G1 F1185.287
+G1 X.227 Y4.46 E.00621
+; LINE_WIDTH: 0.851061
+G1 F1113.667
+G1 X.15 Y4.436 E.00661
+G1 X.011 Y4.439 E.01145
+; LINE_WIDTH: 0.844984
+G1 F1122.105
+G1 X-.062 Y4.462 E.00619
+; LINE_WIDTH: 0.800135
+G1 F1188.567
+G1 X-.135 Y4.484 E.00585
+; LINE_WIDTH: 0.755285
+G1 F1263.398
+G1 X-.208 Y4.507 E.0055
+; LINE_WIDTH: 0.710436
+G1 F1348.284
+G1 X-.28 Y4.529 E.00516
+; LINE_WIDTH: 0.665586
+G1 F1445.399
+G1 X-.353 Y4.552 E.00481
+; LINE_WIDTH: 0.620736
+G1 F1490
+G1 X-1.026 Y4.563 E.03943
+; LINE_WIDTH: 0.599999
+G1 X-3.749 Y4.568 E.1539
+G1 X-3.931 Y4.448 E.01228
+G1 X-4.019 Y4.253 E.01209
+G1 X-4.028 Y4.088 E.00932
+; WIPE_START
+G1 F16800
+G1 X-4.144 Y2.092 E-.76
+; WIPE_END
+M73 P24 R5
+G1 E-.04 F120
+G1 Z19.2 F21000
+G1 X-.833 Y3.068 Z19.2
+G1 Z18.8
+G1 E.8 F420
+G1 F1490
+G1 X-.863 Y3.033 E.00262
+G1 X-1.068 Y2.405 E.03734
+G1 X-1.031 Y2.191 E.01228
+G1 X-.653 Y1.6 E.03963
+G1 X-.502 Y1.485 E.01074
+G1 X.376 Y1.431 E.04971
+G1 X.514 Y1.459 E.00796
+G1 X.631 Y1.568 E.00904
+G1 X1.037 Y2.264 E.04551
+G1 X1.067 Y2.468 E.01168
+G1 X.847 Y3.052 E.03529
+G1 X.709 Y3.203 E.01154
+; LINE_WIDTH: 0.634856
+G1 X.524 Y3.313 E.01293
+; LINE_WIDTH: 0.669712
+G1 F1435.884
+G1 X.339 Y3.423 E.01369
+; LINE_WIDTH: 0.704568
+G1 F1360.24
+G1 X.154 Y3.533 E.01445
+; LINE_WIDTH: 0.753399
+G1 F1266.751
+G1 X.129 Y3.567 E.00302
+; LINE_WIDTH: 0.80223
+G1 F1185.287
+G1 X.104 Y3.6 E.00322
+; LINE_WIDTH: 0.851061
+G1 F1113.667
+G1 X.079 Y3.634 E.00343
+G1 X.009 Y3.637 E.00573
+; LINE_WIDTH: 0.844984
+G1 F1122.105
+G1 X-.016 Y3.609 E.00305
+; LINE_WIDTH: 0.800135
+G1 F1188.567
+G1 X-.041 Y3.581 E.00288
+; LINE_WIDTH: 0.755285
+G1 F1263.398
+G1 X-.066 Y3.553 E.00271
+; LINE_WIDTH: 0.710436
+G1 F1348.284
+G1 X-.091 Y3.525 E.00254
+; LINE_WIDTH: 0.665586
+G1 F1445.399
+G1 X-.116 Y3.497 E.00237
+; LINE_WIDTH: 0.620736
+G1 F1490
+G1 X-.718 Y3.198 E.03943
+; LINE_WIDTH: 0.599999
+G1 X-.793 Y3.113 E.00639
+; WIPE_START
+G1 F16800
+G1 X-.863 Y3.033 E-.04044
+G1 X-1.068 Y2.405 E-.25108
+G1 X-1.031 Y2.191 E-.08255
+G1 X-.653 Y1.6 E-.26646
+G1 X-.502 Y1.485 E-.0722
+G1 X-.378 Y1.477 E-.04727
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.2 F21000
+G1 X-.527 Y-2.397 Z19.2
+G1 Z18.8
+G1 E.8 F420
+; FEATURE: Internal solid infill
+; LINE_WIDTH: 0.518378
+G1 F1490
+G1 X.479 Y-2.416 E.04854
+G1 X.328 Y-1.908 F21000
+; LINE_WIDTH: 0.599999
+G1 F1490
+G1 X.756 Y-1.88 E.02422
+G1 X1.015 Y-1.835 E.0149
+G1 X1.078 Y-2.925 E.06174
+G1 X-1.086 Y-2.924 E.12228
+G1 X-1.016 Y-1.805 E.06334
+G1 X-.503 Y-1.87 E.02922
+G1 X.268 Y-1.905 E.04364
+G1 X.353 Y-1.352 F21000
+M73 P25 R5
+G1 F1490
+G1 X1.105 Y-1.253 E.04283
+G1 X1.532 Y-1.125 E.02523
+G1 X1.668 Y-3.483 E.13348
+G1 X-1.676 Y-3.48 E.18899
+G1 X-1.536 Y-1.071 E.13638
+G1 X-.869 Y-1.263 E.03923
+G1 X-.478 Y-1.314 E.0223
+G1 X.294 Y-1.349 E.04364
+G1 X.379 Y-.795 F21000
+G1 F1490
+G1 X1.008 Y-.704 E.03593
+G1 X1.394 Y-.583 E.02286
+G1 X1.87 Y-.294 E.03149
+G1 X2.034 Y-.147 E.01243
+G1 X2.259 Y-4.04 E.22038
+G1 X-2.266 Y-4.037 E.25569
+G1 X-2.041 Y-.14 E.22059
+G1 X-1.563 Y-.456 E.03237
+G1 X-1.328 Y-.561 E.01453
+G1 X-.724 Y-.725 E.03542
+G1 X.319 Y-.791 E.05903
+G1 X.404 Y-.239 F21000
+G1 F1490
+G1 X.911 Y-.156 E.02903
+G1 X1.282 Y-.022 E.02229
+G1 X1.602 Y.206 E.02216
+G1 X2.037 Y.677 E.03626
+G1 X2.498 Y1.454 E.05105
+G1 X2.849 Y-4.598 E.34256
+G1 X-2.856 Y-4.593 E.32239
+G1 X-2.502 Y1.41 E.33986
+M73 P26 R5
+G1 X-2.061 Y.699 E.04728
+G1 X-1.701 Y.296 E.03053
+G1 X-1.261 Y.012 E.02961
+G1 X-.578 Y-.187 E.04021
+G1 X.344 Y-.235 E.05218
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 19
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;19
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.578 Y-.187 E-.35085
+G1 X-1.261 Y.012 E-.27036
+G1 X-1.568 Y.21 E-.1388
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;19
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z19.2 F21000
+G1 X-2.863 Y3.379 Z19.2
+G1 Z19
+G1 E.8 F420
+; FEATURE: Inner wall
+; LINE_WIDTH: 0.781487
+G1 F1218.576
+G1 X-2.924 Y2.685 E.05224
+; LINE_WIDTH: 0.762904
+G1 F1250.028
+G1 X-2.948 Y2.075 E.04457
+G1 X-2.978 Y1.962 E.00853
+; LINE_WIDTH: 0.715761
+G1 F1337.612
+G1 X-3.009 Y1.849 E.00797
+; LINE_WIDTH: 0.668618
+G1 F1438.394
+G1 X-3.039 Y1.736 E.00741
+; LINE_WIDTH: 0.621475
+G1 F1555.6
+G1 X-3.074 Y1.307 E.02529
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X-3.454 Y-5.211 E.36895
+G1 X3.443 Y-5.207 E.38976
+G1 X3.038 Y1.723 E.3923
+; LINE_WIDTH: 0.643032
+G1 F1499.721
+G1 X3.003 Y1.959 E.01448
+; LINE_WIDTH: 0.686065
+G1 F1399.375
+G1 X2.968 Y2.194 E.01552
+; LINE_WIDTH: 0.729097
+G1 F1311.615
+G1 X2.933 Y2.429 E.01656
+; LINE_WIDTH: 0.738517
+G1 F1293.853
+G1 X2.904 Y2.837 E.02886
+; LINE_WIDTH: 0.7639
+G1 F1248.301
+G1 X2.86 Y3.377 E.03964
+G1 X2.002 Y3.379 E.06275
+G1 X2.182 Y2.892 E.03793
+G1 X2.248 Y2.389 E.03713
+; LINE_WIDTH: 0.729097
+G1 F1311.615
+G1 X2.164 Y2.158 E.01713
+; LINE_WIDTH: 0.686065
+G1 F1399.375
+G1 X2.08 Y1.926 E.01606
+; LINE_WIDTH: 0.643032
+G1 F1499.721
+G1 X1.996 Y1.695 E.01498
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X1.59 Y1.005 E.04524
+G1 X1.438 Y.815 E.01378
+G1 X.998 Y.457 E.03203
+G1 X.802 Y.391 E.01166
+G1 X.323 Y.319 E.02737
+G1 X-.484 Y.358 E.04568
+G1 X-1.015 Y.506 E.03112
+G1 X-1.347 Y.72 E.02234
+M73 P27 R5
+G1 X-1.592 Y1 E.02102
+G1 X-1.971 Y1.595 E.03986
+; LINE_WIDTH: 0.640726
+G1 F1505.507
+G1 X-2.038 Y1.732 E.00929
+; LINE_WIDTH: 0.681452
+G1 F1409.484
+G1 X-2.106 Y1.87 E.00992
+; LINE_WIDTH: 0.722178
+G1 F1324.976
+G1 X-2.173 Y2.007 E.01055
+; LINE_WIDTH: 0.762904
+G1 F1250.028
+G1 X-2.24 Y2.145 E.01119
+G1 X-2.224 Y2.641 E.03626
+; LINE_WIDTH: 0.781487
+G1 F1218.576
+G1 X-2.017 Y3.378 E.05734
+G1 X-2.803 Y3.379 E.05892
+G1 X-3.475 Y4.015 F21000
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X-4.044 Y-5.768 E.55381
+G1 X4.034 Y-5.763 E.4565
+G1 X3.463 Y4.015 E.55355
+G1 X1.205 Y4.019 E.12758
+G1 X.617 Y3.948 E.03349
+G1 X1.037 Y3.641 E.02945
+G1 X1.37 Y3.246 E.02916
+G1 X1.582 Y2.671 E.03466
+G1 X1.627 Y2.353 E.01816
+G1 X1.516 Y1.977 E.02214
+G1 X1.11 Y1.287 E.04524
+G1 X.755 Y.959 E.02732
+G1 X.35 Y.876 E.02338
+G1 X-.535 Y.929 E.05012
+G1 X-.943 Y1.104 E.02505
+G1 X-1.122 Y1.3 E.01501
+G1 X-1.501 Y1.894 E.03986
+G1 X-1.631 Y2.392 E.02908
+G1 X-1.542 Y2.713 E.01884
+G1 X-1.335 Y3.307 E.03556
+G1 X-.963 Y3.699 E.03052
+G1 X-.417 Y3.978 E.03468
+G1 X-.444 Y4.006 E.00217
+G1 X-1.032 Y4.024 E.03327
+G1 X-3.427 Y4.028 E.13535
+G1 X-4.031 Y4.048 F21000
+; FEATURE: Outer wall
+G1 F1615.57
+G1 X-4.615 Y-5.999 E.56869
+M73 P28 R5
+G1 X-4.49 Y-6.235 E.01509
+G1 X-4.489 Y-6.236 E.00011
+G1 X-4.297 Y-6.324 E.01196
+G1 X-3.681 Y-6.325 E.03478
+G1 X4.315 Y-6.32 E.45188
+G1 X4.363 Y-6.296 E.00305
+G1 X4.511 Y-6.207 E.00973
+G1 X4.561 Y-6.106 E.00637
+G1 X4.607 Y-6.014 E.00582
+G1 X4.001 Y4.348 E.58659
+G1 X3.855 Y4.537 E.01349
+G1 X3.736 Y4.572 E.00703
+G1 X1.028 Y4.577 E.15301
+; LINE_WIDTH: 0.635744
+G1 F1518.157
+G1 X.813 Y4.559 E.01297
+; LINE_WIDTH: 0.671489
+G1 F1431.824
+G1 X.598 Y4.542 E.01375
+; LINE_WIDTH: 0.707234
+G1 F1354.781
+G1 X.383 Y4.524 E.01454
+; LINE_WIDTH: 0.745367
+G1 F1281.237
+G1 X.325 Y4.505 E.00435
+; LINE_WIDTH: 0.783499
+G1 F1215.266
+G1 X.267 Y4.486 E.00459
+; LINE_WIDTH: 0.821631
+G1 F1155.757
+G1 X.209 Y4.467 E.00482
+; LINE_WIDTH: 0.859763
+G1 F1101.803
+G1 X.151 Y4.448 E.00506
+G1 X.01 Y4.452 E.0117
+; LINE_WIDTH: 0.853619
+G1 F1110.153
+G1 X-.064 Y4.475 E.00635
+; LINE_WIDTH: 0.806693
+G1 F1178.361
+G1 X-.137 Y4.499 E.00598
+; LINE_WIDTH: 0.759767
+G1 F1255.499
+G1 X-.211 Y4.523 E.00561
+; LINE_WIDTH: 0.712841
+G1 F1343.443
+G1 X-.284 Y4.546 E.00525
+; LINE_WIDTH: 0.665915
+G1 F1444.636
+G1 X-.358 Y4.57 E.00488
+; LINE_WIDTH: 0.618988
+G1 F1562.316
+G1 X-1.027 Y4.581 E.03912
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X-3.756 Y4.586 E.1542
+G1 X-3.931 Y4.465 E.01204
+G1 X-4.018 Y4.274 E.01188
+G1 X-4.028 Y4.108 E.0094
+; WIPE_START
+G1 F16800
+G1 X-4.144 Y2.111 E-.76
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.4 F21000
+G1 X-.832 Y3.069 Z19.4
+G1 Z19
+G1 E.8 F420
+G1 F1615.57
+G1 X-.861 Y3.036 E.00252
+G1 X-1.068 Y2.408 E.03737
+G1 X-1.032 Y2.194 E.01225
+G1 X-.652 Y1.599 E.03986
+G1 X-.501 Y1.483 E.01081
+G1 X.377 Y1.432 E.04965
+G1 X.512 Y1.46 E.00781
+G1 X.63 Y1.569 E.00909
+G1 X1.036 Y2.259 E.04524
+G1 X1.067 Y2.465 E.01173
+G1 X.848 Y3.051 E.03538
+G1 X.709 Y3.203 E.01161
+; LINE_WIDTH: 0.635744
+M73 P29 R5
+G1 F1518.157
+G1 X.524 Y3.313 E.01297
+; LINE_WIDTH: 0.671489
+G1 F1431.824
+G1 X.339 Y3.424 E.01375
+; LINE_WIDTH: 0.707234
+G1 F1354.781
+G1 X.153 Y3.534 E.01454
+; LINE_WIDTH: 0.745367
+G1 F1281.237
+G1 X.135 Y3.56 E.00227
+; LINE_WIDTH: 0.783499
+G1 F1215.266
+G1 X.116 Y3.586 E.0024
+; LINE_WIDTH: 0.821631
+G1 F1155.757
+G1 X.098 Y3.612 E.00252
+; LINE_WIDTH: 0.859763
+G1 F1101.803
+G1 X.079 Y3.638 E.00264
+G1 X.008 Y3.641 E.00585
+; LINE_WIDTH: 0.853619
+G1 F1110.153
+G1 X-.017 Y3.612 E.00315
+; LINE_WIDTH: 0.806693
+G1 F1178.361
+G1 X-.041 Y3.583 E.00296
+; LINE_WIDTH: 0.759767
+G1 F1255.499
+G1 X-.066 Y3.554 E.00278
+; LINE_WIDTH: 0.712841
+G1 F1343.443
+G1 X-.091 Y3.525 E.0026
+; LINE_WIDTH: 0.665915
+G1 F1444.636
+G1 X-.116 Y3.496 E.00242
+; LINE_WIDTH: 0.618988
+G1 F1562.316
+G1 X-.717 Y3.2 E.03912
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X-.792 Y3.114 E.00645
+; WIPE_START
+G1 F16800
+G1 X-.861 Y3.036 E-.03974
+G1 X-1.068 Y2.408 E-.25126
+G1 X-1.032 Y2.194 E-.0824
+G1 X-.652 Y1.599 E-.268
+G1 X-.501 Y1.483 E-.07266
+G1 X-.38 Y1.476 E-.04595
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.4 F21000
+G1 X-.505 Y-2.427 Z19.4
+G1 Z19
+G1 E.8 F420
+; FEATURE: Internal solid infill
+; LINE_WIDTH: 0.572782
+G1 F1698.555
+G1 X.452 Y-2.443 E.0514
+G1 X.274 Y-1.908 F21000
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X.786 Y-1.877 E.02899
+G1 X1.014 Y-1.835 E.01314
+G1 X1.081 Y-2.98 E.06482
+G1 X-1.092 Y-2.981 E.1228
+G1 X-1.023 Y-1.798 E.06696
+G1 X-.479 Y-1.873 E.03104
+G1 X.214 Y-1.905 E.03918
+G1 X.299 Y-1.351 F21000
+G1 F1615.57
+G1 X.952 Y-1.282 E.03708
+G1 X1.53 Y-1.116 E.034
+G1 X1.672 Y-3.536 E.13702
+G1 X-1.682 Y-3.538 E.18954
+G1 X-1.539 Y-1.071 E.1397
+G1 X-.858 Y-1.266 E.04002
+G1 X.24 Y-1.347 E.06219
+G1 X.325 Y-.795 F21000
+G1 F1615.57
+G1 X.806 Y-.744 E.02733
+G1 X1.337 Y-.6 E.0311
+G1 X1.59 Y-.484 E.01569
+M73 P30 R5
+G1 X2.032 Y-.146 E.03145
+G1 X2.262 Y-4.093 E.22345
+G1 X-2.273 Y-4.096 E.25628
+G1 X-2.043 Y-.139 E.22401
+G1 X-1.558 Y-.46 E.03283
+G1 X-1.322 Y-.565 E.01461
+G1 X-.714 Y-.727 E.03559
+G1 X.265 Y-.791 E.05544
+G1 X.351 Y-.238 F21000
+G1 F1615.57
+G1 X.661 Y-.206 E.01759
+G1 X1.192 Y-.062 E.0311
+G1 X1.594 Y.202 E.0272
+M73 P30 R4
+G1 X2.034 Y.673 E.03646
+G1 X2.495 Y1.447 E.05086
+G1 X2.853 Y-4.65 E.34512
+G1 X-2.863 Y-4.653 E.32302
+G1 X-2.503 Y1.414 E.34348
+G1 X-2.061 Y.7 E.04742
+G1 X-1.7 Y.294 E.03075
+G1 X-1.257 Y.008 E.02979
+G1 X-.57 Y-.189 E.04041
+G1 X.291 Y-.235 E.0487
+; WIPE_START
+G1 F16800
+G1 X-.57 Y-.189 E-.32748
+G1 X-1.257 Y.008 E-.27172
+G1 X-1.612 Y.238 E-.1608
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.4 F21000
+G1 X3.936 Y4.584 Z19.4
+M73 P31 R4
+G1 Z19
+G1 E.8 F420
+; FEATURE: Ironing
+; LINE_WIDTH: 0.40161
+; LAYER_HEIGHT: 0.0075
+G1 F1800
+G1 X-3.802 Y4.584 E.01177
+G1 X-3.951 Y4.482 E.00028
+G1 X-3.973 Y4.434 E.00008
+G1 X4.051 Y4.434 E.01221
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 19.2
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;19.2
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X2.051 Y4.434 E-.76
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;19.2
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z19.4 F21000
+G1 X-3.101 Y.878 Z19.4
+G1 Z19.2
+G1 E.8 F420
+; FEATURE: Inner wall
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X-3.455 Y-5.189 E.34348
+G1 X3.444 Y-5.188 E.38988
+G1 X3.091 Y.916 E.34553
+G1 X1.534 Y.952 E.08799
+G1 X1.31 Y.666 E.02054
+G1 X1.143 Y.553 E.01141
+G1 X.693 Y.353 E.02784
+G1 X.498 Y.334 E.01109
+G1 X-.463 Y.358 E.05429
+M73 P32 R4
+G1 X-.951 Y.466 E.02825
+G1 X-1.278 Y.655 E.02136
+G1 X-1.55 Y.946 E.02252
+G1 X-3.041 Y.881 E.08436
+G1 X-3.628 Y1.413 F21000
+G1 F1615.57
+G1 X-4.045 Y-5.747 E.40528
+G1 X4.035 Y-5.745 E.4566
+G1 X3.617 Y1.461 E.40791
+G1 X1.237 Y1.516 E.13455
+G1 X.944 Y1.086 E.02944
+G1 X.643 Y.921 E.01939
+G1 X.509 Y.891 E.00773
+G1 X-.364 Y.909 E.0494
+G1 X-.704 Y.965 E.01946
+G1 X-.941 Y1.102 E.01547
+G1 X-1.26 Y1.517 E.02956
+G1 X-3.568 Y1.415 E.13056
+; WIPE_START
+G1 F16800
+G1 X-3.701 Y-.58 E-.76
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.6 F21000
+G1 X-3.942 Y4.048 Z19.6
+G1 Z19.2
+G1 E.8 F420
+; FEATURE: Outer wall
+G1 F1615.57
+G1 X-4.069 Y3.418 E.03635
+G1 X-4.616 Y-5.977 E.5318
+M73 P33 R4
+G1 X-4.499 Y-6.206 E.01454
+G1 X-4.303 Y-6.304 E.01237
+G1 X4.318 Y-6.302 E.48722
+G1 X4.503 Y-6.194 E.0121
+G1 X4.555 Y-6.097 E.00623
+G1 X4.607 Y-5.996 E.0064
+G1 X4.078 Y3.14 E.51717
+G1 X3.934 Y4.112 E.05555
+G1 X.916 Y4.11 E.17057
+; LINE_WIDTH: 0.611813
+G1 F1582.02
+G1 X-.254 Y4.099 E.06752
+; LINE_WIDTH: 0.605828
+G1 F1598.84
+G1 X-.922 Y4.098 E.03816
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X-2.19 Y4.09 E.07165
+G1 X-3.882 Y4.05 E.09563
+; WIPE_START
+G1 F16800
+G1 X-4.069 Y3.418 E-.25046
+G1 X-4.147 Y2.079 E-.50954
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.6 F21000
+G1 X-.836 Y3.065 Z19.6
+G1 Z19.2
+G1 E.8 F420
+G1 F1615.57
+G1 X-.861 Y3.036 E.00215
+G1 X-1.074 Y2.378 E.0391
+G1 X-1.032 Y2.197 E.01052
+G1 X-.652 Y1.598 E.04008
+G1 X-.499 Y1.481 E.01088
+G1 X.379 Y1.434 E.04966
+G1 X.576 Y1.504 E.01182
+G1 X1.035 Y2.257 E.04985
+G1 X1.056 Y2.496 E.01358
+G1 X.848 Y3.05 E.03347
+G1 X.71 Y3.203 E.01165
+; LINE_WIDTH: 0.611813
+G1 F1582.02
+G1 X.132 Y3.491 E.03728
+; LINE_WIDTH: 0.61629
+G1 F1569.667
+G1 X.005 Y3.522 E.00758
+G1 X-.716 Y3.2 E.04596
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X-.796 Y3.11 E.0068
+G1 X-1.365 Y2.533 F21000
+; FEATURE: Top surface
+; LINE_WIDTH: 0.646478
+G1 F1491.157
+G1 X-1.996 Y1.903 E.05463
+G1 X-2.888 Y1.863 E.05471
+M73 P34 R4
+G1 X-1.32 Y3.432 E.13583
+G1 X-1.174 Y3.674 E.01727
+G1 X-1.933 Y3.672 E.04647
+G1 X-3.741 Y1.864 E.15657
+G1 X-3.688 Y2.771 E.05559
+G1 X-2.545 Y3.914 E.09903
+; WIPE_START
+G1 F16800
+G1 X-3.688 Y2.771 E-.61461
+G1 X-3.711 Y2.389 E-.14539
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.6 F21000
+G1 X2.829 Y1.646 Z19.6
+G1 Z19.2
+G1 E.8 F420
+; LINE_WIDTH: 0.634397
+G1 F1521.615
+G1 X3.696 Y2.513 E.07354
+G1 X3.662 Y3.097 E.0351
+G1 X3.634 Y3.288 E.01155
+G1 X2.257 Y1.91 E.11686
+G1 X1.439 Y1.929 E.04907
+G1 X3.205 Y3.696 E.14986
+G1 X2.368 Y3.694 E.05027
+G1 X1.53 Y2.856 E.07111
+G1 X1.32 Y3.483 E.03967
+G1 X1.781 Y3.944 E.03909
+; WIPE_START
+G1 F16800
+G1 X1.32 Y3.483 E-.24754
+G1 X1.53 Y2.856 E-.25125
+G1 X2.016 Y3.342 E-.26121
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.6 F21000
+G1 X-.397 Y-1.787 Z19.6
+M73 P35 R4
+G1 Z19.2
+G1 E.8 F420
+; FEATURE: Internal solid infill
+; LINE_WIDTH: 0.428897
+G1 F2331.749
+G1 X.763 Y-1.781 E.04542
+G1 X1.099 Y-1.735 E.01329
+G1 X1.124 Y-2.16 E.0167
+G1 X-1.124 Y-2.156 E.08798
+G1 X-1.098 Y-1.712 E.01744
+G1 X-.618 Y-1.778 E.01898
+G1 X-.457 Y-1.784 E.00628
+G1 X-.4 Y-1.319 F21000
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X.76 Y-1.312 E.06555
+G1 X1.224 Y-1.23 E.02661
+G1 X1.535 Y-1.114 E.01875
+G1 X1.622 Y-2.63 E.08582
+G1 X-1.632 Y-2.637 E.1839
+G1 X-1.541 Y-1.075 E.0884
+G1 X-.876 Y-1.274 E.0392
+G1 X-.46 Y-1.313 E.02365
+G1 X-.403 Y-.761 F21000
+G1 F1615.57
+G1 X.757 Y-.755 E.06555
+G1 X1.035 Y-.706 E.01596
+G1 X1.452 Y-.54 E.02533
+G1 X2.038 Y-.177 E.039
+G1 X2.213 Y-3.186 E.17035
+G1 X-2.222 Y-3.195 E.25062
+G1 X-2.047 Y-.191 E.17005
+G1 X-1.516 Y-.492 E.03452
+G1 X-1.002 Y-.677 E.03084
+G1 X-.463 Y-.758 E.03084
+G1 X-.406 Y-.204 F21000
+M73 P36 R4
+G1 F1615.57
+G1 X.754 Y-.198 E.06555
+G1 X1.167 Y-.061 E.02461
+G1 X1.636 Y.217 E.03076
+G1 X1.804 Y.389 E.0136
+G1 X2.565 Y.371 E.043
+G1 X2.803 Y-3.742 E.23283
+G1 X-2.813 Y-3.753 E.31735
+G1 X-2.574 Y.344 E.23191
+G1 X-1.787 Y.378 E.04452
+G1 X-1.61 Y.209 E.01384
+G1 X-1.327 Y.032 E.01885
+G1 X-.814 Y-.153 E.03084
+G1 X-.465 Y-.197 E.01984
+; WIPE_START
+G1 F16800
+G1 X-.814 Y-.153 E-.13339
+G1 X-1.327 Y.032 E-.2074
+G1 X-1.61 Y.209 E-.12678
+G1 X-1.787 Y.378 E-.09306
+G1 X-2.311 Y.355 E-.19937
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.6 F21000
+G1 X4.124 Y3.475 Z19.6
+G1 Z19.2
+G1 E.8 F420
+; FEATURE: Ironing
+; LINE_WIDTH: 0.40161
+; LAYER_HEIGHT: 0.0075
+G1 F1800
+G1 X4.124 Y2.403 E.00163
+G1 X3.974 Y2.407 E.00023
+G1 X3.974 Y4.017 E.00245
+G1 X3.956 Y4.137 E.00019
+G1 X3.824 Y4.138 E.0002
+G1 X3.824 Y2.41 E.00263
+G1 X3.674 Y2.414 E.00023
+G1 X3.674 Y4.139 E.00263
+G1 X3.524 Y4.14 E.00023
+G1 X3.524 Y2.417 E.00262
+G1 X3.374 Y2.42 E.00023
+G1 X3.374 Y4.141 E.00262
+M73 P37 R4
+G1 X3.224 Y4.143 E.00023
+G1 X3.224 Y2.424 E.00262
+G1 X3.074 Y2.427 E.00023
+G1 X3.074 Y4.144 E.00261
+G1 X2.924 Y4.145 E.00023
+G1 X2.924 Y2.431 E.00261
+G1 X2.774 Y2.434 E.00023
+G1 X2.774 Y4.146 E.0026
+G1 X2.624 Y4.146 E.00023
+G1 X2.624 Y2.438 E.0026
+G1 X2.474 Y2.441 E.00023
+G1 X2.474 Y4.145 E.00259
+G1 X2.324 Y4.144 E.00023
+G1 X2.324 Y2.445 E.00259
+G1 X2.174 Y2.448 E.00023
+G1 X2.174 Y4.143 E.00258
+G1 X2.024 Y4.142 E.00023
+G1 X2.024 Y2.452 E.00257
+G1 X1.874 Y2.455 E.00023
+G1 X1.874 Y4.141 E.00257
+G1 X1.724 Y4.14 E.00023
+G1 X1.724 Y2.459 E.00256
+G1 X1.574 Y2.462 E.00023
+G1 X1.574 Y4.139 E.00255
+G1 X1.424 Y4.138 E.00023
+G1 X1.424 Y2.398 E.00265
+G1 X1.274 Y2.765 F21000
+G1 F1800
+G1 X1.274 Y4.137 E.00209
+G1 X1.124 Y4.136 E.00023
+G1 X1.124 Y3.428 E.00108
+G1 X1.071 Y3.523 E.00017
+G1 X.974 Y3.558 E.00016
+G1 X.974 Y4.135 E.00088
+G1 X.824 Y4.134 E.00023
+G1 X.824 Y3.611 E.0008
+G1 X.674 Y3.664 E.00024
+G1 X.674 Y4.133 E.00071
+G1 X.524 Y4.132 E.00023
+G1 X.524 Y3.717 E.00063
+G1 X.374 Y3.771 E.00024
+G1 X.374 Y4.131 E.00055
+G1 X.224 Y4.13 E.00023
+G1 X.224 Y3.824 E.00047
+G1 X.074 Y3.877 E.00024
+G1 X.074 Y4.129 E.00038
+G1 X-.076 Y4.128 E.00023
+G1 X-.076 Y3.93 E.0003
+G1 X-.148 Y3.942 E.00011
+G1 X-.226 Y3.91 E.00013
+G1 X-.226 Y4.127 E.00033
+G1 X-.376 Y4.127 E.00023
+G1 X-.376 Y3.837 E.00044
+G1 X-.526 Y3.764 E.00025
+G1 X-.526 Y4.126 E.00055
+M73 P38 R4
+G1 X-.676 Y4.125 E.00023
+G1 X-.676 Y3.691 E.00066
+G1 X-.826 Y3.618 E.00025
+G1 X-.826 Y4.124 E.00077
+G1 X-.976 Y4.123 E.00023
+G1 X-.976 Y3.544 E.00088
+G1 X-1.03 Y3.518 E.00009
+G1 X-1.126 Y3.36 E.00028
+G1 X-1.126 Y4.122 E.00116
+G1 X-1.276 Y4.121 E.00023
+G1 X-1.276 Y2.981 E.00173
+G1 X-1.426 Y2.396 F21000
+G1 F1800
+G1 X-1.426 Y4.12 E.00262
+G1 X-1.576 Y4.119 E.00023
+G1 X-1.576 Y2.457 E.00253
+G1 X-1.726 Y2.451 E.00023
+G1 X-1.726 Y4.118 E.00254
+G1 X-1.876 Y4.117 E.00023
+G1 X-1.876 Y2.444 E.00255
+G1 X-2.026 Y2.437 E.00023
+G1 X-2.026 Y4.116 E.00255
+G1 X-2.176 Y4.115 E.00023
+G1 X-2.176 Y2.431 E.00256
+G1 X-2.326 Y2.424 E.00023
+G1 X-2.326 Y4.112 E.00257
+G1 X-2.476 Y4.108 E.00023
+G1 X-2.476 Y2.418 E.00257
+G1 X-2.626 Y2.411 E.00023
+G1 X-2.626 Y4.105 E.00258
+G1 X-2.776 Y4.101 E.00023
+G1 X-2.776 Y2.405 E.00258
+G1 X-2.926 Y2.398 E.00023
+G1 X-2.926 Y4.098 E.00259
+G1 X-3.076 Y4.092 E.00023
+G1 X-3.076 Y2.392 E.00259
+G1 X-3.226 Y2.385 E.00023
+G1 X-3.226 Y4.086 E.00259
+G1 X-3.376 Y4.084 E.00023
+G1 X-3.376 Y2.378 E.00259
+G1 X-3.526 Y2.372 E.00023
+G1 X-3.526 Y4.082 E.0026
+G1 X-3.676 Y4.081 E.00023
+G1 X-3.676 Y2.365 E.00261
+G1 X-3.826 Y2.359 E.00023
+M73 P39 R4
+G1 X-3.826 Y4.079 E.00262
+G1 X-3.965 Y4.077 E.00021
+G1 X-3.976 Y4.026 E.00008
+G1 X-3.976 Y2.352 E.00255
+G1 X-4.126 Y2.346 E.00023
+G1 X-4.126 Y3.65 E.00199
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 19.4
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;19.4
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-4.126 Y2.346 E-.49582
+G1 X-3.976 Y2.352 E-.05705
+G1 X-3.976 Y2.897 E-.20713
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;19.4
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z19.6 F21000
+G1 X-1.673 Y-1.144 Z19.6
+G1 Z19.4
+G1 E.8 F420
+; FEATURE: Inner wall
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X-1.942 Y-1.148 E.01521
+G1 X-3.225 Y-1.203 E.07256
+G1 X-3.456 Y-5.168 E.22447
+G1 X3.445 Y-5.169 E.38997
+G1 X3.214 Y-1.174 E.22617
+G1 X.773 Y-1.127 E.13793
+G1 X-.706 Y-1.129 E.08363
+G1 X-1.613 Y-1.143 E.05123
+G1 X-1.577 Y-.585 F21000
+G1 F1615.57
+G1 X-1.957 Y-.591 E.02147
+G1 X-3.751 Y-.668 E.10152
+G1 X-4.046 Y-5.725 E.28628
+G1 X4.035 Y-5.727 E.4567
+M73 P40 R4
+G1 X3.74 Y-.629 E.28858
+G1 X.801 Y-.57 E.16614
+G1 X-.707 Y-.572 E.08521
+G1 X-1.517 Y-.584 E.04577
+; WIPE_START
+G1 F16800
+G1 X-1.957 Y-.591 E-.16714
+G1 X-3.515 Y-.658 E-.59286
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.8 F21000
+G1 X-1.083 Y2.292 Z19.8
+G1 Z19.4
+G1 E.8 F420
+; FEATURE: Outer wall
+G1 F1615.57
+G1 X-1.098 Y2.202 E.00516
+G1 X-1.307 Y2.094 E.01331
+G1 X-4.073 Y1.972 E.15644
+G1 X-4.201 Y1.189 E.04489
+G1 X-4.618 Y-5.955 E.40438
+G1 X-4.508 Y-6.174 E.01383
+G1 X-4.313 Y-6.282 E.01265
+G1 X4.314 Y-6.284 E.48752
+G1 X4.496 Y-6.181 E.01182
+G1 X4.549 Y-6.086 E.00612
+G1 X4.608 Y-5.979 E.00689
+G1 X4.203 Y1.012 E.39577
+G1 X4.056 Y2.03 E.05808
+G1 X1.369 Y2.092 E.15189
+M73 P41 R4
+G1 X1.127 Y2.251 E.01638
+; LINE_WIDTH: 0.594221
+G1 F1632.502
+G1 X1.051 Y2.483 E.01364
+G1 X1.033 Y2.255 E.01278
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X.632 Y1.572 E.04478
+G1 X.516 Y1.464 E.00894
+G1 X.381 Y1.435 E.00779
+G1 X-.477 Y1.474 E.04856
+G1 X-.651 Y1.597 E.012
+G1 X-1.032 Y2.199 E.04031
+G1 X-1.039 Y2.29 E.00516
+; LINE_WIDTH: 0.572422
+G1 F1699.71
+G1 X-1.046 Y2.381 E.0049
+; LINE_WIDTH: 0.544845
+G1 F1793.097
+G1 X-1.024 Y2.38 E.00112
+; LINE_WIDTH: 0.501021
+G1 F1964.635
+G1 X-1.002 Y2.378 E.00102
+; LINE_WIDTH: 0.457196
+G1 F2172.467
+G1 X-.98 Y2.376 E.00092
+; LINE_WIDTH: 0.413371
+G1 F2429.473
+G1 X-.958 Y2.374 E.00083
+; LINE_WIDTH: 0.369546
+G1 F2755.445
+G1 X-.861 Y2.67 E.01032
+; LINE_WIDTH: 0.418943
+G1 F2393.475
+G1 X-.852 Y2.764 E.00358
+; LINE_WIDTH: 0.468339
+G1 F2115.562
+G1 X-.842 Y2.857 E.00405
+; LINE_WIDTH: 0.517736
+G1 F1895.474
+G1 X-.832 Y2.95 E.00452
+; LINE_WIDTH: 0.567132
+G1 F1716.864
+G1 X-.822 Y3.044 E.00499
+; LINE_WIDTH: 0.616528
+G1 F1569.016
+G1 X-.812 Y3.137 E.00546
+G1 X-.887 Y3.062 E.00613
+; LINE_WIDTH: 0.567132
+G1 F1716.864
+G1 X-.961 Y2.987 E.0056
+; LINE_WIDTH: 0.517736
+G1 F1895.474
+G1 X-1.035 Y2.912 E.00508
+; LINE_WIDTH: 0.468339
+G1 F2115.562
+G1 X-1.109 Y2.837 E.00455
+; LINE_WIDTH: 0.418943
+G1 F2393.475
+G1 X-1.183 Y2.762 E.00402
+; LINE_WIDTH: 0.369546
+G1 F2755.445
+G1 X-1.156 Y2.383 E.01259
+; LINE_WIDTH: 0.413371
+G1 F2429.473
+G1 X-1.135 Y2.383 E.00083
+; LINE_WIDTH: 0.457196
+G1 F2172.467
+G1 X-1.113 Y2.383 E.00092
+; LINE_WIDTH: 0.501021
+G1 F1964.635
+G1 X-1.091 Y2.383 E.00102
+; LINE_WIDTH: 0.544845
+G1 F1793.097
+G1 X-1.069 Y2.382 E.00112
+; LINE_WIDTH: 0.572422
+G1 F1699.71
+G1 X-1.074 Y2.352 E.00168
+; WIPE_START
+G1 F16800
+G1 X-1.098 Y2.202 E-.05748
+G1 X-1.307 Y2.094 E-.08952
+G1 X-2.919 Y2.023 E-.61301
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.8 F21000
+G1 X1.051 Y2.483 Z19.8
+G1 Z19.4
+G1 E.8 F420
+; LINE_WIDTH: 0.60069
+G1 F1613.568
+G1 X.849 Y3.05 E.03406
+; LINE_WIDTH: 0.64934
+G1 F1484.12
+G1 X.735 Y3.217 E.01244
+G1 X.429 Y3.345 E.02045
+; LINE_WIDTH: 0.609871
+G1 F1587.439
+G1 X.122 Y3.473 E.01912
+; LINE_WIDTH: 0.611113
+G1 F1583.969
+G1 X-.002 Y3.492 E.00719
+; LINE_WIDTH: 0.651824
+G1 F1478.066
+G1 X-.125 Y3.511 E.0077
+G1 X-.726 Y3.222 E.04122
+; LINE_WIDTH: 0.64797
+G1 F1487.48
+G1 X-.812 Y3.137 E.00741
+; WIPE_START
+G1 F16800
+G1 X-.726 Y3.222 E-.04587
+G1 X-.125 Y3.511 E-.25358
+G1 X-.002 Y3.492 E-.04739
+G1 X.122 Y3.473 E-.04739
+G1 X.429 Y3.345 E-.12635
+G1 X.735 Y3.217 E-.12635
+G1 X.849 Y3.05 E-.07683
+G1 X.881 Y2.96 E-.03626
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.8 F21000
+G1 X4.062 Y.55 Z19.8
+G1 Z19.4
+G1 E.8 F420
+; FEATURE: Top surface
+; LINE_WIDTH: 0.616085
+G1 F1570.228
+G1 X2.976 Y1.637 E.08936
+G1 X2.146 Y1.656 E.04826
+G1 X3.846 Y-.044 E.13978
+M73 P42 R4
+G1 X3.856 Y-.214 E.00988
+G1 X3.191 Y-.2 E.03863
+G1 X1.417 Y1.574 E.14592
+G1 X1.289 Y1.309 E.01711
+G1 X1.042 Y1.139 E.01745
+G1 X2.364 Y-.183 E.10875
+G1 X1.537 Y-.167 E.04812
+G1 X.562 Y.808 E.08018
+G1 X.529 Y.786 E.00231
+G1 X-.237 Y.797 E.04456
+G1 X.712 Y-.153 E.07808
+G1 X-.092 Y-.159 E.04677
+G1 X-1.9 Y1.649 E.14869
+G1 X-2.677 Y1.615 E.0452
+G1 X-.897 Y-.165 E.1464
+G1 X-1.701 Y-.171 E.04677
+G1 X-3.454 Y1.581 E.14411
+G1 X-3.724 Y1.57 E.01576
+G1 X-3.788 Y1.105 E.02727
+G1 X-2.487 Y-.196 E.10693
+G1 X-3.265 Y-.229 E.04523
+G1 X-4.07 Y.576 E.0662
+; WIPE_START
+G1 F16800
+G1 X-3.265 Y-.229 E-.43267
+G1 X-2.487 Y-.196 E-.29561
+G1 X-2.546 Y-.137 E-.03172
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.8 F21000
+G1 X.744 Y-2.834 Z19.8
+G1 Z19.4
+G1 E.8 F420
+; FEATURE: Internal solid infill
+; LINE_WIDTH: 0.668592
+G1 F1438.454
+G1 X1.603 Y-2.847 E.05455
+M73 P43 R4
+G1 X1.639 Y-3.465 E.03927
+G1 X-1.649 Y-3.465 E.20874
+G1 X-1.613 Y-2.847 E.03928
+G1 X.684 Y-2.834 E.14583
+G1 X.752 Y-2.241 F21000
+; LINE_WIDTH: 0.599999
+G1 F1615.57
+G1 X2.161 Y-2.268 E.07961
+G1 X2.264 Y-4.055 E.10118
+G1 X-2.275 Y-4.054 E.25652
+G1 X-2.171 Y-2.273 E.10084
+G1 X-.78 Y-2.243 E.07862
+G1 X.692 Y-2.241 E.08321
+G1 X.757 Y-1.684 F21000
+G1 F1615.57
+G1 X2.687 Y-1.72 E.10908
+G1 X2.855 Y-4.612 E.1637
+G1 X-2.865 Y-4.611 E.32324
+G1 X-2.698 Y-1.738 E.16265
+G1 X-1.926 Y-1.705 E.04364
+G1 X-.785 Y-1.686 E.0645
+G1 X.697 Y-1.684 E.08377
+; WIPE_START
+G1 F16800
+G1 X-.785 Y-1.686 E-.56327
+G1 X-1.303 Y-1.695 E-.19673
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.8 F21000
+G1 X-4.154 Y2.034 Z19.8
+M73 P44 R4
+G1 Z19.4
+G1 E.8 F420
+; FEATURE: Ironing
+; LINE_WIDTH: 0.40161
+; LAYER_HEIGHT: 0.0075
+G1 F1800
+G1 X-1.401 Y2.034 E.00419
+G1 X-1.389 Y1.884 E.00023
+G1 X-4.117 Y1.884 E.00415
+G1 X-4.15 Y1.734 E.00023
+G1 X-1.363 Y1.734 E.00424
+G1 X-1.196 Y1.584 E.00034
+M73 P44 R3
+G1 X-4.179 Y1.584 E.00454
+G1 X-4.197 Y1.434 E.00023
+G1 X-1.018 Y1.434 E.00484
+G1 X-.84 Y1.284 E.00035
+G1 X-4.215 Y1.284 E.00514
+G1 X-4.23 Y1.134 E.00023
+G1 X-.557 Y1.134 E.00559
+; WIPE_START
+G1 F16800
+G1 X-2.557 Y1.134 E-.76
+; WIPE_END
+G1 E-.04 F120
+G1 Z19.8 F21000
+G1 X1.338 Y2.034 Z19.8
+G1 Z19.4
+G1 E.8 F420
+G1 F1800
+G1 X4.082 Y2.034 E.00418
+G1 X4.105 Y1.884 E.00023
+G1 X1.341 Y1.884 E.00421
+M73 P45 R3
+G1 X1.268 Y1.734 E.00025
+G1 X4.128 Y1.734 E.00435
+G1 X4.15 Y1.584 E.00023
+G1 X1.195 Y1.584 E.0045
+G1 X1.111 Y1.434 E.00026
+G1 X4.173 Y1.434 E.00466
+G1 X4.193 Y1.284 E.00023
+G1 X.893 Y1.284 E.00502
+G1 X.676 Y1.134 E.0004
+G1 X4.213 Y1.134 E.00538
+G1 X4.23 Y.984 E.00023
+G1 X-4.238 Y.984 E.01289
+G1 X-4.247 Y.834 E.00023
+G1 X4.238 Y.834 E.01291
+G1 X4.247 Y.684 E.00023
+G1 X-4.256 Y.684 E.01294
+G1 X-4.265 Y.534 E.00023
+G1 X4.256 Y.534 E.01297
+G1 X4.265 Y.384 E.00023
+G1 X-4.341 Y.384 E.0131
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 19.6
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;19.6
+G92 E0
+
+; WIPE_START
+M73 P46 R3
+G1 F16800
+G1 X-2.341 Y.384 E-.76
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;19.6
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z19.8 F21000
+G1 X-.617 Y1.574 Z19.8
+G1 Z19.6
+G1 E.8 F420
+; FEATURE: Outer wall
+; LINE_WIDTH: 0.610295
+G1 F1586.253
+G1 X-.526 Y1.522 E.006
+; LINE_WIDTH: 0.648254
+G1 F1486.784
+G1 X-.435 Y1.471 E.0064
+; LINE_WIDTH: 0.686212
+G1 F1399.054
+G1 X-.345 Y1.42 E.0068
+G1 X.342 Y1.403 E.04479
+; LINE_WIDTH: 0.67227
+G1 F1430.047
+G1 X.464 Y1.462 E.00865
+; LINE_WIDTH: 0.631085
+G1 F1530.183
+G1 X.586 Y1.521 E.00808
+; LINE_WIDTH: 0.627593
+G1 F1539.323
+G1 X.652 Y1.59 E.00563
+; LINE_WIDTH: 0.665286
+G1 F1446.096
+G1 X.718 Y1.658 E.006
+; LINE_WIDTH: 0.702978
+G1 F1363.516
+G1 X.784 Y1.726 E.00636
+G1 X.92 Y1.982 E.01942
+; LINE_WIDTH: 0.676779
+G1 F1419.874
+G1 X1.057 Y2.238 E.01865
+; LINE_WIDTH: 0.652698
+G1 F1475.947
+G1 X1.087 Y2.304 E.00449
+G1 X.858 Y3.052 E.0484
+; LINE_WIDTH: 0.661466
+G1 F1455.025
+G1 X.741 Y3.221 E.01286
+G1 X.433 Y3.351 E.02099
+; LINE_WIDTH: 0.624897
+G1 F1546.453
+G1 X.125 Y3.481 E.01975
+; LINE_WIDTH: 0.623483
+G1 F1550.219
+G1 X-.001 Y3.497 E.00748
+; LINE_WIDTH: 0.658638
+G1 F1461.708
+G1 X-.127 Y3.514 E.00793
+G1 X-.728 Y3.225 E.04161
+; LINE_WIDTH: 0.656094
+G1 F1467.773
+G1 X-.816 Y3.136 E.00777
+; LINE_WIDTH: 0.620834
+G1 F1557.325
+G1 X-.826 Y3.039 E.00574
+; LINE_WIDTH: 0.570998
+G1 F1704.294
+G1 X-.837 Y2.942 E.00524
+; LINE_WIDTH: 0.521162
+G1 F1881.894
+G1 X-.848 Y2.845 E.00475
+; LINE_WIDTH: 0.471326
+G1 F2100.814
+G1 X-.859 Y2.747 E.00425
+; LINE_WIDTH: 0.42149
+G1 F2377.373
+G1 X-.87 Y2.65 E.00376
+; LINE_WIDTH: 0.415738
+G1 F2414.049
+G1 X-.907 Y2.608 E.00214
+; LINE_WIDTH: 0.459823
+G1 F2158.78
+G1 X-.945 Y2.565 E.00239
+; LINE_WIDTH: 0.503907
+G1 F1952.333
+G1 X-.982 Y2.523 E.00264
+; LINE_WIDTH: 0.547992
+G1 F1781.926
+G1 X-1.02 Y2.481 E.0029
+; LINE_WIDTH: 0.592076
+G1 F1638.879
+G1 X-1.057 Y2.438 E.00315
+G1 X-1.059 Y2.328 E.00613
+G1 X-1.057 Y2.438 E.00613
+G1 X-1.085 Y2.499 E.0037
+; LINE_WIDTH: 0.547992
+G1 F1781.926
+G1 X-1.112 Y2.559 E.0034
+; LINE_WIDTH: 0.503907
+G1 F1952.333
+G1 X-1.139 Y2.62 E.0031
+; LINE_WIDTH: 0.459823
+G1 F2158.78
+G1 X-1.167 Y2.68 E.00281
+; LINE_WIDTH: 0.415738
+G1 F2414.049
+G1 X-1.194 Y2.741 E.00251
+G1 X-1.172 Y2.19 F21000
+; LINE_WIDTH: 0.352949
+G1 F2902.954
+G1 X-1.142 Y2.028 E.00519
+; LINE_WIDTH: 0.384239
+G1 F2636.83
+G1 X-1.112 Y1.866 E.00571
+G1 X-1.058 Y1.82 E.00246
+; LINE_WIDTH: 0.431264
+G1 F2317.537
+G1 X-.948 Y1.759 E.00498
+; LINE_WIDTH: 0.478288
+G1 F2067.219
+G1 X-.837 Y1.697 E.00558
+; LINE_WIDTH: 0.525312
+G1 F1865.704
+G1 X-.727 Y1.635 E.00618
+; LINE_WIDTH: 0.572336
+G1 F1699.986
+G1 X-.617 Y1.574 E.00678
+G1 X-.631 Y1.608 E.00198
+; LINE_WIDTH: 0.554937
+G1 F1757.754
+G1 X-.688 Y1.741 E.00755
+; LINE_WIDTH: 0.508282
+G1 F1933.981
+G1 X-.745 Y1.875 E.00686
+; LINE_WIDTH: 0.461626
+G1 F2149.48
+G1 X-.801 Y2.009 E.00617
+; LINE_WIDTH: 0.414971
+G1 F2419.028
+G1 X-.858 Y2.143 E.00548
+; LINE_WIDTH: 0.368315
+G1 F2765.873
+G1 X-.915 Y2.276 E.0048
+; LINE_WIDTH: 0.371188
+G1 F2741.669
+G1 X-.944 Y2.287 E.00102
+; LINE_WIDTH: 0.420716
+G1 F2382.242
+G1 X-.973 Y2.297 E.00118
+; LINE_WIDTH: 0.470244
+G1 F2106.132
+G1 X-1.001 Y2.308 E.00133
+; LINE_WIDTH: 0.519772
+G1 F1887.379
+G1 X-1.03 Y2.318 E.00148
+; LINE_WIDTH: 0.5693
+G1 F1709.791
+G1 X-1.059 Y2.328 E.00164
+G1 X-1.082 Y2.301 E.0019
+; LINE_WIDTH: 0.519772
+G1 F1887.379
+G1 X-1.104 Y2.273 E.00172
+; LINE_WIDTH: 0.470244
+G1 F2106.132
+G1 X-1.127 Y2.245 E.00154
+; LINE_WIDTH: 0.420716
+G1 F2382.242
+G1 X-1.149 Y2.218 E.00136
+; LINE_WIDTH: 0.371188
+G1 F2741.669
+G1 X-1.172 Y2.19 E.00119
+G1 X-1.194 Y2.741 F21000
+; LINE_WIDTH: 0.371653
+G1 F2737.784
+G1 X-1.134 Y2.849 E.00414
+; LINE_WIDTH: 0.406935
+G1 F2472.427
+G1 X-1.081 Y2.897 E.00264
+; LINE_WIDTH: 0.449715
+G1 F2212.418
+G1 X-1.028 Y2.945 E.00295
+; LINE_WIDTH: 0.492495
+G1 F2001.893
+G1 X-.975 Y2.993 E.00326
+; LINE_WIDTH: 0.535275
+G1 F1827.952
+G1 X-.922 Y3.041 E.00357
+; LINE_WIDTH: 0.578055
+G1 F1681.821
+G1 X-.869 Y3.089 E.00388
+; LINE_WIDTH: 0.620834
+G1 F1557.325
+G1 X-.86 Y3.096 E.00067
+; WIPE_START
+G1 F16800
+G1 X-.826 Y3.039 E-.02521
+G1 X-.837 Y2.942 E-.03719
+G1 X-.848 Y2.845 E-.0372
+G1 X-.859 Y2.747 E-.03719
+G1 X-.87 Y2.65 E-.03719
+G1 X-.907 Y2.608 E-.02149
+G1 X-.945 Y2.565 E-.02149
+G1 X-.982 Y2.523 E-.02149
+G1 X-1.02 Y2.481 E-.02149
+G1 X-1.057 Y2.438 E-.02149
+G1 X-1.059 Y2.328 E-.04183
+G1 X-1.057 Y2.438 E-.04183
+G1 X-1.085 Y2.499 E-.02521
+G1 X-1.112 Y2.559 E-.02521
+G1 X-1.139 Y2.62 E-.02521
+G1 X-1.167 Y2.68 E-.02521
+G1 X-1.194 Y2.741 E-.02521
+G1 X-1.172 Y2.19 E-.20934
+G1 X-1.143 Y2.036 E-.05952
+; WIPE_END
+G1 E-.04 F120
+G1 Z20 F21000
+G1 X3.336 Y-3.264 Z20
+G1 Z19.6
+G1 E.8 F420
+; FEATURE: Inner wall
+; LINE_WIDTH: 0.599999
+M73 P47 R3
+G1 F1615.57
+G1 X1.877 Y-3.219 E.08249
+G1 X-1.963 Y-3.226 E.21703
+G1 X-3.348 Y-3.284 E.07835
+G1 X-3.457 Y-5.147 E.10546
+G1 X3.446 Y-5.151 E.39006
+G1 X3.34 Y-3.324 E.10343
+G1 X3.863 Y-2.718 F21000
+G1 F1615.57
+G1 X2.448 Y-2.691 E.07999
+G1 X1.905 Y-2.662 E.03073
+G1 X-1.975 Y-2.669 E.21925
+G1 X-3.875 Y-2.749 E.10745
+G1 X-4.047 Y-5.704 E.16729
+G1 X4.036 Y-5.708 E.45679
+G1 X3.866 Y-2.778 E.16586
+; WIPE_START
+G1 F16800
+G1 X2.448 Y-2.691 E-.54011
+G1 X1.905 Y-2.662 E-.20664
+G1 X1.87 Y-2.662 E-.01325
+; WIPE_END
+G1 E-.04 F120
+G1 Z20 F21000
+G1 X4.18 Y-.061 Z20
+G1 Z19.6
+G1 E.8 F420
+; FEATURE: Outer wall
+G1 F1615.57
+G1 X.841 Y.009 E.18872
+M73 P48 R3
+G1 X-.891 Y.007 E.0979
+G1 X-1.971 Y-.012 E.06102
+G1 X-4.201 Y-.108 E.12616
+G1 X-4.247 Y-.32 E.01227
+G1 X-4.334 Y-1.053 E.04168
+G1 X-4.619 Y-5.934 E.27629
+G1 X-4.518 Y-6.143 E.01311
+G1 X-4.322 Y-6.261 E.01294
+G1 X4.31 Y-6.265 E.48784
+G1 X4.488 Y-6.168 E.01146
+G1 X4.541 Y-6.077 E.00598
+G1 X4.608 Y-5.961 E.00755
+G1 X4.328 Y-1.115 E.2743
+G1 X4.188 Y-.12 E.0568
+; WIPE_START
+G1 F16800
+G1 X2.189 Y-.043 E-.76
+; WIPE_END
+G1 E-.04 F120
+G1 Z20 F21000
+G1 X3.086 Y-2.538 Z20
+G1 Z19.6
+G1 E.8 F420
+; FEATURE: Top surface
+; LINE_WIDTH: 0.625777
+G1 F1544.118
+G1 X3.942 Y-1.682 E.07156
+G1 X3.912 Y-1.157 E.03114
+G1 X3.879 Y-.922 E.01403
+G1 X2.523 Y-2.277 E.11337
+G1 X1.732 Y-2.244 E.04683
+G1 X3.511 Y-.465 E.14882
+G1 X2.704 Y-.448 E.04775
+G1 X.906 Y-2.246 E.15035
+G1 X.08 Y-2.247 E.04883
+G1 X1.896 Y-.431 E.15188
+M73 P49 R3
+G1 X1.089 Y-.414 E.04775
+G1 X-.746 Y-2.249 E.15341
+G1 X-1.571 Y-2.25 E.04883
+G1 X.269 Y-.41 E.15391
+G1 X-.556 Y-.411 E.0488
+G1 X-2.43 Y-2.284 E.15667
+G1 X-3.274 Y-2.304 E.04993
+G1 X-1.39 Y-.42 E.15756
+G1 X-2.236 Y-.442 E.05005
+G1 X-3.982 Y-2.188 E.146
+G1 X-3.931 Y-1.313 E.05184
+G1 X-2.835 Y-.217 E.09164
+; WIPE_START
+G1 F16800
+G1 X-3.931 Y-1.313 E-.58896
+G1 X-3.957 Y-1.762 E-.17104
+; WIPE_END
+G1 E-.04 F120
+G1 Z20 F21000
+G1 X1.835 Y-3.841 Z20
+G1 Z19.6
+G1 E.8 F420
+; FEATURE: Internal solid infill
+; LINE_WIDTH: 0.723699
+G1 F1322.016
+G1 X2.756 Y-3.868 E.06364
+G1 X2.795 Y-4.536 E.0462
+G1 X-2.806 Y-4.533 E.38674
+G1 X-2.767 Y-3.875 E.04555
+M73 P50 R3
+G1 X-1.943 Y-3.846 E.05698
+G1 X1.775 Y-3.841 E.25673
+; WIPE_START
+G1 F16800
+G1 X-.225 Y-3.844 E-.76
+; WIPE_END
+G1 E-.04 F120
+G1 Z20 F21000
+G1 X4.274 Y-.052 Z20
+G1 Z19.6
+G1 E.8 F420
+; FEATURE: Ironing
+; LINE_WIDTH: 0.40161
+; LAYER_HEIGHT: 0.0075
+G1 F1800
+G1 X4.274 Y-1.774 E.00262
+G1 X4.124 Y-1.77 E.00023
+G1 X4.124 Y-.034 E.00264
+G1 X3.974 Y-.03 E.00023
+G1 X3.974 Y-1.767 E.00264
+G1 X3.824 Y-1.763 E.00023
+G1 X3.824 Y-.027 E.00264
+G1 X3.674 Y-.023 E.00023
+G1 X3.674 Y-1.76 E.00264
+G1 X3.524 Y-1.756 E.00023
+G1 X3.524 Y-.019 E.00264
+G1 X3.374 Y-.016 E.00023
+G1 X3.374 Y-1.753 E.00264
+G1 X3.224 Y-1.749 E.00023
+G1 X3.224 Y-.012 E.00264
+G1 X3.074 Y-.009 E.00023
+G1 X3.074 Y-1.746 E.00264
+G1 X2.924 Y-1.743 E.00023
+G1 X2.924 Y-.005 E.00264
+G1 X2.774 Y-.002 E.00023
+G1 X2.774 Y-1.74 E.00265
+G1 X2.624 Y-1.739 E.00023
+G1 X2.624 Y.002 E.00265
+G1 X2.474 Y.005 E.00023
+M73 P51 R3
+G1 X2.474 Y-1.738 E.00265
+G1 X2.324 Y-1.737 E.00023
+G1 X2.324 Y.009 E.00266
+G1 X2.174 Y.012 E.00023
+G1 X2.174 Y-1.731 E.00265
+G1 X2.024 Y-1.716 E.00023
+G1 X2.024 Y.015 E.00263
+G1 X1.874 Y.018 E.00023
+G1 X1.874 Y-1.708 E.00263
+G1 X1.724 Y-1.709 E.00023
+G1 X1.724 Y.02 E.00263
+G1 X1.664 Y.022 E.00009
+G1 X1.574 Y.022 E.00014
+G1 X1.574 Y-1.709 E.00263
+G1 X1.424 Y-1.709 E.00023
+G1 X1.424 Y.023 E.00264
+G1 X1.274 Y.024 E.00023
+G1 X1.274 Y-1.709 E.00264
+G1 X1.124 Y-1.71 E.00023
+G1 X1.124 Y.025 E.00264
+G1 X.974 Y.026 E.00023
+G1 X.974 Y-1.71 E.00264
+G1 X.824 Y-1.71 E.00023
+G1 X.824 Y.034 E.00265
+G1 X.674 Y.034 E.00023
+G1 X.674 Y-1.711 E.00265
+G1 X.524 Y-1.711 E.00023
+G1 X.524 Y.033 E.00265
+G1 X.374 Y.033 E.00023
+G1 X.374 Y-1.711 E.00265
+G1 X.224 Y-1.711 E.00023
+G1 X.224 Y.033 E.00265
+G1 X.074 Y.033 E.00023
+G1 X.074 Y-1.712 E.00265
+G1 X-.076 Y-1.712 E.00023
+G1 X-.076 Y.033 E.00265
+G1 X-.226 Y.032 E.00023
+G1 X-.226 Y-1.712 E.00265
+M73 P52 R3
+G1 X-.376 Y-1.712 E.00023
+G1 X-.376 Y.032 E.00265
+G1 X-.526 Y.032 E.00023
+G1 X-.526 Y-1.713 E.00265
+G1 X-.676 Y-1.713 E.00023
+G1 X-.676 Y.032 E.00266
+G1 X-.826 Y.032 E.00023
+G1 X-.826 Y-1.713 E.00266
+G1 X-.976 Y-1.714 E.00023
+G1 X-.976 Y.023 E.00264
+G1 X-1.126 Y.021 E.00023
+G1 X-1.126 Y-1.714 E.00264
+G1 X-1.276 Y-1.714 E.00023
+G1 X-1.276 Y.02 E.00264
+G1 X-1.426 Y.018 E.00023
+G1 X-1.426 Y-1.714 E.00264
+G1 X-1.576 Y-1.715 E.00023
+G1 X-1.576 Y.017 E.00263
+G1 X-1.726 Y.015 E.00023
+G1 X-1.726 Y-1.715 E.00263
+G1 X-1.876 Y-1.715 E.00023
+G1 X-1.876 Y.013 E.00263
+G1 X-1.973 Y.012 E.00015
+G1 X-2.026 Y.01 E.00008
+G1 X-2.026 Y-1.716 E.00263
+G1 X-2.176 Y-1.734 E.00023
+G1 X-2.176 Y.004 E.00264
+G1 X-2.326 Y-.003 E.00023
+G1 X-2.326 Y-1.748 E.00266
+G1 X-2.476 Y-1.749 E.00023
+G1 X-2.476 Y-.009 E.00265
+G1 X-2.626 Y-.016 E.00023
+G1 X-2.626 Y-1.751 E.00264
+G1 X-2.776 Y-1.752 E.00023
+G1 X-2.776 Y-.022 E.00263
+G1 X-2.926 Y-.028 E.00023
+G1 X-2.926 Y-1.754 E.00263
+G1 X-3.076 Y-1.76 E.00023
+G1 X-3.076 Y-.035 E.00262
+M73 P53 R3
+G1 X-3.226 Y-.041 E.00023
+G1 X-3.226 Y-1.766 E.00262
+G1 X-3.376 Y-1.772 E.00023
+G1 X-3.376 Y-.048 E.00262
+G1 X-3.526 Y-.054 E.00023
+G1 X-3.526 Y-1.779 E.00262
+G1 X-3.676 Y-1.785 E.00023
+G1 X-3.676 Y-.061 E.00262
+G1 X-3.826 Y-.067 E.00023
+G1 X-3.826 Y-1.792 E.00262
+G1 X-3.976 Y-1.798 E.00023
+G1 X-3.976 Y-.074 E.00262
+G1 X-4.126 Y-.08 E.00023
+G1 X-4.126 Y-1.805 E.00262
+G1 X-4.276 Y-1.811 E.00023
+G1 X-4.276 Y-.019 E.00273
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 19.8
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;19.8
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-4.276 Y-1.811 E-.68106
+G1 X-4.126 Y-1.805 E-.05705
+G1 X-4.126 Y-1.747 E-.02189
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;19.8
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z20 F21000
+G1 X-.623 Y1.573 Z20
+G1 Z19.8
+G1 E.8 F420
+; FEATURE: Outer wall
+; LINE_WIDTH: 0.630804
+G1 F1530.914
+G1 X-.5 Y1.498 E.00859
+; LINE_WIDTH: 0.679502
+G1 F1413.801
+G1 X-.377 Y1.423 E.00931
+G1 X.346 Y1.401 E.04671
+; LINE_WIDTH: 0.678808
+G1 F1415.344
+G1 X.467 Y1.46 E.00869
+; LINE_WIDTH: 0.63907
+G1 F1509.687
+G1 X.589 Y1.518 E.00815
+; LINE_WIDTH: 0.63557
+G1 F1518.603
+G1 X.652 Y1.584 E.00547
+; LINE_WIDTH: 0.671808
+G1 F1431.097
+G1 X.716 Y1.649 E.00581
+; LINE_WIDTH: 0.708046
+G1 F1353.127
+G1 X.779 Y1.714 E.00614
+G1 X1.064 Y2.231 E.03983
+; LINE_WIDTH: 0.670216
+G1 F1434.729
+G1 X1.093 Y2.291 E.00422
+G1 X1.077 Y2.39 E.00638
+; LINE_WIDTH: 0.639194
+G1 F1509.373
+G1 X1.061 Y2.489 E.00606
+; LINE_WIDTH: 0.630428
+G1 F1531.894
+G1 X.864 Y3.054 E.03565
+; LINE_WIDTH: 0.657055
+G1 F1465.476
+G1 X.826 Y3.129 E.00525
+; LINE_WIDTH: 0.683682
+G1 F1404.578
+G1 X.787 Y3.203 E.00547
+G1 X.457 Y3.345 E.02335
+; LINE_WIDTH: 0.642527
+G1 F1500.983
+G1 X.127 Y3.487 E.02185
+; LINE_WIDTH: 0.633412
+G1 F1524.153
+G1 X-.001 Y3.502 E.00773
+; LINE_WIDTH: 0.665452
+G1 F1445.709
+G1 X-.13 Y3.517 E.00815
+G1 X-.73 Y3.229 E.04205
+; LINE_WIDTH: 0.664222
+G1 F1448.571
+G1 X-.776 Y3.191 E.00377
+G1 X-.831 Y3.147 F21000
+; LINE_WIDTH: 0.6459
+G1 F1492.587
+G1 X-.776 Y3.191 E.00431
+G1 X-.788 Y3.135 E.00351
+; LINE_WIDTH: 0.598463
+G1 F1620.039
+G1 X-.801 Y3.079 E.00323
+; LINE_WIDTH: 0.551025
+G1 F1771.289
+G1 X-.814 Y3.023 E.00296
+; LINE_WIDTH: 0.503587
+G1 F1953.689
+G1 X-.815 Y2.946 E.00359
+; LINE_WIDTH: 0.457279
+G1 F2172.03
+G1 X-.817 Y2.869 E.00323
+; LINE_WIDTH: 0.410971
+G1 F2445.313
+G1 X-.818 Y2.792 E.00287
+; LINE_WIDTH: 0.364663
+G1 F2797.264
+G1 X-.931 Y2.398 E.01336
+; LINE_WIDTH: 0.368825
+G1 F2761.541
+G1 X-.954 Y2.395 E.00077
+; LINE_WIDTH: 0.412688
+G1 F2433.959
+G1 X-.977 Y2.392 E.00087
+; LINE_WIDTH: 0.456551
+G1 F2175.852
+G1 X-1 Y2.389 E.00097
+; LINE_WIDTH: 0.500414
+G1 F1967.239
+G1 X-1.022 Y2.385 E.00108
+; LINE_WIDTH: 0.544277
+G1 F1795.128
+G1 X-1.045 Y2.382 E.00118
+; LINE_WIDTH: 0.58814
+G1 F1650.71
+G1 X-1.068 Y2.379 E.00128
+G1 X-1.067 Y2.332 E.00261
+G1 X-1.068 Y2.379 E.00261
+G1 X-1.091 Y2.388 E.00135
+; LINE_WIDTH: 0.544277
+G1 F1795.128
+G1 X-1.114 Y2.397 E.00124
+; LINE_WIDTH: 0.500414
+G1 F1967.239
+G1 X-1.137 Y2.405 E.00113
+; LINE_WIDTH: 0.456551
+G1 F2175.852
+G1 X-1.159 Y2.414 E.00102
+; LINE_WIDTH: 0.412688
+G1 F2433.959
+G1 X-1.182 Y2.423 E.00092
+; LINE_WIDTH: 0.368825
+G1 F2761.541
+G1 X-1.205 Y2.432 E.00081
+; LINE_WIDTH: 0.352768
+G1 F2904.655
+G1 X-1.189 Y2.619 E.00589
+G1 E-.8 F120
+M73 P54 R3
+G1 Z20.2 F21000
+G1 X-.692 Y1.738 Z20.2
+G1 Z19.8
+G1 E.8 F420
+; LINE_WIDTH: 0.51905
+G1 F1890.243
+G1 X-.748 Y1.873 E.00706
+; LINE_WIDTH: 0.47172
+G1 F2098.884
+G1 X-.805 Y2.008 E.00636
+; LINE_WIDTH: 0.42439
+G1 F2359.297
+G1 X-.862 Y2.142 E.00566
+; LINE_WIDTH: 0.37706
+G1 F2693.483
+G1 X-.918 Y2.277 E.00495
+; LINE_WIDTH: 0.372115
+G1 F2733.945
+G1 X-.943 Y2.286 E.00088
+; LINE_WIDTH: 0.4145
+G1 F2422.094
+G1 X-.968 Y2.295 E.00099
+; LINE_WIDTH: 0.456884
+G1 F2174.102
+G1 X-.993 Y2.304 E.00111
+; LINE_WIDTH: 0.499269
+G1 F1972.176
+G1 X-1.017 Y2.313 E.00122
+; LINE_WIDTH: 0.541654
+G1 F1804.572
+G1 X-1.042 Y2.322 E.00133
+; LINE_WIDTH: 0.584038
+G1 F1663.223
+G1 X-1.067 Y2.332 E.00145
+G1 X-1.086 Y2.308 E.00168
+; LINE_WIDTH: 0.541654
+G1 F1804.572
+G1 X-1.105 Y2.284 E.00155
+; LINE_WIDTH: 0.499269
+G1 F1972.176
+G1 X-1.125 Y2.26 E.00142
+; LINE_WIDTH: 0.456884
+G1 F2174.102
+G1 X-1.144 Y2.237 E.00129
+; LINE_WIDTH: 0.4145
+G1 F2422.094
+G1 X-1.163 Y2.213 E.00115
+; LINE_WIDTH: 0.372115
+G1 F2733.945
+G1 X-1.183 Y2.189 E.00102
+; LINE_WIDTH: 0.358662
+G1 F2850.428
+G1 X-1.156 Y2.038 E.00493
+; LINE_WIDTH: 0.387594
+G1 F2611.163
+G1 X-1.129 Y1.886 E.00538
+G1 X-1.077 Y1.84 E.00245
+; LINE_WIDTH: 0.436222
+G1 F2288.318
+G1 X-.963 Y1.773 E.00525
+; LINE_WIDTH: 0.48485
+G1 F2036.522
+G1 X-.85 Y1.707 E.0059
+; LINE_WIDTH: 0.533478
+G1 F1834.645
+G1 X-.737 Y1.64 E.00655
+; LINE_WIDTH: 0.582106
+G1 F1669.183
+G1 X-.623 Y1.573 E.00719
+G1 X-.635 Y1.603 E.00177
+; LINE_WIDTH: 0.566379
+G1 F1719.332
+G1 X-.692 Y1.738 E.00776
+G1 E-.8 F120
+G1 Z20.2 F21000
+G1 X-1.189 Y2.619 Z20.2
+G1 Z19.8
+G1 E.8 F420
+; LINE_WIDTH: 0.380573
+G1 F2665.458
+G1 X-1.174 Y2.806 E.00642
+G1 X-1.108 Y2.928 E.00477
+; LINE_WIDTH: 0.411536
+G1 F2441.566
+G1 X-1.052 Y2.972 E.00264
+; LINE_WIDTH: 0.458409
+G1 F2166.124
+G1 X-.997 Y3.016 E.00297
+; LINE_WIDTH: 0.505282
+G1 F1946.529
+G1 X-.942 Y3.059 E.00331
+; LINE_WIDTH: 0.552155
+G1 F1767.359
+G1 X-.886 Y3.103 E.00364
+; LINE_WIDTH: 0.599028
+G1 F1618.393
+G1 X-.878 Y3.11 E.00059
+; WIPE_START
+G1 F16800
+G1 X-.776 Y3.191 E-.04958
+G1 X-.788 Y3.135 E-.0218
+G1 X-.801 Y3.079 E-.0218
+G1 X-.814 Y3.023 E-.0218
+G1 X-.815 Y2.946 E-.02921
+G1 X-.817 Y2.869 E-.02921
+G1 X-.818 Y2.792 E-.02921
+G1 X-.931 Y2.398 E-.15558
+G1 X-.954 Y2.395 E-.00882
+G1 X-.977 Y2.392 E-.00882
+G1 X-1 Y2.389 E-.00882
+G1 X-1.022 Y2.385 E-.00882
+G1 X-1.045 Y2.382 E-.00882
+G1 X-1.068 Y2.379 E-.00882
+G1 X-1.067 Y2.332 E-.01792
+G1 X-1.068 Y2.379 E-.01792
+G1 X-1.091 Y2.388 E-.00928
+G1 X-1.114 Y2.397 E-.00928
+G1 X-1.137 Y2.405 E-.00928
+G1 X-1.159 Y2.414 E-.00928
+G1 X-1.182 Y2.423 E-.00928
+G1 X-1.205 Y2.432 E-.00928
+G1 X-1.189 Y2.619 E-.07123
+G1 X-.948 Y2.193 E-.18617
+; WIPE_END
+G1 E-.04 F120
+G1 Z20.2 F21000
+G1 X-3.999 Y-4.829 Z20.2
+G1 Z19.8
+G1 E.8 F420
+; FEATURE: Inner wall
+; LINE_WIDTH: 0.599999
+M73 P55 R3
+G1 F1615.57
+G1 X-4.048 Y-5.682 E.04833
+G1 X4.036 Y-5.69 E.45688
+G1 X3.985 Y-4.81 E.04983
+G1 X3.574 Y-4.803 E.02326
+G1 X3.008 Y-4.754 E.03209
+G1 X-3.079 Y-4.766 E.344
+G1 X-3.939 Y-4.825 E.04869
+; WIPE_START
+G1 F16800
+G1 X-4.048 Y-5.682 E-.32865
+G1 X-2.913 Y-5.683 E-.43135
+; WIPE_END
+G1 E-.04 F120
+G1 Z20.2 F21000
+G1 X-4.33 Y-2.189 Z20.2
+G1 Z19.8
+G1 E.8 F420
+; FEATURE: Outer wall
+G1 F1615.57
+G1 X-4.467 Y-3.294 E.06294
+G1 X-4.62 Y-5.912 E.14821
+G1 X-4.528 Y-6.111 E.01237
+G1 X-4.332 Y-6.239 E.01324
+G1 X4.307 Y-6.247 E.48817
+G1 X4.481 Y-6.155 E.01113
+G1 X4.609 Y-5.944 E.01398
+G1 X4.602 Y-5.818 E.00714
+G1 X4.453 Y-3.243 E.14574
+G1 X4.303 Y-2.151 E.0623
+G1 X2.478 Y-2.116 E.10315
+G1 X1.933 Y-2.083 E.03088
+G1 X-2.012 Y-2.09 E.2229
+G1 X-4.27 Y-2.186 E.12775
+; WIPE_START
+G1 F16800
+G1 X-4.467 Y-3.294 E-.42759
+M73 P56 R3
+G1 X-4.518 Y-4.167 E-.33241
+; WIPE_END
+G1 E-.04 F120
+G1 Z20.2 F21000
+G1 X3.567 Y-5.246 Z20.2
+G1 Z19.8
+G1 E.8 F420
+; FEATURE: Inner wall
+; LINE_WIDTH: 0.37377
+G1 F2720.266
+G1 X3.487 Y-5.245 E.00266
+; LINE_WIDTH: 0.420692
+G1 F2382.389
+G1 X2.985 Y-5.221 E.01927
+G1 X-3.078 Y-5.225 E.23237
+; LINE_WIDTH: 0.403376
+G1 F2496.838
+G1 X-3.582 Y-5.243 E.01843
+; WIPE_START
+G1 F16800
+G1 X-3.078 Y-5.225 E-.19154
+G1 X-1.582 Y-5.224 E-.56846
+; WIPE_END
+G1 E-.04 F120
+G1 Z20.2 F21000
+G1 X4.311 Y-3.688 Z20.2
+G1 Z19.8
+G1 E.8 F420
+; FEATURE: Top surface
+; LINE_WIDTH: 0.641802
+G1 F1502.8
+G1 X3.17 Y-2.547 E.09805
+G1 X2.306 Y-2.53 E.05247
+G1 X4.097 Y-4.321 E.15381
+G1 X4.101 Y-4.394 E.00444
+G1 X3.507 Y-4.384 E.03606
+G1 X3.291 Y-4.362 E.01318
+G1 X1.431 Y-2.502 E.15983
+G1 X.586 Y-2.504 E.05136
+G1 X2.419 Y-4.337 E.15756
+G1 X1.574 Y-4.339 E.05135
+G1 X-.26 Y-2.505 E.15757
+M73 P57 R3
+G1 X-1.105 Y-2.507 E.05136
+G1 X.729 Y-4.341 E.15758
+G1 X-.117 Y-4.342 E.05135
+G1 X-1.951 Y-2.508 E.15759
+G1 X-2.765 Y-2.541 E.04952
+G1 X-.962 Y-4.344 E.15493
+G1 X-1.807 Y-4.346 E.05135
+G1 X-3.578 Y-2.575 E.15211
+G1 X-3.963 Y-2.591 E.02343
+G1 X-4.01 Y-2.989 E.02435
+G1 X-2.652 Y-4.347 E.11665
+G1 X-3.115 Y-4.348 E.02809
+G1 X-3.456 Y-4.391 E.02089
+G1 X-4.314 Y-3.533 E.07369
+; WIPE_START
+G1 F16800
+G1 X-3.456 Y-4.391 E-.46091
+G1 X-3.115 Y-4.348 E-.13067
+G1 X-2.672 Y-4.347 E-.16842
+; WIPE_END
+G1 E-.04 F120
+G1 Z20.2 F21000
+G1 X-4.42 Y-2.166 Z20.2
+G1 Z19.8
+G1 E.8 F420
+; FEATURE: Ironing
+; LINE_WIDTH: 0.40161
+; LAYER_HEIGHT: 0.0075
+G1 F1800
+G1 X4.334 Y-2.166 E.01332
+G1 X4.357 Y-2.316 E.00023
+G1 X-4.376 Y-2.316 E.01329
+M73 P58 R3
+G1 X-4.394 Y-2.466 E.00023
+G1 X4.376 Y-2.466 E.01335
+G1 X4.396 Y-2.616 E.00023
+G1 X-4.412 Y-2.616 E.0134
+M73 P58 R2
+G1 X-4.429 Y-2.766 E.00023
+G1 X4.416 Y-2.766 E.01346
+G1 X4.435 Y-2.916 E.00023
+G1 X-4.447 Y-2.916 E.01352
+G1 X-4.465 Y-3.066 E.00023
+G1 X4.455 Y-3.066 E.01357
+G1 X4.474 Y-3.216 E.00023
+G1 X-4.483 Y-3.216 E.01363
+G1 X-4.496 Y-3.366 E.00023
+G1 X4.485 Y-3.366 E.01367
+G1 X4.494 Y-3.516 E.00023
+G1 X-4.505 Y-3.516 E.01369
+M73 P59 R2
+G1 X-4.514 Y-3.666 E.00023
+G1 X4.502 Y-3.666 E.01372
+G1 X4.511 Y-3.816 E.00023
+G1 X-4.59 Y-3.816 E.01385
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 20
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;20
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-2.59 Y-3.816 E-.76
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;20
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z20.2 F21000
+G1 X-.626 Y1.562 Z20.2
+G1 Z20
+G1 E.8 F420
+; FEATURE: Outer wall
+; LINE_WIDTH: 0.635476
+G1 F1424
+G1 X-.537 Y1.511 E.00616
+; LINE_WIDTH: 0.670896
+G1 X-.449 Y1.459 E.00653
+; LINE_WIDTH: 0.706316
+G1 F1356.656
+G1 X-.36 Y1.408 E.00689
+G1 X.343 Y1.398 E.04736
+; LINE_WIDTH: 0.689684
+G1 F1391.543
+G1 X.468 Y1.456 E.00902
+; LINE_WIDTH: 0.649282
+G1 F1424
+G1 X.592 Y1.515 E.00845
+; LINE_WIDTH: 0.642976
+G1 X.652 Y1.576 E.0052
+; LINE_WIDTH: 0.677071
+G1 F1419.221
+G1 X.712 Y1.637 E.0055
+; LINE_WIDTH: 0.711166
+G1 F1346.809
+G1 X.772 Y1.698 E.0058
+G1 X1.068 Y2.226 E.04103
+; LINE_WIDTH: 0.677114
+G1 F1419.124
+G1 X1.098 Y2.295 E.00485
+G1 X1.082 Y2.391 E.0063
+; LINE_WIDTH: 0.648248
+G1 F1424
+G1 X1.066 Y2.488 E.00601
+; LINE_WIDTH: 0.642664
+G1 X.87 Y3.055 E.03652
+; LINE_WIDTH: 0.669171
+G1 X.832 Y3.13 E.00537
+; LINE_WIDTH: 0.695678
+G1 F1378.765
+G1 X.794 Y3.206 E.0056
+G1 X.461 Y3.349 E.02398
+; LINE_WIDTH: 0.655202
+G1 F1424
+G1 X.129 Y3.493 E.02249
+; LINE_WIDTH: 0.659186
+G1 X-.058 Y3.538 E.01199
+; LINE_WIDTH: 0.674478
+G1 X-.731 Y3.234 E.04736
+G1 X-.88 Y3.046 E.01535
+; LINE_WIDTH: 0.686413
+G1 F1398.617
+G1 X-.959 Y2.88 E.01198
+; LINE_WIDTH: 0.728146
+G1 F1313.435
+G1 X-1.037 Y2.714 E.01275
+G1 X-1.049 Y2.587 E.00888
+; LINE_WIDTH: 0.683752
+G1 F1404.426
+G1 X-1.06 Y2.46 E.0083
+; LINE_WIDTH: 0.639357
+G1 F1424
+G1 X-1.072 Y2.333 E.00773
+; LINE_WIDTH: 0.594962
+G1 X-1.089 Y2.233 E.00566
+; LINE_WIDTH: 0.545677
+G1 X-1.105 Y2.133 E.00515
+; LINE_WIDTH: 0.496392
+G1 X-1.121 Y2.034 E.00465
+; LINE_WIDTH: 0.447107
+G1 X-1.138 Y1.934 E.00414
+; LINE_WIDTH: 0.397821
+G1 X-1.078 Y1.81 E.00496
+; LINE_WIDTH: 0.437424
+G1 X-.987 Y1.761 E.00412
+; LINE_WIDTH: 0.478082
+G1 X-.897 Y1.711 E.00455
+; LINE_WIDTH: 0.51874
+G1 X-.807 Y1.661 E.00498
+; LINE_WIDTH: 0.559398
+G1 X-.716 Y1.612 E.0054
+; LINE_WIDTH: 0.600056
+G1 X-.626 Y1.562 E.00583
+G1 X-.661 Y1.656 E.00563
+; LINE_WIDTH: 0.559398
+G1 X-.696 Y1.749 E.00522
+; LINE_WIDTH: 0.51874
+G1 X-.731 Y1.842 E.00481
+; LINE_WIDTH: 0.478082
+G1 X-.766 Y1.935 E.0044
+; LINE_WIDTH: 0.437424
+G1 X-.801 Y2.028 E.00398
+; LINE_WIDTH: 0.446315
+G1 X-.869 Y2.105 E.00417
+; LINE_WIDTH: 0.495864
+G1 X-.936 Y2.181 E.00468
+; LINE_WIDTH: 0.545413
+G1 X-1.004 Y2.257 E.0052
+; LINE_WIDTH: 0.594962
+G1 X-1.032 Y2.288 E.00235
+; WIPE_START
+G1 F16800
+G1 X-1.089 Y2.233 E-.03179
+G1 X-1.105 Y2.133 E-.04083
+G1 X-1.121 Y2.034 E-.04083
+G1 X-1.138 Y1.934 E-.04083
+G1 X-1.078 Y1.81 E-.05567
+G1 X-.987 Y1.761 E-.04166
+G1 X-.897 Y1.711 E-.04166
+G1 X-.807 Y1.661 E-.04166
+G1 X-.716 Y1.612 E-.04166
+G1 X-.626 Y1.562 E-.04166
+G1 X-.661 Y1.656 E-.04024
+G1 X-.696 Y1.749 E-.04024
+G1 X-.731 Y1.842 E-.04024
+G1 X-.766 Y1.935 E-.04024
+G1 X-.801 Y2.028 E-.04024
+G1 X-.869 Y2.105 E-.0412
+M73 P60 R2
+G1 X-.936 Y2.181 E-.0412
+G1 X-1.004 Y2.257 E-.0412
+G1 X-1.032 Y2.288 E-.01695
+; WIPE_END
+G1 E-.04 F120
+G1 Z20.4 F21000
+G1 X4.426 Y-4.241 Z20.4
+G1 Z20
+G1 E.8 F420
+; LINE_WIDTH: 0.599999
+G1 F1424
+G1 X3.566 Y-4.224 E.04861
+G1 X3.036 Y-4.175 E.03009
+G1 X-3.063 Y-4.187 E.34467
+G1 X-3.573 Y-4.242 E.02896
+G1 X-4.45 Y-4.271 E.0496
+G1 X-4.621 Y-5.891 E.09206
+G1 X-4.538 Y-6.079 E.01159
+G1 X-4.34 Y-6.218 E.01368
+G1 X4.303 Y-6.229 E.48842
+G1 X4.473 Y-6.143 E.01074
+G1 X4.61 Y-5.927 E.01448
+G1 X4.602 Y-5.795 E.00745
+G1 X4.578 Y-5.371 E.02401
+G1 X4.434 Y-4.3 E.06105
+; WIPE_START
+G1 F16800
+G1 X3.566 Y-4.224 E-.33107
+G1 X3.036 Y-4.175 E-.20232
+G1 X2.44 Y-4.177 E-.22661
+; WIPE_END
+G1 E-.04 F120
+G1 Z20.4 F21000
+G1 X3.298 Y-6.052 Z20.4
+G1 Z20
+G1 E.8 F420
+; FEATURE: Top surface
+; LINE_WIDTH: 0.612846
+G1 F1424
+G1 X4.135 Y-5.215 E.06844
+G1 X4.06 Y-4.651 E.03286
+G1 X3.896 Y-4.648 E.0095
+G1 X2.743 Y-5.801 E.09426
+G1 X1.937 Y-5.801 E.04659
+G1 X3.133 Y-4.604 E.09782
+M73 P61 R2
+G1 X2.337 Y-4.595 E.04603
+G1 X1.131 Y-5.801 E.09863
+G1 X.325 Y-5.801 E.04659
+G1 X1.53 Y-4.596 E.09849
+G1 X.722 Y-4.598 E.04669
+G1 X-.481 Y-5.801 E.09835
+G1 X-1.287 Y-5.8 E.04659
+G1 X-.085 Y-4.599 E.09822
+G1 X-.893 Y-4.601 E.04669
+G1 X-2.093 Y-5.8 E.09808
+G1 X-2.898 Y-5.8 E.04659
+G1 X-1.701 Y-4.602 E.09794
+G1 X-2.508 Y-4.604 E.04669
+G1 X-3.704 Y-5.8 E.09781
+G1 X-4.197 Y-5.8 E.02849
+G1 X-4.17 Y-5.46 E.01971
+G1 X-3.064 Y-4.354 E.09042
+; WIPE_START
+G1 F16800
+G1 X-4.17 Y-5.46 E-.59433
+G1 X-4.197 Y-5.8 E-.12953
+G1 X-4.102 Y-5.8 E-.03614
+; WIPE_END
+G1 E-.04 F120
+G1 Z20.4 F21000
+G1 X4.574 Y-4.633 Z20.4
+G1 Z20
+G1 E.8 F420
+; FEATURE: Ironing
+; LINE_WIDTH: 0.40161
+; LAYER_HEIGHT: 0.0075
+G1 F1424
+G1 X4.574 Y-5.934 E.00198
+G1 X4.424 Y-5.919 E.00023
+G1 X4.424 Y-4.214 E.00259
+M73 P62 R2
+G1 X4.274 Y-4.211 E.00023
+G1 X4.274 Y-5.904 E.00258
+G1 X4.124 Y-5.893 E.00023
+G1 X4.124 Y-4.207 E.00256
+G1 X3.974 Y-4.204 E.00023
+G1 X3.974 Y-5.893 E.00257
+G1 X3.824 Y-5.893 E.00023
+G1 X3.824 Y-4.202 E.00257
+G1 X3.674 Y-4.2 E.00023
+G1 X3.674 Y-5.893 E.00258
+G1 X3.524 Y-5.894 E.00023
+G1 X3.524 Y-4.198 E.00258
+G1 X3.374 Y-4.184 E.00023
+G1 X3.374 Y-5.894 E.0026
+G1 X3.224 Y-5.894 E.00023
+G1 X3.224 Y-4.169 E.00263
+G1 X3.074 Y-4.154 E.00023
+G1 X3.074 Y-5.895 E.00265
+G1 X2.924 Y-5.895 E.00023
+G1 X2.924 Y-4.151 E.00265
+G1 X2.774 Y-4.151 E.00023
+G1 X2.774 Y-5.895 E.00265
+G1 X2.624 Y-5.896 E.00023
+G1 X2.624 Y-4.151 E.00265
+G1 X2.474 Y-4.152 E.00023
+G1 X2.474 Y-5.896 E.00265
+G1 X2.324 Y-5.896 E.00023
+G1 X2.324 Y-4.152 E.00265
+G1 X2.174 Y-4.152 E.00023
+G1 X2.174 Y-5.896 E.00265
+G1 X2.024 Y-5.897 E.00023
+G1 X2.024 Y-4.152 E.00265
+G1 X1.874 Y-4.153 E.00023
+G1 X1.874 Y-5.897 E.00265
+G1 X1.724 Y-5.897 E.00023
+G1 X1.724 Y-4.153 E.00265
+G1 X1.574 Y-4.153 E.00023
+G1 X1.574 Y-5.898 E.00265
+M73 P63 R2
+G1 X1.424 Y-5.898 E.00023
+G1 X1.424 Y-4.154 E.00265
+G1 X1.274 Y-4.154 E.00023
+G1 X1.274 Y-5.898 E.00265
+G1 X1.124 Y-5.899 E.00023
+G1 X1.124 Y-4.154 E.00265
+G1 X.974 Y-4.154 E.00023
+G1 X.974 Y-5.899 E.00265
+G1 X.824 Y-5.899 E.00023
+G1 X.824 Y-4.155 E.00265
+G1 X.674 Y-4.155 E.00023
+G1 X.674 Y-5.899 E.00265
+G1 X.524 Y-5.9 E.00023
+G1 X.524 Y-4.155 E.00265
+G1 X.374 Y-4.156 E.00023
+G1 X.374 Y-5.9 E.00265
+G1 X.224 Y-5.9 E.00023
+G1 X.224 Y-4.156 E.00265
+G1 X.074 Y-4.156 E.00023
+G1 X.074 Y-5.901 E.00265
+G1 X-.076 Y-5.901 E.00023
+G1 X-.076 Y-4.156 E.00265
+G1 X-.226 Y-4.157 E.00023
+G1 X-.226 Y-5.901 E.00265
+G1 X-.376 Y-5.902 E.00023
+G1 X-.376 Y-4.157 E.00265
+G1 X-.526 Y-4.157 E.00023
+G1 X-.526 Y-5.902 E.00265
+G1 X-.676 Y-5.902 E.00023
+G1 X-.676 Y-4.158 E.00265
+G1 X-.826 Y-4.158 E.00023
+G1 X-.826 Y-5.902 E.00265
+G1 X-.976 Y-5.903 E.00023
+G1 X-.976 Y-4.158 E.00265
+G1 X-1.126 Y-4.158 E.00023
+G1 X-1.126 Y-5.903 E.00265
+G1 X-1.276 Y-5.903 E.00023
+G1 X-1.276 Y-4.159 E.00265
+M73 P64 R2
+G1 X-1.426 Y-4.159 E.00023
+G1 X-1.426 Y-5.904 E.00265
+G1 X-1.576 Y-5.904 E.00023
+G1 X-1.576 Y-4.159 E.00265
+G1 X-1.726 Y-4.16 E.00023
+G1 X-1.726 Y-5.904 E.00265
+G1 X-1.876 Y-5.905 E.00023
+G1 X-1.876 Y-4.16 E.00265
+G1 X-2.026 Y-4.16 E.00023
+G1 X-2.026 Y-5.905 E.00265
+G1 X-2.176 Y-5.905 E.00023
+G1 X-2.176 Y-4.161 E.00265
+G1 X-2.326 Y-4.161 E.00023
+G1 X-2.326 Y-5.905 E.00265
+G1 X-2.476 Y-5.906 E.00023
+G1 X-2.476 Y-4.161 E.00265
+G1 X-2.626 Y-4.161 E.00023
+G1 X-2.626 Y-5.906 E.00265
+G1 X-2.776 Y-5.906 E.00023
+G1 X-2.776 Y-4.162 E.00265
+G1 X-2.926 Y-4.162 E.00023
+G1 X-2.926 Y-5.907 E.00265
+G1 X-3.076 Y-5.907 E.00023
+G1 X-3.076 Y-4.162 E.00265
+G1 X-3.226 Y-4.175 E.00023
+G1 X-3.226 Y-5.907 E.00264
+G1 X-3.376 Y-5.908 E.00023
+G1 X-3.376 Y-4.193 E.00261
+G1 X-3.526 Y-4.212 E.00023
+G1 X-3.526 Y-5.908 E.00258
+G1 X-3.676 Y-5.908 E.00023
+G1 X-3.676 Y-4.218 E.00257
+G1 X-3.826 Y-4.22 E.00023
+G1 X-3.826 Y-5.908 E.00257
+G1 X-3.976 Y-5.909 E.00023
+G1 X-3.976 Y-4.224 E.00256
+G1 X-4.126 Y-4.23 E.00023
+G1 X-4.126 Y-5.909 E.00255
+M73 P65 R2
+G1 X-4.276 Y-5.91 E.00023
+G1 X-4.276 Y-4.236 E.00255
+G1 X-4.426 Y-4.243 E.00023
+G1 X-4.426 Y-5.928 E.00256
+G1 X-4.576 Y-5.947 E.00023
+G1 X-4.576 Y-4.546 E.00213
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 20.2
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;20.2
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-4.576 Y-5.947 E-.53226
+G1 X-4.426 Y-5.928 E-.05744
+G1 X-4.426 Y-5.48 E-.1703
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;20.2
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z20.4 F21000
+G1 X-.629 Y1.557 Z20.4
+G1 Z20.2
+G1 E.8 F420
+; FEATURE: Outer wall
+; LINE_WIDTH: 0.647044
+G1 F600
+G1 X-.535 Y1.505 E.00659
+; LINE_WIDTH: 0.682237
+G1 X-.441 Y1.453 E.00697
+; LINE_WIDTH: 0.71743
+G1 X-.347 Y1.401 E.00735
+G1 X.256 Y1.389 E.04129
+; LINE_WIDTH: 0.713478
+G1 X.408 Y1.407 E.0104
+; LINE_WIDTH: 0.67206
+G1 X.657 Y1.565 E.01885
+; LINE_WIDTH: 0.693949
+G1 X.735 Y1.652 E.00771
+; LINE_WIDTH: 0.73868
+G1 X.813 Y1.739 E.00824
+G1 X1.073 Y2.22 E.03856
+; LINE_WIDTH: 0.689814
+G1 X1.104 Y2.308 E.0061
+; LINE_WIDTH: 0.678872
+G1 X.877 Y3.056 E.05049
+; LINE_WIDTH: 0.703426
+G1 X.79 Y3.214 E.01203
+G1 X.46 Y3.356 E.02406
+; LINE_WIDTH: 0.665751
+G1 X.131 Y3.499 E.02269
+; LINE_WIDTH: 0.655441
+G1 X.019 Y3.52 E.00708
+; LINE_WIDTH: 0.682806
+G1 X-.093 Y3.541 E.0074
+G1 X-.733 Y3.237 E.04596
+G1 X-.921 Y3.124 F21000
+; LINE_WIDTH: 0.507911
+G1 F600
+G1 X-.974 Y3.085 E.00311
+; LINE_WIDTH: 0.46023
+G1 X-1.027 Y3.046 E.00279
+; LINE_WIDTH: 0.41255
+G1 X-1.081 Y3.007 E.00247
+; LINE_WIDTH: 0.388742
+G1 X-1.192 Y2.81 E.00795
+G1 X-1.207 Y2.625 E.0065
+; LINE_WIDTH: 0.362823
+G1 X-1.222 Y2.441 E.00601
+; LINE_WIDTH: 0.368778
+G1 X-1.184 Y2.191 E.00834
+; LINE_WIDTH: 0.400652
+G1 X-1.147 Y1.942 E.00915
+G1 X-1.061 Y1.783 E.00656
+; LINE_WIDTH: 0.439018
+G1 X-.974 Y1.738 E.00391
+; LINE_WIDTH: 0.482226
+G1 X-.888 Y1.693 E.00434
+; LINE_WIDTH: 0.525434
+G1 X-.802 Y1.647 E.00477
+; LINE_WIDTH: 0.568642
+G1 X-.716 Y1.602 E.00519
+; LINE_WIDTH: 0.61185
+G1 X-.629 Y1.557 E.00562
+G1 X-.643 Y1.595 E.00233
+; LINE_WIDTH: 0.590117
+G1 X-.699 Y1.732 E.00821
+; LINE_WIDTH: 0.540232
+G1 X-.755 Y1.869 E.00746
+; LINE_WIDTH: 0.490347
+G1 X-.811 Y2.005 E.00671
+; LINE_WIDTH: 0.440462
+G1 X-.867 Y2.142 E.00597
+; LINE_WIDTH: 0.390577
+G1 X-.923 Y2.279 E.00522
+; LINE_WIDTH: 0.340691
+G1 X-.936 Y2.406 E.00384
+; LINE_WIDTH: 0.364869
+G1 X-.792 Y2.869 E.01585
+; LINE_WIDTH: 0.41255
+G1 X-.787 Y2.931 E.00232
+; LINE_WIDTH: 0.46023
+G1 X-.782 Y2.993 E.00262
+; LINE_WIDTH: 0.507911
+G1 X-.777 Y3.054 E.00292
+; LINE_WIDTH: 0.555591
+G1 X-.772 Y3.116 E.00322
+; LINE_WIDTH: 0.603272
+G1 X-.766 Y3.178 E.00352
+; LINE_WIDTH: 0.650952
+G1 X-.761 Y3.24 E.00382
+G1 X-.814 Y3.201 E.00406
+; LINE_WIDTH: 0.603272
+G1 X-.868 Y3.162 E.00374
+; LINE_WIDTH: 0.555591
+G1 X-.872 Y3.159 E.0003
+; WIPE_START
+G1 F16800
+G1 X-.974 Y3.085 E-.04782
+G1 X-1.027 Y3.046 E-.02502
+G1 X-1.081 Y3.007 E-.02502
+G1 X-1.192 Y2.81 E-.08611
+G1 X-1.207 Y2.625 E-.07039
+G1 X-1.222 Y2.441 E-.07039
+G1 X-1.184 Y2.191 E-.09582
+G1 X-1.147 Y1.942 E-.09582
+G1 X-1.061 Y1.783 E-.06867
+G1 X-.974 Y1.738 E-.03701
+G1 X-.888 Y1.693 E-.03701
+G1 X-.802 Y1.647 E-.03701
+G1 X-.716 Y1.602 E-.03701
+G1 X-.653 Y1.569 E-.02691
+; WIPE_END
+G1 E-.04 F120
+G1 Z20.6 F21000
+G1 X-4.386 Y-6.208 Z20.6
+M73 P66 R2
+G1 Z20.2
+G1 E.8 F420
+; LINE_WIDTH: 0.431806
+G1 F600
+G1 X-4.255 Y-6.2 E.00517
+; LINE_WIDTH: 0.464794
+G1 X4.32 Y-6.209 E.36699
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 20.4
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;20.4
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X2.32 Y-6.207 E-.76
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;20.4
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z20.6 F21000
+G1 X-.841 Y3.12 Z20.6
+G1 Z20.4
+G1 E.8 F420
+; LINE_WIDTH: 0.699498
+G1 F600
+G1 X-.925 Y2.957 E.0122
+; LINE_WIDTH: 0.740776
+G1 X-1.03 Y2.756 E.01603
+G1 X-1.048 Y2.633 E.00886
+; LINE_WIDTH: 0.700934
+G1 X-1.067 Y2.509 E.00835
+; LINE_WIDTH: 0.661092
+G1 X-1.085 Y2.385 E.00785
+; LINE_WIDTH: 0.668713
+G1 X-1.049 Y2.246 E.00915
+; LINE_WIDTH: 0.716176
+G1 X-1.013 Y2.106 E.00984
+; LINE_WIDTH: 0.763638
+G1 X-.977 Y1.967 E.01054
+G1 X-.85 Y1.817 E.01435
+; LINE_WIDTH: 0.715518
+G1 X-.723 Y1.667 E.01339
+; LINE_WIDTH: 0.667398
+G1 X-.596 Y1.518 E.01243
+; LINE_WIDTH: 0.655408
+G1 X-.507 Y1.476 E.0061
+; LINE_WIDTH: 0.691538
+G1 X-.418 Y1.435 E.00646
+; LINE_WIDTH: 0.727668
+G1 X-.329 Y1.394 E.00682
+G1 X.332 Y1.387 E.04588
+; LINE_WIDTH: 0.715974
+G1 X.444 Y1.433 E.00829
+; LINE_WIDTH: 0.670134
+G1 X.557 Y1.479 E.00773
+; LINE_WIDTH: 0.665451
+G1 X.646 Y1.57 E.00804
+; LINE_WIDTH: 0.706608
+G1 X.736 Y1.66 E.00857
+; LINE_WIDTH: 0.747764
+G1 X.826 Y1.75 E.0091
+G1 X1.065 Y2.192 E.03589
+; LINE_WIDTH: 0.702128
+G1 X1.104 Y2.304 E.00799
+; LINE_WIDTH: 0.68096
+G1 X1.077 Y2.486 E.01187
+; LINE_WIDTH: 0.670481
+G1 X.953 Y2.83 E.02329
+; LINE_WIDTH: 0.698778
+G1 X.83 Y3.174 E.02434
+; LINE_WIDTH: 0.700674
+G1 X.733 Y3.247 E.00811
+G1 X.396 Y3.389 E.02441
+; LINE_WIDTH: 0.67279
+G1 X.058 Y3.532 E.02338
+; LINE_WIDTH: 0.689088
+G1 X-.137 Y3.527 E.01283
+; LINE_WIDTH: 0.704266
+G1 X-.705 Y3.263 E.04202
+G1 X-.808 Y3.169 E.00935
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 20.6
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;20.6
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.925 Y2.957 E-.09205
+G1 X-1.03 Y2.756 E-.08606
+G1 X-1.048 Y2.633 E-.04755
+G1 X-1.067 Y2.509 E-.04755
+G1 X-1.085 Y2.385 E-.04755
+G1 X-1.049 Y2.246 E-.05477
+G1 X-1.013 Y2.106 E-.05477
+G1 X-.977 Y1.967 E-.05477
+G1 X-.85 Y1.817 E-.07456
+G1 X-.723 Y1.667 E-.07456
+M73 P67 R2
+G1 X-.596 Y1.518 E-.07456
+G1 X-.507 Y1.476 E-.0373
+G1 X-.474 Y1.461 E-.01394
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;20.6
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z20.8 F21000
+G1 X-.844 Y3.121 Z20.8
+G1 Z20.6
+G1 E.8 F420
+; LINE_WIDTH: 0.706892
+G1 F600
+G1 X-.925 Y2.969 E.01161
+; LINE_WIDTH: 0.747042
+G1 X-1.027 Y2.775 E.01568
+G1 X-1.048 Y2.645 E.00935
+; LINE_WIDTH: 0.708813
+G1 X-1.07 Y2.516 E.00884
+; LINE_WIDTH: 0.670584
+G1 X-1.091 Y2.387 E.00834
+; LINE_WIDTH: 0.677871
+G1 X-1.055 Y2.25 E.00912
+; LINE_WIDTH: 0.723388
+G1 X-1.02 Y2.113 E.00977
+; LINE_WIDTH: 0.768904
+G1 X-.984 Y1.976 E.01042
+G1 X-.878 Y1.843 E.01253
+; LINE_WIDTH: 0.727914
+G1 X-.772 Y1.71 E.01182
+; LINE_WIDTH: 0.686924
+G1 X-.665 Y1.578 E.01111
+; LINE_WIDTH: 0.694484
+G1 X-.43 Y1.411 E.01904
+; LINE_WIDTH: 0.738038
+G1 X-.31 Y1.387 E.00866
+G1 X.334 Y1.385 E.04539
+; LINE_WIDTH: 0.723988
+G1 X.446 Y1.43 E.00838
+; LINE_WIDTH: 0.679066
+G1 X.559 Y1.475 E.00782
+; LINE_WIDTH: 0.674826
+G1 X.651 Y1.57 E.00847
+; LINE_WIDTH: 0.715507
+G1 X.744 Y1.664 E.00902
+; LINE_WIDTH: 0.756188
+G1 X.836 Y1.759 E.00956
+G1 X.974 Y2.025 E.02175
+; LINE_WIDTH: 0.729191
+G1 X1.113 Y2.292 E.02092
+; LINE_WIDTH: 0.702194
+G1 X1.082 Y2.485 E.01303
+; LINE_WIDTH: 0.701472
+G1 X.849 Y3.155 E.0474
+; LINE_WIDTH: 0.710926
+G1 X.735 Y3.252 E.01012
+G1 X.398 Y3.395 E.02483
+; LINE_WIDTH: 0.684897
+G1 X.061 Y3.538 E.02387
+; LINE_WIDTH: 0.69645
+G1 X-.14 Y3.53 E.01328
+; LINE_WIDTH: 0.715254
+G1 X-.685 Y3.279 E.04093
+G1 X-.812 Y3.171 E.01141
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 20.8
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;20.8
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.925 Y2.969 E-.08797
+G1 X-1.027 Y2.775 E-.0834
+G1 X-1.048 Y2.645 E-.04975
+G1 X-1.07 Y2.516 E-.04975
+G1 X-1.091 Y2.387 E-.04975
+G1 X-1.055 Y2.25 E-.05378
+G1 X-1.02 Y2.113 E-.05378
+G1 X-.984 Y1.976 E-.05378
+G1 X-.878 Y1.843 E-.06464
+G1 X-.772 Y1.71 E-.06464
+G1 X-.665 Y1.578 E-.06464
+G1 X-.485 Y1.45 E-.0841
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;20.8
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z21 F21000
+G1 X-.642 Y1.547 Z21
+G1 Z20.8
+G1 E.8 F420
+; LINE_WIDTH: 0.673383
+G1 F600
+G1 X-.527 Y1.475 E.00866
+; LINE_WIDTH: 0.704114
+G1 X-.412 Y1.404 E.00908
+; LINE_WIDTH: 0.750876
+G1 X.152 Y1.375 E.04051
+G1 X.274 Y1.387 E.00884
+; LINE_WIDTH: 0.72356
+G1 X.397 Y1.399 E.0085
+; LINE_WIDTH: 0.696244
+G1 X.672 Y1.562 E.02117
+; LINE_WIDTH: 0.721431
+G1 X.76 Y1.665 E.00937
+; LINE_WIDTH: 0.76505
+G1 X.848 Y1.769 E.00998
+G1 X.973 Y2.005 E.01952
+; LINE_WIDTH: 0.735562
+G1 X1.097 Y2.241 E.01873
+; LINE_WIDTH: 0.706074
+G1 X1.119 Y2.316 E.00531
+; LINE_WIDTH: 0.702694
+G1 X.896 Y3.061 E.05202
+; LINE_WIDTH: 0.724406
+G1 X.763 Y3.245 E.01571
+G1 X.45 Y3.381 E.02359
+; LINE_WIDTH: 0.696859
+G1 X.137 Y3.518 E.02263
+; LINE_WIDTH: 0.704232
+G1 X-.111 Y3.547 E.01679
+; LINE_WIDTH: 0.726208
+G1 X-.664 Y3.295 E.0421
+G1 X-.76 Y3.209 E.00892
+; LINE_WIDTH: 0.698403
+G1 X-.856 Y3.123 E.00856
+; LINE_WIDTH: 0.708075
+G1 X-.963 Y2.887 E.01753
+; LINE_WIDTH: 0.745552
+G1 X-1.07 Y2.65 E.01851
+G1 X-1.084 Y2.537 E.00813
+G1 X-1.071 Y2.498 F21000
+; LINE_WIDTH: 0.696928
+G1 F600
+G1 X-1.084 Y2.537 E.00269
+G1 X-1.103 Y2.479 E.00406
+; LINE_WIDTH: 0.648127
+G1 X-1.122 Y2.42 E.00376
+; LINE_WIDTH: 0.599325
+G1 X-1.141 Y2.362 E.00345
+; LINE_WIDTH: 0.550523
+G1 X-1.16 Y2.304 E.00315
+; LINE_WIDTH: 0.501722
+G1 X-1.179 Y2.246 E.00285
+; LINE_WIDTH: 0.45292
+G1 X-1.198 Y2.188 E.00255
+; LINE_WIDTH: 0.415634
+G1 X-1.168 Y1.938 E.0095
+; LINE_WIDTH: 0.416172
+G1 X-1.09 Y1.789 E.00639
+; LINE_WIDTH: 0.461468
+G1 X-1 Y1.74 E.00432
+; LINE_WIDTH: 0.506764
+G1 X-.91 Y1.692 E.00479
+; LINE_WIDTH: 0.55206
+G1 X-.821 Y1.644 E.00526
+; LINE_WIDTH: 0.597356
+G1 X-.731 Y1.595 E.00573
+; LINE_WIDTH: 0.642652
+G1 X-.642 Y1.547 E.00619
+G1 X-.654 Y1.583 E.00232
+; LINE_WIDTH: 0.621203
+G1 X-.696 Y1.691 E.00679
+; LINE_WIDTH: 0.579453
+G1 X-.738 Y1.799 E.0063
+; LINE_WIDTH: 0.537702
+G1 X-.78 Y1.906 E.00581
+; LINE_WIDTH: 0.495951
+G1 X-.822 Y2.014 E.00532
+; LINE_WIDTH: 0.4542
+G1 X-.864 Y2.122 E.00483
+; LINE_WIDTH: 0.412449
+G1 X-.906 Y2.23 E.00434
+; LINE_WIDTH: 0.410361
+G1 X-.944 Y2.268 E.002
+; LINE_WIDTH: 0.450024
+G1 X-.982 Y2.306 E.00222
+; LINE_WIDTH: 0.489686
+G1 X-1.02 Y2.344 E.00243
+; LINE_WIDTH: 0.531135
+G1 X-1.032 Y2.383 E.00201
+; LINE_WIDTH: 0.572583
+G1 X-1.045 Y2.421 E.00218
+; LINE_WIDTH: 0.614032
+G1 X-1.052 Y2.441 E.00123
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 21
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;21
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-1.084 Y2.537 E-.03823
+G1 X-1.103 Y2.479 E-.02325
+G1 X-1.122 Y2.42 E-.02325
+G1 X-1.141 Y2.362 E-.02325
+G1 X-1.16 Y2.304 E-.02325
+G1 X-1.179 Y2.246 E-.02325
+G1 X-1.198 Y2.188 E-.02325
+G1 X-1.168 Y1.938 E-.09546
+G1 X-1.09 Y1.789 E-.06411
+G1 X-1 Y1.74 E-.03869
+G1 X-.91 Y1.692 E-.03869
+G1 X-.821 Y1.644 E-.03869
+G1 X-.731 Y1.595 E-.03869
+G1 X-.642 Y1.547 E-.03869
+G1 X-.654 Y1.583 E-.01452
+M73 P68 R2
+G1 X-.696 Y1.691 E-.04396
+G1 X-.738 Y1.799 E-.04396
+G1 X-.78 Y1.906 E-.04396
+G1 X-.822 Y2.014 E-.04396
+G1 X-.859 Y2.109 E-.03886
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;21
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z21.2 F21000
+G1 X-1.085 Y2.578 Z21.2
+G1 Z21
+G1 E.8 F420
+; LINE_WIDTH: 0.759736
+G1 F600
+G1 X-1.022 Y2.811 E.01756
+G1 X-.923 Y2.992 E.01496
+; LINE_WIDTH: 0.721902
+G1 X-.825 Y3.172 E.01417
+; LINE_WIDTH: 0.710596
+G1 X-.734 Y3.242 E.00772
+; LINE_WIDTH: 0.737124
+G1 X-.644 Y3.311 E.00803
+G1 X-.117 Y3.549 E.04072
+; LINE_WIDTH: 0.711206
+G1 X.14 Y3.524 E.01745
+; LINE_WIDTH: 0.732554
+G1 X.753 Y3.255 E.04688
+G1 X.903 Y3.062 E.01706
+; LINE_WIDTH: 0.7061
+G1 X1.124 Y2.329 E.05149
+; LINE_WIDTH: 0.714144
+G1 X1.101 Y2.238 E.00643
+; LINE_WIDTH: 0.743999
+G1 X.981 Y2.009 E.0184
+; LINE_WIDTH: 0.773854
+G1 X.86 Y1.779 E.01919
+G1 X.776 Y1.685 E.00939
+; LINE_WIDTH: 0.73554
+G1 X.691 Y1.591 E.0089
+; LINE_WIDTH: 0.697226
+G1 X.606 Y1.497 E.0084
+; LINE_WIDTH: 0.696342
+G1 X.477 Y1.44 E.00934
+; LINE_WIDTH: 0.733772
+G1 X.349 Y1.382 E.00987
+; LINE_WIDTH: 0.756198
+G1 X-.28 Y1.376 E.04552
+G1 X-.379 Y1.397 E.00728
+; LINE_WIDTH: 0.723021
+G1 X-.477 Y1.417 E.00695
+; LINE_WIDTH: 0.689844
+G1 X-.646 Y1.542 E.01377
+; WIPE_START
+G1 F16800
+G1 X-.477 Y1.417 E-.07974
+G1 X-.379 Y1.397 E-.03826
+G1 X-.28 Y1.376 E-.03826
+G1 X.349 Y1.382 E-.23908
+G1 X.477 Y1.44 E-.05354
+G1 X.606 Y1.497 E-.05354
+G1 X.691 Y1.591 E-.04811
+G1 X.776 Y1.685 E-.04811
+G1 X.86 Y1.779 E-.04811
+G1 X.981 Y2.009 E-.09833
+G1 X.999 Y2.043 E-.01492
+; WIPE_END
+G1 E-.04 F120
+G1 Z21.4 F21000
+G1 X-1.06 Y2.501 Z21.4
+G1 Z21
+G1 E.8 F420
+; LINE_WIDTH: 0.682319
+G1 F600
+G1 X-1.072 Y2.539 E.00263
+; LINE_WIDTH: 0.725332
+G1 X-1.085 Y2.578 E.00281
+G1 X-1.105 Y2.522 E.00411
+; LINE_WIDTH: 0.675608
+G1 X-1.124 Y2.466 E.00381
+; LINE_WIDTH: 0.625884
+G1 X-1.143 Y2.41 E.00351
+; LINE_WIDTH: 0.57616
+G1 X-1.163 Y2.354 E.00321
+; LINE_WIDTH: 0.526436
+G1 X-1.182 Y2.298 E.00291
+; LINE_WIDTH: 0.476712
+G1 X-1.202 Y2.241 E.00261
+; LINE_WIDTH: 0.426988
+G1 X-1.221 Y2.185 E.00231
+; LINE_WIDTH: 0.418255
+G1 X-1.177 Y1.947 E.00923
+; LINE_WIDTH: 0.419231
+G1 X-1.108 Y1.794 E.0064
+; LINE_WIDTH: 0.466222
+G1 X-1.016 Y1.744 E.00452
+; LINE_WIDTH: 0.513212
+G1 X-.923 Y1.693 E.00502
+; LINE_WIDTH: 0.560202
+G1 X-.831 Y1.643 E.00552
+; LINE_WIDTH: 0.607192
+G1 X-.738 Y1.593 E.00603
+; LINE_WIDTH: 0.654182
+G1 X-.646 Y1.542 E.00653
+G1 X-.658 Y1.579 E.00238
+; LINE_WIDTH: 0.631908
+G1 X-.703 Y1.694 E.00736
+; LINE_WIDTH: 0.58771
+G1 X-.747 Y1.809 E.00681
+; LINE_WIDTH: 0.543512
+G1 X-.792 Y1.923 E.00626
+; LINE_WIDTH: 0.499314
+G1 X-.836 Y2.038 E.0057
+; LINE_WIDTH: 0.455116
+G1 X-.881 Y2.153 E.00515
+; LINE_WIDTH: 0.410918
+G1 X-.926 Y2.268 E.0046
+; LINE_WIDTH: 0.40023
+G1 X-.953 Y2.294 E.00138
+; LINE_WIDTH: 0.433741
+G1 X-.981 Y2.321 E.00151
+; LINE_WIDTH: 0.467251
+G1 X-1.008 Y2.347 E.00164
+; LINE_WIDTH: 0.510265
+G1 X-1.021 Y2.385 E.00192
+; LINE_WIDTH: 0.553278
+G1 X-1.034 Y2.424 E.0021
+; LINE_WIDTH: 0.596292
+G1 X-1.041 Y2.444 E.00119
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 21.2
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;21.2
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-1.072 Y2.539 E-.03822
+G1 X-1.085 Y2.578 E-.01542
+G1 X-1.105 Y2.522 E-.02255
+G1 X-1.124 Y2.466 E-.02255
+G1 X-1.143 Y2.41 E-.02255
+G1 X-1.163 Y2.354 E-.02255
+G1 X-1.182 Y2.298 E-.02255
+G1 X-1.202 Y2.241 E-.02255
+G1 X-1.221 Y2.185 E-.02255
+G1 X-1.177 Y1.947 E-.09216
+G1 X-1.108 Y1.794 E-.0637
+G1 X-1.016 Y1.744 E-.04
+G1 X-.923 Y1.693 E-.04
+G1 X-.831 Y1.643 E-.04
+G1 X-.738 Y1.593 E-.04
+G1 X-.646 Y1.542 E-.04
+G1 X-.658 Y1.579 E-.01457
+G1 X-.703 Y1.694 E-.04681
+G1 X-.747 Y1.809 E-.04681
+G1 X-.792 Y1.923 E-.04681
+G1 X-.828 Y2.016 E-.03763
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;21.2
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z21.4 F21000
+G1 X-.65 Y1.538 Z21.4
+G1 Z21.2
+G1 E.8 F420
+; LINE_WIDTH: 0.69034
+M73 P69 R2
+G1 F600
+G1 X-.501 Y1.422 E.0124
+; LINE_WIDTH: 0.728369
+G1 X-.382 Y1.396 E.00848
+; LINE_WIDTH: 0.766398
+G1 X-.263 Y1.369 E.00895
+G1 X.302 Y1.379 E.04151
+; WIPE_START
+G1 F16800
+G1 X-.263 Y1.369 E-.43052
+G1 X-.382 Y1.396 E-.09288
+G1 X-.501 Y1.422 E-.09288
+G1 X-.65 Y1.538 E-.14373
+; WIPE_END
+G1 E-.04 F120
+G1 Z21.6 F21000
+G1 X-.726 Y3.041 Z21.6
+G1 Z21.2
+G1 E.8 F420
+; LINE_WIDTH: 0.39546
+G1 F600
+G1 X-.547 Y3.168 E.00785
+G1 X-.074 Y3.388 E.01867
+; LINE_WIDTH: 0.380822
+G1 X.071 Y3.383 E.00495
+; LINE_WIDTH: 0.392069
+G1 X.667 Y3.108 E.02325
+G1 X.75 Y3.007 E.00463
+; LINE_WIDTH: 0.380951
+G1 X.947 Y2.428 E.02099
+; LINE_WIDTH: 0.383899
+G1 X.941 Y2.285 E.00493
+; LINE_WIDTH: 0.416522
+G1 X.724 Y1.92 E.01608
+; LINE_WIDTH: 0.449145
+G1 X.508 Y1.555 E.01749
+; LINE_WIDTH: 0.498353
+G1 X.473 Y1.526 E.00209
+; LINE_WIDTH: 0.54756
+G1 X.439 Y1.497 E.00231
+; LINE_WIDTH: 0.596767
+G1 X.405 Y1.467 E.00254
+; LINE_WIDTH: 0.645974
+G1 X.371 Y1.438 E.00276
+; LINE_WIDTH: 0.695181
+G1 X.337 Y1.408 E.00299
+; LINE_WIDTH: 0.744388
+G1 X.302 Y1.379 E.00321
+G1 X.351 Y1.359 E.00371
+; LINE_WIDTH: 0.701056
+G1 X.405 Y1.363 E.00363
+; LINE_WIDTH: 0.652516
+G1 X.459 Y1.367 E.00336
+; LINE_WIDTH: 0.603976
+G1 X.513 Y1.371 E.00309
+; LINE_WIDTH: 0.555436
+G1 X.567 Y1.375 E.00282
+; LINE_WIDTH: 0.506896
+G1 X.621 Y1.378 E.00256
+; LINE_WIDTH: 0.458356
+G1 X.676 Y1.382 E.00229
+; LINE_WIDTH: 0.409816
+G1 X.84 Y1.473 E.00698
+; LINE_WIDTH: 0.412761
+G1 X1.041 Y1.714 E.01178
+G1 X1.285 Y2.249 E.02204
+; LINE_WIDTH: 0.383079
+G1 X1.253 Y2.527 E.00968
+; LINE_WIDTH: 0.382476
+G1 X1.052 Y3.175 E.02335
+; LINE_WIDTH: 0.392069
+G1 X.808 Y3.427 E.01244
+G1 X.089 Y3.712 E.0274
+; LINE_WIDTH: 0.380822
+G1 X-.212 Y3.696 E.01031
+; LINE_WIDTH: 0.39546
+G1 X-.691 Y3.49 E.01867
+G1 X-.888 Y3.357 E.00847
+; LINE_WIDTH: 0.404542
+G1 X-1.169 Y2.931 E.01874
+G1 X-1.257 Y2.668 E.01019
+; LINE_WIDTH: 0.398389
+G1 X-1.265 Y2.461 E.00745
+; LINE_WIDTH: 0.394219
+G1 X-1.226 Y2.208 E.00912
+; LINE_WIDTH: 0.420893
+G1 X-1.186 Y1.956 E.00981
+; LINE_WIDTH: 0.422257
+G1 X-1.103 Y1.779 E.0075
+; LINE_WIDTH: 0.47095
+G1 X-1.013 Y1.731 E.00446
+; LINE_WIDTH: 0.519642
+G1 X-.922 Y1.683 E.00496
+; LINE_WIDTH: 0.568334
+G1 X-.831 Y1.635 E.00547
+; LINE_WIDTH: 0.617026
+G1 X-.741 Y1.587 E.00598
+; LINE_WIDTH: 0.665718
+G1 X-.65 Y1.538 E.00649
+G1 X-.662 Y1.575 E.00242
+; LINE_WIDTH: 0.642723
+G1 X-.71 Y1.705 E.00843
+; LINE_WIDTH: 0.594281
+G1 X-.758 Y1.835 E.00775
+; LINE_WIDTH: 0.545839
+G1 X-.806 Y1.965 E.00707
+; LINE_WIDTH: 0.497396
+G1 X-.855 Y2.095 E.00639
+; LINE_WIDTH: 0.448954
+G1 X-.903 Y2.225 E.00571
+; LINE_WIDTH: 0.400512
+G1 X-.951 Y2.354 E.00503
+; LINE_WIDTH: 0.398389
+G1 X-.919 Y2.559 E.00747
+G1 X-.749 Y2.986 E.01655
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 21.4
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;21.4
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.547 Y3.168 E-.10334
+G1 X-.074 Y3.388 E-.19837
+G1 X.071 Y3.383 E-.05492
+G1 X.667 Y3.108 E-.24945
+G1 X.75 Y3.007 E-.04972
+G1 X.838 Y2.747 E-.10421
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;21.4
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z21.6 F21000
+G1 X-1.035 Y1.703 Z21.6
+G1 Z21.4
+G1 E.8 F420
+; LINE_WIDTH: 0.425261
+G1 F600
+G1 X-.844 Y1.515 E.0104
+; LINE_WIDTH: 0.396582
+G1 X-.611 Y1.287 E.01168
+; LINE_WIDTH: 0.409806
+G1 X-.238 Y1.18 E.01447
+G1 X.403 Y1.201 E.02387
+; LINE_WIDTH: 0.397124
+G1 X.831 Y1.454 E.01784
+; LINE_WIDTH: 0.417105
+G1 X1.055 Y1.724 E.01334
+G1 X1.288 Y2.237 E.02138
+; LINE_WIDTH: 0.386782
+M73 P70 R2
+G1 X1.298 Y2.339 E.00356
+; LINE_WIDTH: 0.379041
+G1 X1.261 Y2.526 E.0065
+; LINE_WIDTH: 0.387825
+G1 X1.07 Y3.154 E.02298
+; LINE_WIDTH: 0.396651
+G1 X.801 Y3.438 E.01403
+G1 X.089 Y3.716 E.02742
+; LINE_WIDTH: 0.384566
+G1 X-.213 Y3.702 E.01048
+; LINE_WIDTH: 0.392099
+G1 X-.869 Y3.393 E.02567
+; LINE_WIDTH: 0.407781
+G1 X-1.166 Y2.951 E.01973
+G1 X-1.267 Y2.652 E.01166
+; LINE_WIDTH: 0.400413
+G1 X-1.274 Y2.465 E.00678
+; LINE_WIDTH: 0.423547
+G1 X-1.195 Y1.964 E.01959
+; LINE_WIDTH: 0.425261
+G1 X-1.077 Y1.746 E.00963
+; WIPE_START
+G1 F16800
+G1 X-.844 Y1.515 E-.12468
+G1 X-.611 Y1.287 E-.12366
+G1 X-.238 Y1.18 E-.14771
+G1 X.403 Y1.201 E-.24368
+G1 X.676 Y1.363 E-.12026
+; WIPE_END
+G1 E-.04 F120
+G1 Z21.8 F21000
+G1 X-.741 Y3.017 Z21.8
+G1 Z21.4
+G1 E.8 F420
+; LINE_WIDTH: 0.392194
+G1 F600
+G1 X-.75 Y3.006 E.00048
+; LINE_WIDTH: 0.375751
+G1 X-.953 Y2.428 E.02069
+; LINE_WIDTH: 0.373838
+G1 X-.938 Y2.287 E.00477
+; LINE_WIDTH: 0.399406
+G1 X-.862 Y2.136 E.00612
+; LINE_WIDTH: 0.425261
+G1 X-.785 Y1.985 E.00656
+G1 X-.657 Y1.809 E.00845
+; LINE_WIDTH: 0.392704
+G1 X-.53 Y1.632 E.00773
+; LINE_WIDTH: 0.37964
+G1 X-.405 Y1.562 E.0049
+; LINE_WIDTH: 0.397124
+G1 X.351 Y1.554 E.02715
+G1 X.547 Y1.643 E.00774
+; LINE_WIDTH: 0.388046
+G1 X.942 Y2.281 E.02629
+G1 X.95 Y2.426 E.00506
+; LINE_WIDTH: 0.387603
+G1 X.754 Y3.008 E.02147
+; LINE_WIDTH: 0.396651
+G1 X.657 Y3.115 E.0052
+G1 X.072 Y3.387 E.02314
+; LINE_WIDTH: 0.384566
+G1 X-.075 Y3.39 E.00509
+; LINE_WIDTH: 0.392194
+G1 X-.669 Y3.108 E.02328
+G1 X-.704 Y3.063 E.00201
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 21.6
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;21.6
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.75 Y3.006 E-.0279
+G1 X-.953 Y2.428 E-.23291
+G1 X-.938 Y2.287 E-.05399
+G1 X-.862 Y2.136 E-.06426
+G1 X-.785 Y1.985 E-.06426
+G1 X-.657 Y1.809 E-.08275
+G1 X-.53 Y1.632 E-.08275
+G1 X-.405 Y1.562 E-.05454
+G1 X-.15 Y1.559 E-.09664
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;21.6
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z21.8 F21000
+G1 X-1.004 Y1.662 Z21.8
+G1 Z21.6
+G1 E.8 F420
+; LINE_WIDTH: 0.42824
+G1 F600
+G1 X-.853 Y1.511 E.00834
+; LINE_WIDTH: 0.399195
+G1 X-.635 Y1.293 E.01114
+; LINE_WIDTH: 0.414994
+G1 X-.219 Y1.171 E.01636
+G1 X.405 Y1.197 E.02356
+; LINE_WIDTH: 0.401521
+G1 X.782 Y1.406 E.01568
+; LINE_WIDTH: 0.421417
+G1 X1.07 Y1.734 E.01679
+G1 X1.29 Y2.226 E.0207
+; LINE_WIDTH: 0.390585
+G1 X1.302 Y2.336 E.0039
+; LINE_WIDTH: 0.381556
+G1 X1.269 Y2.525 E.00657
+; LINE_WIDTH: 0.390663
+G1 X1.053 Y3.177 E.02423
+; LINE_WIDTH: 0.401243
+G1 X.793 Y3.45 E.01371
+G1 X.234 Y3.694 E.02218
+; LINE_WIDTH: 0.386102
+G1 X.089 Y3.72 E.00512
+; LINE_WIDTH: 0.388328
+G1 X-.215 Y3.708 E.01065
+; LINE_WIDTH: 0.396235
+G1 X-.871 Y3.399 E.02598
+; LINE_WIDTH: 0.411047
+M73 P71 R2
+G1 X-1.164 Y2.971 E.01939
+G1 X-1.276 Y2.637 E.01316
+; LINE_WIDTH: 0.402407
+G1 X-1.283 Y2.47 E.0061
+; LINE_WIDTH: 0.426217
+G1 X-1.205 Y1.973 E.01955
+; LINE_WIDTH: 0.42824
+G1 X-1.071 Y1.728 E.01089
+G1 X-1.047 Y1.704 E.00136
+; WIPE_START
+G1 F16800
+G1 X-.853 Y1.511 E-.10392
+G1 X-.635 Y1.293 E-.11709
+G1 X-.219 Y1.171 E-.1647
+G1 X.405 Y1.197 E-.23721
+G1 X.72 Y1.372 E-.13707
+; WIPE_END
+G1 E-.04 F120
+G1 Z22 F21000
+G1 X-.717 Y3.025 Z22
+G1 Z21.6
+G1 E.8 F420
+; LINE_WIDTH: 0.411047
+G1 F600
+G1 X-.719 Y3.022 E.00014
+G1 X-.84 Y2.803 E.00935
+G1 X-.956 Y2.357 E.0172
+; LINE_WIDTH: 0.39576
+G1 X-.867 Y2.164 E.00762
+; LINE_WIDTH: 0.42824
+G1 X-.777 Y1.971 E.00832
+G1 X-.644 Y1.79 E.00876
+; LINE_WIDTH: 0.395928
+G1 X-.512 Y1.61 E.00803
+; LINE_WIDTH: 0.381693
+G1 X-.403 Y1.559 E.00412
+; LINE_WIDTH: 0.401521
+G1 X.351 Y1.553 E.02744
+G1 X.55 Y1.643 E.00794
+; LINE_WIDTH: 0.392192
+G1 X.944 Y2.278 E.02647
+G1 X.952 Y2.424 E.0052
+; LINE_WIDTH: 0.393833
+G1 X.763 Y2.992 E.0213
+; LINE_WIDTH: 0.401243
+G1 X.645 Y3.123 E.0064
+G1 X.092 Y3.381 E.02218
+; LINE_WIDTH: 0.388328
+G1 X-.077 Y3.391 E.00595
+; LINE_WIDTH: 0.396307
+G1 X-.669 Y3.11 E.02351
+; LINE_WIDTH: 0.411047
+G1 X-.688 Y3.077 E.00139
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 21.8
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;21.8
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.719 Y3.022 E-.02418
+G1 X-.84 Y2.803 E-.09512
+G1 X-.956 Y2.357 E-.17497
+G1 X-.867 Y2.164 E-.08092
+G1 X-.777 Y1.971 E-.08092
+G1 X-.644 Y1.79 E-.08521
+G1 X-.512 Y1.61 E-.08521
+G1 X-.403 Y1.559 E-.04557
+G1 X-.172 Y1.557 E-.0879
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;21.8
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z22 F21000
+G1 X-.973 Y1.619 Z22
+G1 Z21.8
+G1 E.8 F420
+; LINE_WIDTH: 0.431194
+G1 F600
+G1 X-.862 Y1.506 E.00621
+; LINE_WIDTH: 0.402243
+G1 X-.658 Y1.299 E.01061
+; LINE_WIDTH: 0.420219
+G1 X-.2 Y1.163 E.01828
+G1 X.406 Y1.192 E.02324
+; LINE_WIDTH: 0.40592
+G1 X.788 Y1.4 E.01601
+; LINE_WIDTH: 0.425698
+G1 X1.084 Y1.745 E.01765
+G1 X1.293 Y2.215 E.01998
+; LINE_WIDTH: 0.394487
+G1 X1.308 Y2.376 E.00576
+; LINE_WIDTH: 0.400309
+G1 X1.182 Y2.884 E.01898
+G1 X1.056 Y3.177 E.01156
+; LINE_WIDTH: 0.405883
+G1 X.785 Y3.461 E.01446
+G1 X.266 Y3.691 E.02089
+; LINE_WIDTH: 0.394448
+G1 X-.128 Y3.73 E.01411
+; LINE_WIDTH: 0.411649
+G1 X-.63 Y3.546 E.01999
+G1 X-.873 Y3.405 E.01053
+; LINE_WIDTH: 0.414341
+G1 X-1.162 Y2.991 E.01904
+G1 X-1.286 Y2.621 E.01468
+; LINE_WIDTH: 0.404365
+G1 X-1.292 Y2.474 E.00542
+; LINE_WIDTH: 0.428905
+G1 X-1.214 Y1.982 E.0195
+; LINE_WIDTH: 0.431194
+G1 X-1.067 Y1.714 E.01203
+G1 X-1.015 Y1.661 E.00289
+; WIPE_START
+G1 F16800
+G1 X-.862 Y1.506 E-.08275
+G1 X-.658 Y1.299 E-.11066
+G1 X-.2 Y1.163 E-.18145
+M73 P72 R2
+G1 X.406 Y1.192 E-.23076
+G1 X.763 Y1.386 E-.15438
+; WIPE_END
+G1 E-.04 F120
+G1 Z22.2 F21000
+G1 X-.73 Y3.046 Z22.2
+G1 Z21.8
+G1 E.8 F420
+; LINE_WIDTH: 0.404365
+M73 P72 R1
+G1 F600
+G1 X-.942 Y2.51 E.02113
+G1 X-.943 Y2.381 E.00474
+G1 X-.943 Y2.347 E.00125
+G1 X-.943 Y2.289 E.00212
+; LINE_WIDTH: 0.431194
+G1 X-.77 Y1.957 E.01475
+G1 X-.616 Y1.766 E.00967
+; LINE_WIDTH: 0.401282
+G1 X-.497 Y1.616 E.00695
+G1 X-.478 Y1.593 E.00108
+G1 X-.463 Y1.574 E.0009
+; LINE_WIDTH: 0.420219
+G1 X-.213 Y1.54 E.00964
+G1 X.352 Y1.552 E.02163
+; LINE_WIDTH: 0.40592
+G1 X.554 Y1.643 E.00816
+; LINE_WIDTH: 0.396329
+G1 X.946 Y2.274 E.02664
+G1 X.956 Y2.423 E.00534
+; LINE_WIDTH: 0.401579
+G1 X.778 Y2.961 E.02063
+G1 X.668 Y3.11 E.00672
+; LINE_WIDTH: 0.397153
+G1 X.12 Y3.372 E.02183
+; LINE_WIDTH: 0.394448
+G1 X-.079 Y3.393 E.00713
+; LINE_WIDTH: 0.400423
+G1 X-.67 Y3.112 E.02375
+G1 X-.69 Y3.091 E.00106
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 22
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;22
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.942 Y2.51 E-.24047
+G1 X-.943 Y2.381 E-.04907
+G1 X-.943 Y2.347 E-.01298
+G1 X-.943 Y2.289 E-.02194
+G1 X-.77 Y1.957 E-.14229
+G1 X-.616 Y1.766 E-.09328
+G1 X-.497 Y1.616 E-.07263
+G1 X-.478 Y1.593 E-.01125
+G1 X-.463 Y1.574 E-.00941
+G1 X-.213 Y1.54 E-.09573
+G1 X-.184 Y1.54 E-.01096
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;22
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z22.2 F21000
+G1 X-.943 Y1.575 Z22.2
+G1 Z22
+G1 E.8 F420
+; LINE_WIDTH: 0.434128
+G1 F600
+G1 X-.872 Y1.502 E.00404
+; LINE_WIDTH: 0.405729
+G1 X-.681 Y1.305 E.01008
+; LINE_WIDTH: 0.425484
+G1 X-.182 Y1.154 E.02025
+G1 X.408 Y1.187 E.02291
+; LINE_WIDTH: 0.410323
+G1 X.794 Y1.393 E.01634
+; LINE_WIDTH: 0.429946
+G1 X1.086 Y1.726 E.01735
+G1 X1.295 Y2.204 E.02049
+; LINE_WIDTH: 0.398495
+G1 X1.31 Y2.331 E.00462
+; LINE_WIDTH: 0.386585
+G1 X1.286 Y2.522 E.0067
+; LINE_WIDTH: 0.405869
+G1 X1.131 Y3.055 E.02043
+G1 X1.059 Y3.177 E.00525
+; LINE_WIDTH: 0.410582
+G1 X.777 Y3.473 E.01523
+G1 X.299 Y3.689 E.01958
+; LINE_WIDTH: 0.40273
+G1 X-.141 Y3.733 E.01612
+; LINE_WIDTH: 0.417114
+G1 X-.479 Y3.627 E.01345
+G1 X-.878 Y3.409 E.01726
+; LINE_WIDTH: 0.417631
+G1 X-1.16 Y3.01 E.0186
+G1 X-1.295 Y2.606 E.01618
+; LINE_WIDTH: 0.40629
+G1 X-1.301 Y2.478 E.00473
+; LINE_WIDTH: 0.431607
+G1 X-1.223 Y1.99 E.01946
+; LINE_WIDTH: 0.434128
+G1 X-1.062 Y1.699 E.01321
+G1 X-.984 Y1.618 E.00445
+; WIPE_START
+G1 F16800
+G1 X-.872 Y1.502 E-.06148
+G1 X-.681 Y1.305 E-.10409
+G1 X-.182 Y1.154 E-.19829
+G1 X.408 Y1.187 E-.22432
+G1 X.794 Y1.393 E-.16658
+G1 X.804 Y1.404 E-.00524
+; WIPE_END
+G1 E-.04 F120
+G1 Z22.4 F21000
+G1 X-.732 Y3.046 Z22.4
+M73 P73 R1
+G1 Z22
+G1 E.8 F420
+; LINE_WIDTH: 0.40629
+G1 F600
+G1 X-.949 Y2.494 E.02188
+G1 X-.947 Y2.372 E.0045
+G1 X-.947 Y2.354 E.00064
+G1 X-.946 Y2.29 E.00237
+; LINE_WIDTH: 0.434128
+G1 X-.762 Y1.943 E.0156
+G1 X-.625 Y1.763 E.00897
+; LINE_WIDTH: 0.404868
+G1 X-.488 Y1.583 E.00829
+; LINE_WIDTH: 0.425484
+G1 X-.197 Y1.537 E.01145
+G1 X.352 Y1.551 E.02133
+; LINE_WIDTH: 0.410323
+G1 X.512 Y1.605 E.00627
+; LINE_WIDTH: 0.403819
+G1 X.634 Y1.769 E.00747
+; LINE_WIDTH: 0.429946
+G1 X.756 Y1.932 E.00801
+G1 X.967 Y2.353 E.01848
+; LINE_WIDTH: 0.405869
+G1 X.785 Y2.948 E.0229
+G1 X.669 Y3.11 E.00734
+; LINE_WIDTH: 0.40273
+G1 X.148 Y3.363 E.02114
+G1 X.017 Y3.381 E.00484
+G1 X-.013 Y3.386 E.0011
+G1 X-.081 Y3.395 E.00248
+; LINE_WIDTH: 0.417114
+G1 X-.34 Y3.281 E.01076
+G1 X-.683 Y3.079 E.01512
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 22.2
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;22.2
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.949 Y2.494 E-.24432
+G1 X-.947 Y2.372 E-.04634
+G1 X-.947 Y2.354 E-.00659
+G1 X-.946 Y2.29 E-.02442
+G1 X-.762 Y1.943 E-.14934
+G1 X-.625 Y1.763 E-.08585
+G1 X-.488 Y1.583 E-.08585
+G1 X-.197 Y1.537 E-.11212
+G1 X-.183 Y1.537 E-.00518
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;22.2
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z22.4 F21000
+G1 X-.919 Y1.538 Z22.4
+G1 Z22.2
+G1 E.8 F420
+; LINE_WIDTH: 0.409306
+G1 F600
+G1 X-.749 Y1.354 E.00931
+; LINE_WIDTH: 0.383413
+G1 X-.482 Y1.225 E.01024
+; LINE_WIDTH: 0.419624
+G1 X-.124 Y1.144 E.01402
+G1 X.41 Y1.181 E.02044
+; LINE_WIDTH: 0.413394
+G1 X.793 Y1.381 E.01624
+; LINE_WIDTH: 0.43416
+G1 X1.078 Y1.71 E.0173
+G1 X1.298 Y2.192 E.02101
+; LINE_WIDTH: 0.402608
+G1 X1.313 Y2.328 E.005
+; LINE_WIDTH: 0.391795
+G1 X1.294 Y2.52 E.00681
+; LINE_WIDTH: 0.411946
+G1 X1.138 Y3.073 E.0215
+; LINE_WIDTH: 0.41528
+G1 X.808 Y3.467 E.01943
+G1 X.33 Y3.687 E.01986
+; LINE_WIDTH: 0.410772
+G1 X-.145 Y3.737 E.01783
+; LINE_WIDTH: 0.422351
+G1 X-.508 Y3.622 E.01466
+G1 X-.881 Y3.415 E.01641
+; LINE_WIDTH: 0.414336
+G1 X-1.153 Y3.038 E.01752
+G1 X-1.31 Y2.511 E.02071
+; LINE_WIDTH: 0.434324
+G1 X-1.232 Y1.999 E.02057
+; LINE_WIDTH: 0.43704
+G1 X-1.094 Y1.729 E.01212
+G1 X-.959 Y1.583 E.00796
+; WIPE_START
+G1 F16800
+G1 X-.749 Y1.354 E-.11803
+G1 X-.482 Y1.225 E-.11271
+G1 X-.124 Y1.144 E-.13946
+G1 X.41 Y1.181 E-.20328
+G1 X.793 Y1.381 E-.16421
+G1 X.831 Y1.426 E-.02232
+; WIPE_END
+G1 E-.04 F120
+G1 Z22.6 F21000
+G1 X-.733 Y3.047 Z22.6
+G1 Z22.2
+G1 E.8 F420
+; LINE_WIDTH: 0.406767
+M73 P74 R1
+G1 F600
+G1 X-.958 Y2.472 E.02281
+G1 X-.965 Y2.361 E.00408
+; LINE_WIDTH: 0.408663
+G1 X-.859 Y2.145 E.00893
+; LINE_WIDTH: 0.43704
+G1 X-.754 Y1.928 E.00963
+G1 X-.621 Y1.755 E.00875
+; LINE_WIDTH: 0.407198
+G1 X-.488 Y1.581 E.00809
+; LINE_WIDTH: 0.418019
+G1 X-.107 Y1.52 E.01467
+G1 X.418 Y1.56 E.02001
+; LINE_WIDTH: 0.402889
+G1 X.561 Y1.642 E.00602
+; LINE_WIDTH: 0.404586
+G1 X.949 Y2.266 E.02697
+G1 X.96 Y2.419 E.0056
+; LINE_WIDTH: 0.411946
+G1 X.796 Y2.926 E.01996
+G1 X.67 Y3.111 E.00838
+; LINE_WIDTH: 0.410772
+G1 X.174 Y3.354 E.0206
+G1 X.007 Y3.403 E.00648
+; LINE_WIDTH: 0.422351
+G1 X-.003 Y3.399 E.00042
+G1 X-.009 Y3.397 E.00025
+G1 X-.367 Y3.271 E.01461
+G1 X-.687 Y3.082 E.01429
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 22.4
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;22.4
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.958 Y2.472 E-.25388
+G1 X-.965 Y2.361 E-.04198
+G1 X-.859 Y2.145 E-.09149
+G1 X-.754 Y1.928 E-.09149
+G1 X-.621 Y1.755 E-.08318
+G1 X-.488 Y1.581 E-.08318
+G1 X-.189 Y1.534 E-.11479
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;22.4
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z22.6 F21000
+G1 X-.879 Y1.479 Z22.6
+G1 Z22.4
+G1 E.8 F420
+; LINE_WIDTH: 0.439932
+G1 F600
+G1 X-.822 Y1.415 E.00347
+; LINE_WIDTH: 0.393981
+G1 X-.636 Y1.279 E.00819
+; LINE_WIDTH: 0.426679
+G1 X-.147 Y1.133 E.01987
+G1 X.374 Y1.173 E.02033
+; LINE_WIDTH: 0.417929
+G1 X.783 Y1.363 E.01716
+; LINE_WIDTH: 0.438336
+G1 X1.092 Y1.719 E.01889
+G1 X1.3 Y2.181 E.02032
+; LINE_WIDTH: 0.406832
+G1 X1.302 Y2.518 E.01244
+; LINE_WIDTH: 0.418029
+G1 X1.128 Y3.085 E.02257
+; LINE_WIDTH: 0.420144
+G1 X.799 Y3.478 E.01963
+G1 X.331 Y3.7 E.01982
+; LINE_WIDTH: 0.41888
+G1 X-.149 Y3.741 E.01835
+; LINE_WIDTH: 0.427575
+G1 X-.537 Y3.617 E.01589
+G1 X-.881 Y3.422 E.01544
+; LINE_WIDTH: 0.421398
+G1 X-1.171 Y3.017 E.01912
+G1 X-1.324 Y2.537 E.01936
+; LINE_WIDTH: 0.437058
+G1 X-1.241 Y2.008 E.02142
+; LINE_WIDTH: 0.439932
+G1 X-1.089 Y1.713 E.01335
+G1 X-.919 Y1.523 E.01025
+; WIPE_START
+G1 F16800
+G1 X-.822 Y1.415 E-.0555
+G1 X-.636 Y1.279 E-.08742
+G1 X-.147 Y1.133 E-.19398
+G1 X.374 Y1.173 E-.19843
+G1 X.783 Y1.363 E-.17139
+G1 X.875 Y1.469 E-.05327
+; WIPE_END
+G1 E-.04 F120
+G1 Z22.8 F21000
+G1 X-.734 Y3.049 Z22.8
+G1 Z22.4
+G1 E.8 F420
+; LINE_WIDTH: 0.409356
+G1 F600
+G1 X-.965 Y2.459 E.02359
+G1 X-.951 Y2.293 E.00619
+; LINE_WIDTH: 0.439932
+G1 X-.746 Y1.914 E.01735
+G1 X-.617 Y1.746 E.00853
+; LINE_WIDTH: 0.409517
+G1 X-.487 Y1.579 E.00788
+; LINE_WIDTH: 0.425048
+G1 X-.134 Y1.517 E.01389
+G1 X.419 Y1.559 E.02149
+; LINE_WIDTH: 0.406238
+G1 X.563 Y1.643 E.00614
+; LINE_WIDTH: 0.408699
+G1 X.95 Y2.263 E.02713
+M73 P75 R1
+G1 X.963 Y2.417 E.00574
+; LINE_WIDTH: 0.418029
+G1 X.807 Y2.904 E.01947
+G1 X.709 Y3.053 E.00679
+G1 X.706 Y3.057 E.00016
+G1 X.67 Y3.111 E.00249
+; LINE_WIDTH: 0.41888
+G1 X.201 Y3.346 E.02
+G1 X.007 Y3.404 E.00774
+; LINE_WIDTH: 0.427575
+G1 X-.002 Y3.401 E.00037
+G1 X-.019 Y3.395 E.00069
+G1 X-.394 Y3.261 E.01554
+G1 X-.687 Y3.084 E.01336
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 22.6
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;22.6
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.965 Y2.459 E-.26023
+G1 X-.951 Y2.293 E-.06332
+G1 X-.746 Y1.914 E-.16366
+G1 X-.617 Y1.746 E-.08048
+G1 X-.487 Y1.579 E-.08048
+G1 X-.197 Y1.528 E-.11183
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;22.6
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z22.8 F21000
+G1 X-.915 Y1.375 Z22.8
+G1 Z22.6
+G1 E.8 F420
+; LINE_WIDTH: 0.501272
+G1 F600
+G1 X-.882 Y1.335 E.00239
+G1 X-.869 Y1.318 E.001
+; LINE_WIDTH: 0.455625
+G1 X-.569 Y1.179 E.01382
+; LINE_WIDTH: 0.452808
+G1 X-.283 Y1.117 E.01217
+; LINE_WIDTH: 0.484405
+G1 X.003 Y1.055 E.0131
+G1 X.548 Y1.125 E.02461
+; LINE_WIDTH: 0.462528
+G1 X.833 Y1.345 E.01533
+; LINE_WIDTH: 0.461741
+G1 X1.016 Y1.543 E.01147
+; LINE_WIDTH: 0.493339
+G1 X1.199 Y1.741 E.01233
+G1 X1.29 Y2.005 E.01277
+; LINE_WIDTH: 0.467997
+G1 X1.382 Y2.269 E.01205
+; LINE_WIDTH: 0.481968
+G1 X1.38 Y2.629 E.016
+G1 X1.379 Y2.694 E.0029
+G1 X1.336 Y2.804 E.00527
+G1 X1.242 Y3.044 E.01148
+; LINE_WIDTH: 0.472645
+G1 X1.122 Y3.214 E.00908
+; LINE_WIDTH: 0.48473
+G1 X.756 Y3.588 E.02346
+G1 X.637 Y3.656 E.00611
+G1 X-.18 Y3.84 E.03754
+; LINE_WIDTH: 0.457882
+G1 X-.273 Y3.797 E.0043
+; LINE_WIDTH: 0.465385
+G1 X-.863 Y3.524 E.02788
+; LINE_WIDTH: 0.465936
+G1 X-.973 Y3.436 E.00605
+; LINE_WIDTH: 0.480282
+G1 X-1.295 Y2.921 E.02697
+G1 X-1.391 Y2.457 E.02102
+; LINE_WIDTH: 0.464288
+G1 X-1.368 Y2.143 E.01345
+; LINE_WIDTH: 0.501272
+G1 X-1.192 Y1.713 E.02161
+G1 X-.953 Y1.421 E.01753
+; WIPE_START
+G1 F16800
+G1 X-.882 Y1.335 E-.04232
+G1 X-.869 Y1.318 E-.00819
+G1 X-.569 Y1.179 E-.12544
+G1 X-.283 Y1.117 E-.11119
+G1 X.003 Y1.055 E-.11119
+G1 X.548 Y1.125 E-.20882
+G1 X.833 Y1.345 E-.13684
+G1 X.861 Y1.376 E-.01601
+; WIPE_END
+G1 E-.04 F120
+G1 Z23 F21000
+G1 X-.769 Y3.035 Z23
+G1 Z22.6
+G1 E.8 F420
+; LINE_WIDTH: 0.465936
+G1 F600
+G1 X-.78 Y3.021 E.00076
+; LINE_WIDTH: 0.447097
+G1 X-.987 Y2.457 E.02464
+; LINE_WIDTH: 0.464288
+G1 X-.978 Y2.279 E.0076
+G1 X-.577 Y1.613 E.03321
+; LINE_WIDTH: 0.460126
+G1 X-.409 Y1.529 E.00797
+; LINE_WIDTH: 0.455793
+G1 X-.226 Y1.511 E.00772
+; LINE_WIDTH: 0.484405
+G1 X-.042 Y1.494 E.00826
+G1 X.434 Y1.532 E.02138
+; LINE_WIDTH: 0.462528
+G1 X.577 Y1.636 E.00753
+; LINE_WIDTH: 0.464958
+G1 X.685 Y1.783 E.00782
+; LINE_WIDTH: 0.493339
+G1 X.794 Y1.93 E.00834
+G1 X.891 Y2.118 E.00971
+; LINE_WIDTH: 0.467997
+G1 X.989 Y2.307 E.00916
+; LINE_WIDTH: 0.481968
+G1 X.946 Y2.596 E.01299
+G1 X.783 Y3.014 E.01999
+; LINE_WIDTH: 0.44509
+G1 X.679 Y3.13 E.00634
+; LINE_WIDTH: 0.443223
+G1 X.078 Y3.41 E.02695
+; LINE_WIDTH: 0.45759
+M73 P76 R1
+G1 X-.096 Y3.422 E.00734
+; LINE_WIDTH: 0.465385
+G1 X-.683 Y3.142 E.02788
+; LINE_WIDTH: 0.465936
+G1 X-.693 Y3.137 E.00047
+G1 X-.733 Y3.083 E.00289
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 22.8
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;22.8
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.78 Y3.021 E-.0295
+G1 X-.987 Y2.457 E-.22841
+G1 X-.978 Y2.279 E-.06757
+G1 X-.577 Y1.613 E-.29526
+G1 X-.409 Y1.529 E-.07159
+G1 X-.232 Y1.512 E-.06766
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;22.8
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z23 F21000
+G1 X-.915 Y1.276 Z23
+G1 Z22.8
+G1 E.8 F420
+; LINE_WIDTH: 0.548837
+G1 F600
+G1 X-.826 Y1.184 E.00656
+; LINE_WIDTH: 0.514803
+G1 X-.443 Y1.024 E.01987
+; LINE_WIDTH: 0.544647
+G1 X-.423 Y1.022 E.00104
+G1 X.023 Y.968 E.02283
+G1 X.56 Y1.068 E.0278
+; LINE_WIDTH: 0.52794
+G1 X1.023 Y1.357 E.02687
+; LINE_WIDTH: 0.543809
+G1 X1.316 Y1.772 E.02581
+G1 X1.418 Y2.056 E.01531
+; LINE_WIDTH: 0.50961
+G1 X1.48 Y2.38 E.01564
+; LINE_WIDTH: 0.526716
+G1 X1.41 Y2.786 E.02023
+G1 X1.288 Y3.133 E.01804
+; LINE_WIDTH: 0.520635
+G1 X1.155 Y3.344 E.01211
+G1 X1.111 Y3.413 E.00394
+; LINE_WIDTH: 0.539358
+G1 X1.005 Y3.497 E.00682
+G1 X.744 Y3.701 E.0167
+G1 X.358 Y3.848 E.0208
+G1 X.273 Y3.88 E.00456
+; LINE_WIDTH: 0.511506
+G1 X.107 Y3.911 E.00804
+; LINE_WIDTH: 0.537679
+G1 X.071 Y3.905 E.00179
+G1 X-.489 Y3.813 E.02849
+G1 X-.924 Y3.577 E.02484
+; LINE_WIDTH: 0.515833
+G1 X-1.101 Y3.418 E.01143
+; LINE_WIDTH: 0.536394
+G1 X-1.359 Y3.002 E.02453
+G1 X-1.497 Y2.469 E.02754
+; LINE_WIDTH: 0.510373
+G1 X-1.415 Y2.066 E.01952
+; LINE_WIDTH: 0.548837
+G1 X-1.201 Y1.573 E.02759
+G1 X-.956 Y1.319 E.01808
+; WIPE_START
+G1 F16800
+G1 X-.826 Y1.184 E-.07138
+G1 X-.443 Y1.024 E-.1577
+G1 X-.423 Y1.022 E-.00779
+G1 X.023 Y.968 E-.17042
+G1 X.56 Y1.068 E-.20759
+G1 X.884 Y1.27 E-.14514
+; WIPE_END
+G1 E-.04 F120
+G1 Z23.2 F21000
+G1 X-.795 Y3.05 Z23.2
+G1 Z22.8
+G1 E.8 F420
+; LINE_WIDTH: 0.515833
+G1 F600
+G1 X-.81 Y3.033 E.0011
+; LINE_WIDTH: 0.51137
+G1 X-1.017 Y2.47 E.02847
+G1 X-.998 Y2.27 E.00956
+; LINE_WIDTH: 0.548837
+G1 X-.768 Y1.847 E.02471
+G1 X-.642 Y1.686 E.01052
+; LINE_WIDTH: 0.522591
+G1 X-.515 Y1.525 E.00997
+; LINE_WIDTH: 0.527021
+G1 X-.186 Y1.466 E.0164
+G1 X.395 Y1.501 E.02859
+; LINE_WIDTH: 0.522475
+G1 X.61 Y1.617 E.01188
+; LINE_WIDTH: 0.543809
+G1 X.901 Y2.053 E.02662
+G1 X1.024 Y2.351 E.01642
+; LINE_WIDTH: 0.520635
+G1 X.838 Y2.971 E.03133
+G1 X.715 Y3.15 E.01053
+; LINE_WIDTH: 0.511934
+G1 X.095 Y3.447 E.03273
+; LINE_WIDTH: 0.511506
+G1 X-.106 Y3.44 E.00953
+; LINE_WIDTH: 0.515833
+G1 X-.694 Y3.165 E.03117
+G1 X-.755 Y3.095 E.00445
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 23
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;23
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.81 Y3.033 E-.03155
+G1 X-1.017 Y2.47 E-.22766
+M73 P77 R1
+G1 X-.998 Y2.27 E-.07646
+G1 X-.768 Y1.847 E-.18294
+G1 X-.642 Y1.686 E-.07788
+G1 X-.515 Y1.525 E-.07788
+G1 X-.293 Y1.485 E-.08563
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;23
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z23.2 F21000
+G1 X-.868 Y1.233 Z23.2
+G1 Z23
+G1 E.8 F420
+; LINE_WIDTH: 0.548783
+G1 F600
+G1 X-.828 Y1.189 E.00306
+; LINE_WIDTH: 0.504153
+G1 X-.509 Y1.043 E.01643
+; LINE_WIDTH: 0.547773
+G1 X.048 Y.961 E.02881
+G1 X.559 Y1.052 E.0266
+; LINE_WIDTH: 0.528956
+G1 X.994 Y1.342 E.02577
+; LINE_WIDTH: 0.543762
+G1 X1.309 Y1.76 E.02662
+G1 X1.416 Y2.049 E.01566
+; LINE_WIDTH: 0.509253
+G1 X1.482 Y2.371 E.01554
+; LINE_WIDTH: 0.504915
+G1 X1.462 Y2.528 E.00741
+; LINE_WIDTH: 0.522317
+G1 X1.297 Y3.115 E.02967
+G1 X1.121 Y3.402 E.0164
+; LINE_WIDTH: 0.538325
+G1 X.749 Y3.697 E.02384
+G1 X.248 Y3.893 E.02701
+; LINE_WIDTH: 0.512783
+G1 X-.076 Y3.896 E.01544
+G1 X-.327 Y3.841 E.01226
+; LINE_WIDTH: 0.53971
+G1 X-.578 Y3.785 E.01296
+G1 X-1.064 Y3.466 E.02932
+; LINE_WIDTH: 0.535565
+G1 X-1.352 Y3.017 E.02663
+G1 X-1.496 Y2.491 E.02728
+; LINE_WIDTH: 0.512795
+G1 X-1.421 Y2.068 E.02045
+; LINE_WIDTH: 0.548783
+G1 X-1.201 Y1.601 E.0265
+G1 X-.908 Y1.278 E.02237
+; WIPE_START
+G1 F16800
+G1 X-.828 Y1.189 E-.04548
+G1 X-.509 Y1.043 E-.13343
+G1 X.048 Y.961 E-.21378
+G1 X.559 Y1.052 E-.19734
+G1 X.931 Y1.3 E-.16998
+; WIPE_END
+G1 E-.04 F120
+G1 Z23.4 F21000
+G1 X-.795 Y3.05 Z23.4
+G1 Z23
+G1 E.8 F420
+; LINE_WIDTH: 0.514693
+G1 F600
+G1 X-.81 Y3.033 E.00109
+; LINE_WIDTH: 0.512274
+G1 X-1.018 Y2.473 E.02843
+; LINE_WIDTH: 0.512795
+G1 X-.999 Y2.272 E.00966
+; LINE_WIDTH: 0.548783
+G1 X-.804 Y1.908 E.02116
+G1 X-.66 Y1.717 E.01229
+; LINE_WIDTH: 0.521987
+G1 X-.516 Y1.525 E.01164
+; LINE_WIDTH: 0.523951
+G1 X-.214 Y1.468 E.01503
+G1 X.425 Y1.507 E.03123
+; LINE_WIDTH: 0.517532
+G1 X.611 Y1.618 E.01043
+; LINE_WIDTH: 0.543762
+G1 X.895 Y2.041 E.02587
+G1 X1.025 Y2.348 E.01692
+; LINE_WIDTH: 0.522317
+G1 X.844 Y2.957 E.03091
+G1 X.716 Y3.149 E.01122
+; LINE_WIDTH: 0.513758
+G1 X.094 Y3.448 E.03294
+G1 X-.107 Y3.441 E.00962
+; LINE_WIDTH: 0.514693
+G1 X-.693 Y3.164 E.03104
+G1 X-.755 Y3.095 E.00443
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 23.2
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;23.2
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.81 Y3.033 E-.03144
+G1 X-1.018 Y2.473 E-.22692
+G1 X-.999 Y2.272 E-.07705
+G1 X-.804 Y1.908 E-.15667
+G1 X-.66 Y1.717 E-.09102
+G1 X-.516 Y1.525 E-.09102
+G1 X-.294 Y1.483 E-.08588
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;23.2
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+M73 P78 R1
+G1 Z23.4 F21000
+G1 X-.842 Y1.2 Z23.4
+G1 Z23.2
+G1 E.8 F420
+; LINE_WIDTH: 0.546599
+G1 F600
+G1 X-.833 Y1.191 E.00064
+; LINE_WIDTH: 0.519072
+G1 X-.438 Y1.02 E.02082
+; LINE_WIDTH: 0.551778
+G1 X.068 Y.964 E.02627
+G1 X.583 Y1.061 E.02702
+; LINE_WIDTH: 0.530097
+G1 X1.005 Y1.353 E.02536
+; LINE_WIDTH: 0.543753
+G1 X1.303 Y1.748 E.02517
+G1 X1.415 Y2.043 E.01599
+; LINE_WIDTH: 0.509131
+G1 X1.484 Y2.361 E.0154
+; LINE_WIDTH: 0.505594
+G1 X1.463 Y2.524 E.00771
+; LINE_WIDTH: 0.524297
+G1 X1.306 Y3.097 E.02903
+G1 X1.13 Y3.391 E.01676
+; LINE_WIDTH: 0.537203
+G1 X.755 Y3.692 E.0241
+G1 X.219 Y3.908 E.02899
+; LINE_WIDTH: 0.515699
+G1 X-.136 Y3.897 E.01702
+; LINE_WIDTH: 0.537925
+G1 X-.624 Y3.759 E.02548
+G1 X-1.073 Y3.457 E.02717
+; LINE_WIDTH: 0.53484
+G1 X-1.346 Y3.033 E.02517
+G1 X-1.494 Y2.513 E.02697
+; LINE_WIDTH: 0.519253
+G1 X-1.414 Y2.063 E.02206
+; LINE_WIDTH: 0.546599
+G1 X-1.2 Y1.596 E.02628
+G1 X-.882 Y1.245 E.02419
+; WIPE_START
+G1 F16800
+G1 X-.833 Y1.191 E-.02756
+G1 X-.438 Y1.02 E-.16379
+G1 X.068 Y.964 E-.19339
+G1 X.583 Y1.061 E-.1989
+G1 X.964 Y1.325 E-.17636
+; WIPE_END
+G1 E-.04 F120
+G1 Z23.6 F21000
+G1 X-.795 Y3.051 Z23.6
+G1 Z23.2
+G1 E.8 F420
+; LINE_WIDTH: 0.51385
+G1 F600
+G1 X-.81 Y3.034 E.00107
+; LINE_WIDTH: 0.513445
+G1 X-1.018 Y2.477 E.02841
+G1 X-.998 Y2.276 E.00963
+; LINE_WIDTH: 0.519253
+G1 X-.974 Y2.225 E.0027
+G1 X-.594 Y1.596 E.0355
+; LINE_WIDTH: 0.506997
+G1 X-.481 Y1.508 E.00674
+; LINE_WIDTH: 0.520988
+G1 X-.218 Y1.492 E.01281
+; LINE_WIDTH: 0.551778
+G1 X.046 Y1.476 E.01364
+G1 X.451 Y1.513 E.02096
+; LINE_WIDTH: 0.513146
+G1 X.611 Y1.62 E.0092
+; LINE_WIDTH: 0.512295
+G1 X.992 Y2.225 E.03406
+; LINE_WIDTH: 0.509131
+G1 X1.014 Y2.423 E.00943
+; LINE_WIDTH: 0.524297
+G1 X.85 Y2.941 E.02654
+G1 X.748 Y3.122 E.01015
+; LINE_WIDTH: 0.516447
+G1 X.094 Y3.449 E.0351
+G1 X-.108 Y3.441 E.00971
+; LINE_WIDTH: 0.51385
+G1 X-.693 Y3.164 E.03094
+G1 X-.755 Y3.095 E.00441
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 23.4
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;23.4
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.81 Y3.034 E-.03132
+G1 X-1.018 Y2.477 E-.22617
+G1 X-.998 Y2.276 E-.07669
+G1 X-.974 Y2.225 E-.02125
+G1 X-.594 Y1.596 E-.27919
+G1 X-.481 Y1.508 E-.05438
+G1 X-.295 Y1.497 E-.071
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;23.4
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z23.6 F21000
+G1 X-.813 Y1.185 Z23.6
+G1 Z23.4
+G1 E.8 F420
+; LINE_WIDTH: 0.520695
+M73 P79 R1
+G1 F600
+G1 X-.434 Y1.018 E.02009
+; LINE_WIDTH: 0.551632
+G1 X.089 Y.965 E.02709
+G1 X.606 Y1.071 E.02722
+; LINE_WIDTH: 0.531238
+G1 X1.016 Y1.365 E.025
+; LINE_WIDTH: 0.543739
+G1 X1.296 Y1.736 E.02365
+G1 X1.413 Y2.036 E.01636
+; LINE_WIDTH: 0.50904
+G1 X1.485 Y2.351 E.01529
+; LINE_WIDTH: 0.50631
+G1 X1.465 Y2.52 E.008
+; LINE_WIDTH: 0.526246
+G1 X1.315 Y3.08 E.02841
+G1 X1.139 Y3.38 E.01708
+; LINE_WIDTH: 0.536145
+G1 X.761 Y3.688 E.02437
+G1 X.294 Y3.884 E.02534
+; LINE_WIDTH: 0.520001
+G1 X.117 Y3.915 E.00871
+; LINE_WIDTH: 0.51016
+G1 X-.247 Y3.887 E.01728
+; LINE_WIDTH: 0.539435
+G1 X-.629 Y3.759 E.02031
+G1 X-1.059 Y3.48 E.0258
+; LINE_WIDTH: 0.534055
+G1 X-1.339 Y3.048 E.02567
+G1 X-1.494 Y2.527 E.0271
+; LINE_WIDTH: 0.513963
+G1 X-1.422 Y2.083 E.02151
+; LINE_WIDTH: 0.549981
+G1 X-1.196 Y1.576 E.02854
+G1 X-1.017 Y1.386 E.01346
+; LINE_WIDTH: 0.523825
+G1 X-.86 Y1.22 E.01113
+; WIPE_START
+G1 F16800
+G1 X-.434 Y1.018 E-.17933
+G1 X.089 Y.965 E-.19949
+G1 X.606 Y1.071 E-.20045
+G1 X.992 Y1.348 E-.18073
+; WIPE_END
+G1 E-.04 F120
+G1 Z23.8 F21000
+G1 X-.795 Y3.052 Z23.8
+G1 Z23.4
+G1 E.8 F420
+; LINE_WIDTH: 0.513512
+G1 F600
+G1 X-.81 Y3.035 E.00107
+; LINE_WIDTH: 0.514745
+G1 X-1.018 Y2.48 E.02839
+G1 X-.999 Y2.278 E.0097
+; LINE_WIDTH: 0.511404
+G1 X-.593 Y1.595 E.03776
+; LINE_WIDTH: 0.506794
+G1 X-.482 Y1.508 E.00661
+; LINE_WIDTH: 0.520695
+G1 X-.348 Y1.476 E.0067
+G1 X.424 Y1.51 E.03745
+; LINE_WIDTH: 0.515567
+G1 X.612 Y1.621 E.01046
+; LINE_WIDTH: 0.511627
+G1 X.992 Y2.222 E.03382
+; LINE_WIDTH: 0.50904
+G1 X1.015 Y2.421 E.00943
+; LINE_WIDTH: 0.526246
+G1 X.856 Y2.927 E.026
+G1 X.748 Y3.121 E.01092
+; LINE_WIDTH: 0.520001
+G1 X.103 Y3.447 E.03498
+G1 X-.111 Y3.446 E.01034
+; LINE_WIDTH: 0.513112
+G1 X-.693 Y3.164 E.03084
+; LINE_WIDTH: 0.513512
+G1 X-.754 Y3.096 E.00438
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 23.6
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;23.6
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.81 Y3.035 E-.03135
+G1 X-1.018 Y2.48 E-.22543
+G1 X-.999 Y2.278 E-.07703
+G1 X-.593 Y1.595 E-.30189
+G1 X-.482 Y1.508 E-.0534
+G1 X-.348 Y1.476 E-.05255
+G1 X-.3 Y1.478 E-.01836
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;23.6
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z23.8 F21000
+G1 X-.783 Y1.178 Z23.8
+G1 Z23.6
+G1 E.8 F420
+; LINE_WIDTH: 0.522332
+G1 F600
+G1 X-.393 Y.999 E.02086
+; LINE_WIDTH: 0.551594
+G1 X.11 Y.967 E.02599
+G1 X.629 Y1.081 E.02742
+; LINE_WIDTH: 0.532353
+G1 X1.027 Y1.376 E.02464
+; LINE_WIDTH: 0.543745
+G1 X1.289 Y1.724 E.02211
+G1 X1.412 Y2.029 E.01673
+; LINE_WIDTH: 0.509084
+G1 X1.486 Y2.342 E.01517
+; LINE_WIDTH: 0.50706
+G1 X1.466 Y2.516 E.00829
+; LINE_WIDTH: 0.528269
+G1 X1.324 Y3.062 E.02775
+G1 X1.148 Y3.369 E.01744
+; LINE_WIDTH: 0.535159
+G1 X.767 Y3.684 E.02464
+M73 P80 R1
+G1 X.299 Y3.887 E.02551
+; LINE_WIDTH: 0.524688
+G1 X-.091 Y3.914 E.0191
+; LINE_WIDTH: 0.538206
+G1 X-.627 Y3.766 E.02792
+G1 X-1.069 Y3.47 E.02676
+; LINE_WIDTH: 0.533302
+G1 X-1.333 Y3.064 E.02406
+G1 X-1.493 Y2.547 E.02692
+; LINE_WIDTH: 0.515595
+G1 X-1.425 Y2.088 E.02228
+; LINE_WIDTH: 0.547983
+G1 X-1.183 Y1.561 E.02967
+G1 X-1.019 Y1.386 E.01232
+; LINE_WIDTH: 0.522332
+G1 X-.854 Y1.211 E.01169
+G1 X-.837 Y1.203 E.00089
+; WIPE_START
+G1 F16800
+G1 X-.393 Y.999 E-.18579
+G1 X.11 Y.967 E-.19139
+G1 X.629 Y1.081 E-.20196
+G1 X1.011 Y1.364 E-.18085
+; WIPE_END
+G1 E-.04 F120
+G1 Z24 F21000
+G1 X-.796 Y3.051 Z24
+G1 Z23.6
+G1 E.8 F420
+; LINE_WIDTH: 0.51449
+G1 F600
+G1 X-.81 Y3.036 E.00101
+; LINE_WIDTH: 0.516249
+G1 X-1.019 Y2.483 E.02839
+G1 X-1 Y2.28 E.00977
+; LINE_WIDTH: 0.547983
+G1 X-.752 Y1.824 E.02658
+G1 X-.635 Y1.675 E.00972
+; LINE_WIDTH: 0.51951
+G1 X-.518 Y1.526 E.00917
+; LINE_WIDTH: 0.522322
+G1 X-.342 Y1.474 E.00893
+G1 X.426 Y1.513 E.03739
+; LINE_WIDTH: 0.51471
+G1 X.613 Y1.622 E.01037
+; LINE_WIDTH: 0.511177
+G1 X.992 Y2.22 E.0336
+; LINE_WIDTH: 0.509084
+G1 X1.015 Y2.418 E.00944
+; LINE_WIDTH: 0.528269
+G1 X.863 Y2.911 E.02543
+G1 X.748 Y3.12 E.01173
+; LINE_WIDTH: 0.524688
+G1 X.139 Y3.432 E.03346
+G1 X-.062 Y3.456 E.0099
+; LINE_WIDTH: 0.512604
+G1 X-.692 Y3.164 E.0331
+; LINE_WIDTH: 0.51449
+G1 X-.755 Y3.096 E.00443
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 23.8
+; LAYER_HEIGHT: 0.199999
+;BEFORE_LAYER_CHANGE
+;23.8
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.81 Y3.036 E-.03086
+G1 X-1.019 Y2.483 E-.22468
+G1 X-1 Y2.28 E-.07729
+G1 X-.752 Y1.824 E-.19714
+G1 X-.635 Y1.675 E-.07208
+G1 X-.518 Y1.526 E-.07208
+G1 X-.342 Y1.474 E-.06979
+G1 X-.3 Y1.476 E-.01607
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;23.8
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z24 F21000
+G1 X-.758 Y1.164 Z24
+G1 Z23.8
+G1 E.8 F420
+; LINE_WIDTH: 0.523748
+G1 F600
+G1 X-.387 Y.995 E.01991
+; LINE_WIDTH: 0.551628
+G1 X.131 Y.968 E.02673
+G1 X.651 Y1.09 E.02758
+; LINE_WIDTH: 0.533451
+G1 X1.038 Y1.388 E.02433
+; LINE_WIDTH: 0.543873
+G1 X1.308 Y1.747 E.0228
+G1 X1.475 Y2.247 E.02682
+; LINE_WIDTH: 0.504529
+G1 X1.463 Y2.498 E.01172
+; LINE_WIDTH: 0.529421
+G1 X1.332 Y3.043 E.02771
+G1 X1.157 Y3.358 E.01778
+; LINE_WIDTH: 0.534206
+G1 X.838 Y3.637 E.02112
+G1 X.377 Y3.859 E.02547
+; LINE_WIDTH: 0.529074
+G1 X-.104 Y3.92 E.02394
+; LINE_WIDTH: 0.538446
+G1 X-.603 Y3.768 E.02619
+G1 X-1.05 Y3.48 E.02674
+; LINE_WIDTH: 0.532998
+G1 X-1.291 Y3.149 E.02037
+G1 X-1.473 Y2.644 E.02667
+; LINE_WIDTH: 0.521378
+G1 X-1.478 Y2.334 E.01507
+; LINE_WIDTH: 0.524091
+G1 X-1.396 Y2.065 E.0137
+; LINE_WIDTH: 0.549513
+G1 X-1.315 Y1.797 E.01442
+G1 X-1.171 Y1.547 E.01483
+; LINE_WIDTH: 0.545961
+G1 X-.846 Y1.204 E.02412
+; LINE_WIDTH: 0.523748
+G1 X-.813 Y1.189 E.00175
+; WIPE_START
+G1 F16800
+G1 X-.387 Y.995 E-.17789
+M73 P81 R1
+G1 X.131 Y.968 E-.19686
+G1 X.651 Y1.09 E-.20308
+G1 X1.031 Y1.383 E-.18216
+; WIPE_END
+G1 E-.04 F120
+G1 Z24.2 F21000
+G1 X-.795 Y3.052 Z24.2
+G1 Z23.8
+G1 E.8 F420
+; LINE_WIDTH: 0.515469
+G1 F600
+G1 X-.81 Y3.037 E.00102
+; LINE_WIDTH: 0.521378
+G1 X-1.021 Y2.486 E.0286
+G1 X-.999 Y2.284 E.00991
+; LINE_WIDTH: 0.545961
+G1 X-.741 Y1.808 E.02759
+G1 X-.63 Y1.667 E.00917
+; LINE_WIDTH: 0.517842
+G1 X-.519 Y1.526 E.00866
+; LINE_WIDTH: 0.523748
+G1 X-.337 Y1.472 E.00926
+G1 X.428 Y1.514 E.03736
+; LINE_WIDTH: 0.514184
+G1 X.613 Y1.624 E.01029
+; LINE_WIDTH: 0.511505
+G1 X.992 Y2.216 E.03343
+G1 X1.014 Y2.415 E.00949
+; LINE_WIDTH: 0.529421
+G1 X.866 Y2.902 E.02516
+G1 X.749 Y3.119 E.01217
+; LINE_WIDTH: 0.529074
+G1 X.174 Y3.418 E.03195
+G1 X-.069 Y3.457 E.01212
+; LINE_WIDTH: 0.512269
+G1 X-.692 Y3.164 E.03279
+; LINE_WIDTH: 0.515469
+G1 X-.755 Y3.096 E.00442
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; CHANGE_LAYER
+; Z_HEIGHT: 24
+; LAYER_HEIGHT: 0.200001
+;BEFORE_LAYER_CHANGE
+;24
+G92 E0
+
+; WIPE_START
+G1 F16800
+G1 X-.81 Y3.037 E-.03091
+G1 X-1.021 Y2.486 E-.22394
+G1 X-.999 Y2.284 E-.07756
+G1 X-.741 Y1.808 E-.20543
+G1 X-.63 Y1.667 E-.06829
+G1 X-.519 Y1.526 E-.06829
+G1 X-.337 Y1.472 E-.07216
+G1 X-.302 Y1.474 E-.01341
+; WIPE_END
+G1 E-.04 F120
+;AFTER_LAYER_CHANGE
+;24
+EXCLUDE_OBJECT_START NAME=3DBenchy.stl_id_0_copy_0
+G1 Z24.2 F21000
+G1 X-.733 Y1.155 Z24.2
+G1 Z24
+G1 E.8 F420
+; LINE_WIDTH: 0.523703
+G1 F600
+G1 X-.381 Y.992 E.01894
+; LINE_WIDTH: 0.55082
+G1 X.16 Y.97 E.02788
+G1 X.673 Y1.1 E.02729
+; LINE_WIDTH: 0.534461
+G1 X1.05 Y1.4 E.02399
+; LINE_WIDTH: 0.543533
+G1 X1.311 Y1.77 E.023
+G1 X1.478 Y2.285 E.02752
+; LINE_WIDTH: 0.503912
+G1 X1.463 Y2.497 E.00991
+; LINE_WIDTH: 0.532195
+G1 X1.342 Y3.026 E.02695
+G1 X1.184 Y3.319 E.01652
+; LINE_WIDTH: 0.533303
+G1 X.839 Y3.635 E.02324
+G1 X.419 Y3.846 E.02339
+; LINE_WIDTH: 0.532982
+G1 X-.111 Y3.913 E.02657
+; LINE_WIDTH: 0.538811
+G1 X-.625 Y3.759 E.027
+G1 X-1.062 Y3.469 E.02637
+; LINE_WIDTH: 0.531452
+G1 X-1.306 Y3.134 E.02054
+G1 X-1.462 Y2.658 E.02483
+; LINE_WIDTH: 0.51695
+G1 X-1.454 Y2.195 E.02228
+; LINE_WIDTH: 0.548586
+G1 X-1.335 Y1.836 E.01936
+G1 X-1.158 Y1.532 E.01806
+; LINE_WIDTH: 0.54373
+G1 X-.85 Y1.208 E.0227
+; LINE_WIDTH: 0.523703
+G1 X-.788 Y1.18 E.00335
+; WIPE_START
+G1 F16800
+G1 X-.381 Y.992 E-.17035
+G1 X.16 Y.97 E-.20566
+G1 X.673 Y1.1 E-.20128
+G1 X1.049 Y1.4 E-.18271
+; WIPE_END
+G1 E-.04 F120
+G1 Z24.4 F21000
+G1 X-.775 Y3.082 Z24.4
+M73 P82 R1
+G1 Z24
+G1 E.8 F420
+; LINE_WIDTH: 0.531452
+G1 F600
+G1 X-.857 Y2.935 E.00834
+G1 X-1.023 Y2.431 E.02634
+; LINE_WIDTH: 0.513715
+G1 X-1.001 Y2.286 E.00699
+; LINE_WIDTH: 0.54373
+G1 X-.73 Y1.792 E.02862
+G1 X-.624 Y1.659 E.00867
+; LINE_WIDTH: 0.515639
+G1 X-.518 Y1.525 E.00818
+; LINE_WIDTH: 0.523703
+G1 X-.333 Y1.469 E.00943
+G1 X.43 Y1.516 E.03731
+; LINE_WIDTH: 0.513981
+G1 X.614 Y1.625 E.0102
+; LINE_WIDTH: 0.510833
+G1 X.99 Y2.214 E.03316
+; LINE_WIDTH: 0.507384
+G1 X1.014 Y2.411 E.00936
+; LINE_WIDTH: 0.513579
+G1 X.82 Y3.021 E.03057
+G1 X.696 Y3.159 E.00885
+; LINE_WIDTH: 0.532982
+G1 X.209 Y3.403 E.02708
+G1 X-.007 Y3.447 E.01097
+G1 X-.013 Y3.448 E.00029
+G1 X-.069 Y3.459 E.00286
+; LINE_WIDTH: 0.512246
+G1 X-.692 Y3.164 E.03282
+G1 X-.739 Y3.129 E.00279
+; WIPE_START
+G1 F16800
+G1 X-.857 Y2.935 E-.08615
+G1 X-1.023 Y2.431 E-.20193
+G1 X-1.001 Y2.286 E-.05563
+G1 X-.73 Y1.792 E-.21404
+G1 X-.624 Y1.659 E-.06485
+G1 X-.518 Y1.525 E-.06485
+G1 X-.336 Y1.469 E-.07254
+; WIPE_END
+G1 E-.04 F120
+G1 Z24.4 F21000
+G1 X1.424 Y2.955 Z24.4
+G1 Z24
+G1 E.8 F420
+; FEATURE: Ironing
+; LINE_WIDTH: 0.40161
+; LAYER_HEIGHT: 0.0075
+G1 F600
+G1 X1.424 Y1.918 E.00158
+G1 X1.274 Y1.588 F21000
+G1 F600
+G1 X1.274 Y3.135 E.00235
+G1 X1.124 Y3.364 E.00042
+G1 X1.124 Y1.498 E.00284
+G1 X1.073 Y1.427 E.00013
+G1 X.974 Y1.353 E.00019
+G1 X.974 Y2.149 E.00121
+G1 X.824 Y1.916 E.00042
+G1 X.824 Y1.24 E.00103
+G1 X.674 Y1.128 E.00029
+G1 X.674 Y1.683 E.00084
+G1 X.561 Y1.506 E.00032
+G1 X.524 Y1.504 E.00006
+G1 X.524 Y1.078 E.00065
+G1 X.374 Y1.034 E.00024
+G1 X.374 Y1.495 E.0007
+G1 X.224 Y1.487 E.00023
+G1 X.224 Y.989 E.00076
+G1 X.16 Y.97 E.0001
+G1 X.074 Y.976 E.00013
+G1 X.074 Y1.478 E.00077
+G1 X-.076 Y1.47 E.00023
+G1 X-.076 Y.985 E.00074
+G1 X-.226 Y.995 E.00023
+G1 X-.226 Y1.462 E.00071
+G1 X-.376 Y1.453 E.00023
+G1 X-.378 Y1.005 E.00068
+M73 P83 R1
+G1 X-.526 Y1.075 E.00025
+G1 X-.526 Y1.445 E.00056
+G1 X-.676 Y1.693 E.00044
+G1 X-.676 Y1.146 E.00083
+G1 X-.826 Y1.223 E.00026
+G1 X-.826 Y1.949 E.00111
+G1 X-.976 Y2.206 E.00045
+G1 X-.976 Y1.268 E.00143
+; WIPE_START
+G1 F16800
+G1 X-.976 Y2.206 E-.35654
+G1 X-.826 Y1.949 E-.113
+G1 X-.826 Y1.223 E-.27596
+G1 X-.792 Y1.206 E-.01451
+; WIPE_END
+G1 E-.04 F120
+G1 Z24.4 F21000
+G1 X.974 Y2.389 Z24.4
+G1 Z24
+G1 E.8 F420
+G1 F600
+G1 X.974 Y3.501 E.00169
+G1 X.824 Y3.637 E.00031
+G1 X.824 Y3.065 E.00087
+G1 X.803 Y3.13 E.0001
+G1 X.674 Y3.191 E.00022
+G1 X.674 Y3.715 E.0008
+G1 X.524 Y3.786 E.00025
+G1 X.524 Y3.262 E.0008
+G1 X.374 Y3.334 E.00025
+G1 X.374 Y3.857 E.0008
+G1 X.224 Y3.867 E.00023
+G1 X.224 Y3.405 E.0007
+G1 X.074 Y3.476 E.00025
+G1 X.074 Y3.878 E.00061
+G1 X-.076 Y3.888 E.00023
+G1 X-.076 Y3.486 E.00061
+G1 X-.226 Y3.413 E.00025
+G1 X-.226 Y3.871 E.0007
+G1 X-.376 Y3.827 E.00024
+G1 X-.376 Y3.34 E.00074
+G1 X-.526 Y3.266 E.00025
+G1 X-.526 Y3.783 E.00079
+G1 X-.676 Y3.734 E.00024
+G1 X-.676 Y3.193 E.00082
+G1 X-.79 Y3.137 E.00019
+G1 X-.826 Y3.043 E.00015
+G1 X-.826 Y3.622 E.00088
+G1 X-.976 Y3.509 E.00029
+G1 X-.976 Y2.461 E.00159
+; WIPE_START
+G1 F16800
+G1 X-.976 Y3.509 E-.39807
+G1 X-.826 Y3.622 E-.07131
+G1 X-.826 Y3.043 E-.21976
+G1 X-.79 Y3.137 E-.0381
+G1 X-.712 Y3.175 E-.03276
+; WIPE_END
+G1 E-.04 F120
+G1 Z24.4 F21000
+G1 X-1.126 Y3.479 Z24.4
+G1 Z24
+G1 E.8 F420
+G1 F600
+G1 X-1.126 Y1.495 E.00302
+M73 P84 R1
+G1 X-1.276 Y1.724 E.00042
+G1 X-1.276 Y3.274 E.00236
+G1 X-1.426 Y2.946 F21000
+G1 F600
+G1 X-1.426 Y1.907 E.00158
+EXCLUDE_OBJECT_END NAME=3DBenchy.stl_id_0_copy_0
+; WIPE_START
+G1 F16800
+G1 X-1.426 Y2.946 E-.76
+; WIPE_END
+G1 E-.04 F120
+M106 S0
+M106 P2 S0
+; FEATURE: Custom
+; filament end gcode 
+G0 Z75
+G0 X-45 Y-70
+TURN_OFF_HEATERS
+PRINT_END
+M73 P100 R0
+; EXECUTABLE_BLOCK_END
+
