@@ -40,6 +40,10 @@ The name Spark, apart from being possible foreshadowing (please no), is also mea
 
 ![](</frontimages/wiring.png>)
 
+![](</frontimages/build-tools.png>)
+
+![](</frontimages/build-all.png>)
+
 ![](</frontimages/display-at-open-sauce.png>)
 
 ---
