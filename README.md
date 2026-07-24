@@ -10,19 +10,23 @@
 
 ## Spark
 
-[Spark](https://github.com/HenryLi-0/spark) is an open source complex 3D printer, built for (and generously funded by) Hack Club's [Blueprint](https://blueprint.hackclub.com/)!
+[Spark](https://github.com/HenryLi-0/spark) is an open source complex 3D printer, built for (and generously funded by) Hack Club's [Blueprint](https://blueprint.hackclub.com/)! It's capable of automated tool changing using a passive latch system, printing using a coreXY setup, and more!
+
+Check out the video showcase [here](https://www.youtube.com/watch?v=ktODngPF7UI)! *(epilepsy warning)*
 
 ---
 
-## What is this?
+## What's this?
 
 Following summer break, I realized I wasn't really doing much programming, CAD work, or pretty much anything significantly large. To simplify, I wanted to work on something to get out of creative limbo, something complex enough to grab my interest, and something that I would actually find myself using to create more.
 
-With that said, along with 6 months of on and off work, I present my newest, top 1 hardest mechanical endurance design project, **Spark**. Compared to the mechanical design of [`Raven`](https://github.com/HenryLi-0/raven), Spark is significantly more complex, involving coreXY, belts, and bringing in the idea of a passive tool changer. (Note: In my opinion, one can't compare Spark and Raven, since they're both very complex in their own ways, Raven is more of an all-skill complexity, while Spark is more endurance and CAD.)
+With that said, along with 9 months of on and off work, I present my newest, top 1 hardest mechanical endurance project, **Spark**. Compared to the mechanical design of [`Raven`](https://github.com/HenryLi-0/raven), Spark is significantly more complex, involving coreXY, belts, and bringing in the idea of a passive tool changer. (Note: In my opinion, one can't compare Spark and Raven, since they're both very complex in their own ways, Raven is more of an all-skill complexity, while Spark is more endurance and CAD.)
 
 Spark uses [Klipper](https://www.klipper3d.org/), running on an SKR 1.4 Motherboard, to control its inputs. Powered through a Meanwell LRS-150-24, Spark features a coreXY motion system, which uses two NEMA17 42Ncm stepper motors. In this assembly, Spark is able to move the gantry, where a passive tool exchange system is utilized, using a latch, magnet, and guide system to align the tool head with the tool base. This allows Spark to use significantly less motors compared to a normal tool changer, using only one across all tools. With three motors down, Spark also has two more for Z control. In theory, this makes it capable of printing at a rotation, but that feature will probably be saved for a future date. 
 
-The name Spark, apart from being possible foreshadowing (please no), is also meant to be trying to spark motivation to bounce back. Spark holds it difficulty in the lack of a fast reward function, meaning hours of CAD and research doesn't really translate directly to a "percent" or "progress". This, along with the mental struggles of pushing for time between an intense school year, really contributed to my personal rating of this journey. However, I don't regret my choice, and I feel the scope was fairly optimistic but achievable. In the end, Spark sorta achieved my initial personal goal, the one of trying to prove to myself that I was, infact, not washed and still capable of producing advanced projects. If anything its got the ball rolling again, and I definitely learned a lot more about the deep design behind FDM 3D printing. Well, that's it for now! Enjoy the showcase!
+After a month or two of inactivity after the initial design submission, parts for Spark arrived gradually, with physical construction starting on June 24th. After much build, testing, and video editing, Spark was fully assembled and tested in just 18 days, with forms submitted on the early morning of July 12th! After this, thanks to [Outpost](http://outpost.hackclub.com/), I flew out to California on July 14th for a quick hackathon and then three days of exhibiting Spark at Open Sauce! Being my first hackathon and in-person Hack Club event, it was quite the amazing experience! After a week of ecstasy, I returned back to NYC with Spark barely fitting inside its suitcase on the morning of July 21st!
+
+The name Spark, apart from being possible foreshadowing (please no), is also meant to be trying to spark motivation to bounce back. Spark held it difficulty in the lack of a fast reward function, meaning hours of CAD and research doesn't really translate directly to a "percent" or "progress". This, along with the mental struggles of pushing for time between an intense school year, really contributed to my personal rating of this journey. However, I don't regret my choice, and I feel the scope was fairly optimistic but achievable. In the end, Spark sorta achieved my initial personal goal, the one of trying to prove to myself that I was, infact, not washed and still capable of producing advanced projects. If anything its got the ball rolling again, and I definitely learned a lot more about the deep design behind FDM 3D printing. I was still learning so much, even during the build process, and I don't regret a single bit pushing myself to wake up and work on design, printing, and building for 18 days straight for the magical experience of a hackathon and exhibiting at Open Sauce.
 
 ---
 
@@ -35,6 +39,8 @@ The name Spark, apart from being possible foreshadowing (please no), is also mea
 ![](</frontimages/assembly-close-up-2026-3-31.png>)
 
 ![](</frontimages/wiring.png>)
+
+![](</frontimages/display-at-open-sauce.png>)
 
 ---
 
